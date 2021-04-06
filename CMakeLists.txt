@@ -222,6 +222,22 @@ endif()
 option(WITH_MEMORY_ANALYZER
   "build the memory analyzer" ${WITH_MEMORY_ANALYZER_DEFAULT})
 
+if ((CMAKE_SYSTEM_PROCESSOR STREQUAL "x86_64")
+       OR (CMAKE_SYSTEM_PROCESSOR STREQUAL "i386")
+       OR (CMAKE_SYSTEM_PROCESSOR STREQUAL "i586")
+       OR (CMAKE_SYSTEM_PROCESSOR STREQUAL "i686")
+       OR (CMAKE_SYSTEM_PROCESSOR STREQUAL "amd64") # freebsd
+       OR (CMAKE_SYSTEM_PROCESSOR STREQUAL "AMD64") # windows
+       OR (CMAKE_SYSTEM_PROCESSOR STREQUAL "x86"))
+  set(PROCESSOR_FAMILY "Intel")
+  if(CMAKE_COMPILER_IS_GNUCC
+      OR (CMAKE_CXX_COMPILER_ID STREQUAL AppleClang)
+      OR (CMAKE_CXX_COMPILER_ID STREQUAL Clang)
+      OR (CMAKE_CXX_COMPILER_ID STREQUAL Intel))
+    add_definitions(-march=native)
+  endif()
+endif()
+
 add_subdirectory(src)
 add_subdirectory(regression)
 add_subdirectory(unit)
