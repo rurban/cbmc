@@ -74,16 +74,16 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 if("${CMAKE_CXX_COMPILER_ID}" STREQUAL "GNU")
     #   Ensure NDEBUG is not set for release builds
     set(CMAKE_CXX_FLAGS_RELEASE "-O3")
-    set(CMAKE_CXX_FLAGS_RELWITHDEBINFO "-O2 -g")
+    set(CMAKE_CXX_FLAGS_RELWITHDEBINFO "-O3 -g")
     #   Enable lots of warnings
     set(CMAKE_CXX_FLAGS
         "${CMAKE_CXX_FLAGS} -Wall -Wpedantic -Werror -Wswitch-enum \
-         -Wno-deprecated-declarations -Wno-maybe-uninitialized")
+         -Wno-deprecated-declarations -Wno-maybe-uninitialized -Wno-error=odr")
 elseif("${CMAKE_CXX_COMPILER_ID}" STREQUAL "Clang" OR
        "${CMAKE_CXX_COMPILER_ID}" STREQUAL "AppleClang")
     #   Ensure NDEBUG is not set for release builds
-    set(CMAKE_CXX_FLAGS_RELEASE "-O2")
-    set(CMAKE_CXX_FLAGS_RELWITHDEBINFO "-O2 -g")
+    set(CMAKE_CXX_FLAGS_RELEASE "-O3")
+    set(CMAKE_CXX_FLAGS_RELWITHDEBINFO "-O3 -g")
     #   Enable lots of warnings
     set(CMAKE_CXX_FLAGS
         "${CMAKE_CXX_FLAGS} -Wall -Wpedantic -Werror -Wswitch-enum -Wno-deprecated-declarations")
@@ -263,6 +263,10 @@ else()
 endif()
 
 find_program(SED sed gsed)
+
+if (APPLE)
+  add_compile_options(-Wno-error=maybe-uninitialized)
+endif(APPLE)
 
 add_subdirectory(src)
 add_subdirectory(regression)
