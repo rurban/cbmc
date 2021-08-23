@@ -72,7 +72,7 @@ if("${CMAKE_CXX_COMPILER_ID}" STREQUAL "Clang" OR
     set(CMAKE_CXX_FLAGS_RELEASE "-O3")
     set(CMAKE_CXX_FLAGS_RELWITHDEBINFO "-O2 -g")
     #   Enable lots of warnings
-    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wpedantic -Werror -Wno-deprecated-declarations -Wswitch-enum")
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wpedantic -Werror -Wno-deprecated-declarations -Wno-error=odr -Wswitch-enum")
 elseif("${CMAKE_CXX_COMPILER_ID}" STREQUAL "MSVC")
     # This would be the place to enable warnings for Windows builds, although
     # config.inc doesn't seem to do that currently
@@ -236,6 +236,10 @@ if(ipo_supported)
 else()
   message(STATUS "IPO / LTO not supported: <${error}>")
 endif()
+
+if (APPLE)
+  add_compile_options(-Wno-error=maybe-uninitialized)
+endif(APPLE)
 
 add_subdirectory(src)
 add_subdirectory(regression)
