@@ -53,15 +53,19 @@ std::string get_temporary_directory(const std::string &name_template)
     prefixed_name_template.begin(), prefixed_name_template.end());
   t.push_back('\0'); // add the zero
   const char *td = mkdtemp(t.data());
-  if(!td)
-    throw system_exceptiont("Failed to create temporary directory");
+  if(!td || !*td)
+    throw system_exceptiont(
+      std::string("Failed to create temporary directory \"") + t.data() + "\"");
 
   errno = 0;
   char *wd = realpath(td, nullptr);
 
-  if(wd == nullptr)
-    throw system_exceptiont(
-      std::string("realpath failed: ") + std::strerror(errno));
+  if (errno == EINVAL && td && wd) // bogus EINVAL on debian
+    ;
+  else
+    if(wd == nullptr || errno != 0)
+      throw system_exceptiont(
+        std::string("realpath failed: ") + std::strerror(errno) + " \"" + td + "\"");
 
   result = std::string(wd);
   free(wd);
@@ -72,7 +76,7 @@ std::string get_temporary_directory(const std::string &name_template)
 
 temp_dirt::temp_dirt(const std::string &name_template)
 {
-  path=get_temporary_directory(name_template);
+  path = get_temporary_directory(name_template);
 }
 
 std::string temp_dirt::operator()(const std::string &file)
