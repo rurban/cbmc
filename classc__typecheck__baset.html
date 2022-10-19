@@ -309,18 +309,34 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:ae009769542f5787621e4904f50bd3842"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7abd88a8e81956eb51c0361ace40370"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__typecheck__baset.html#ac7abd88a8e81956eb51c0361ace40370">typecheck_start_thread</a> (<a class="el" href="classcodet.html">codet</a> &amp;code)</td></tr>
 <tr class="separator:ac7abd88a8e81956eb51c0361ace40370"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2989017c32946b064ce395be74bd2bd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__typecheck__baset.html#ab2989017c32946b064ce395be74bd2bd">typecheck_typed_target_call</a> (<a class="el" href="classside__effect__expr__function__callt.html">side_effect_expr_function_callt</a> &amp;expr)</td></tr>
+<tr class="separator:ab2989017c32946b064ce395be74bd2bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05e157cfcaf3396341bccbc967e7cb2c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__typecheck__baset.html#a05e157cfcaf3396341bccbc967e7cb2c">check_history_expr_return_value</a> (const <a class="el" href="classexprt.html">exprt</a> &amp;expr, std::string &amp;clause_type)</td></tr>
+<tr class="memdesc:a05e157cfcaf3396341bccbc967e7cb2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks that no history expr or return_value exists in expr.  <a href="classc__typecheck__baset.html#a05e157cfcaf3396341bccbc967e7cb2c">More...</a><br /></td></tr>
+<tr class="separator:a05e157cfcaf3396341bccbc967e7cb2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f04c70f93bebaf7eb53552075c17fcb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__typecheck__baset.html#a2f04c70f93bebaf7eb53552075c17fcb">check_was_freed</a> (const <a class="el" href="classexprt.html">exprt</a> &amp;expr, std::string &amp;clause_type)</td></tr>
+<tr class="memdesc:a2f04c70f93bebaf7eb53552075c17fcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks that no occurence of the <code>CPROVER_PREFIX was_freed</code> predicate is found in expr.  <a href="classc__typecheck__baset.html#a2f04c70f93bebaf7eb53552075c17fcb">More...</a><br /></td></tr>
+<tr class="separator:a2f04c70f93bebaf7eb53552075c17fcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5421a8eb88a64e7821f9c58737c75cb6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__typecheck__baset.html#a5421a8eb88a64e7821f9c58737c75cb6">typecheck_spec_function_pointer_obeys_contract</a> (<a class="el" href="classexprt.html">exprt</a> &amp;expr)</td></tr>
 <tr class="separator:a5421a8eb88a64e7821f9c58737c75cb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4d3952a30cf36e108edcfa454f20add"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__typecheck__baset.html#ac4d3952a30cf36e108edcfa454f20add">typecheck_spec_assigns</a> (<a class="el" href="classexprt.html#a10c073e5cdd14b181d56cf53def8b378">exprt::operandst</a> &amp;targets)</td></tr>
 <tr class="separator:ac4d3952a30cf36e108edcfa454f20add"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a491f78c7735ba2c6ed2bf0f839c6e7ba"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__typecheck__baset.html#a491f78c7735ba2c6ed2bf0f839c6e7ba">typecheck_spec_assigns_condition</a> (<a class="el" href="classexprt.html">exprt</a> &amp;condition)</td></tr>
-<tr class="separator:a491f78c7735ba2c6ed2bf0f839c6e7ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc59dc2e25b62da265c89238619349b2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__typecheck__baset.html#abc59dc2e25b62da265c89238619349b2">typecheck_spec_frees</a> (<a class="el" href="classexprt.html#a10c073e5cdd14b181d56cf53def8b378">exprt::operandst</a> &amp;targets)</td></tr>
+<tr class="separator:abc59dc2e25b62da265c89238619349b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a5dd2ee6e2a742a7eb053261dffcc4d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__typecheck__baset.html#a9a5dd2ee6e2a742a7eb053261dffcc4d">typecheck_conditional_targets</a> (<a class="el" href="classexprt.html#a10c073e5cdd14b181d56cf53def8b378">exprt::operandst</a> &amp;targets, const std::function&lt; void(<a class="el" href="classexprt.html">exprt</a> &amp;)&gt; typecheck_target, const std::string &amp;clause_type)</td></tr>
+<tr class="separator:a9a5dd2ee6e2a742a7eb053261dffcc4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8838f2f757fb29a15393b93f6a45f5da"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__typecheck__baset.html#a8838f2f757fb29a15393b93f6a45f5da">typecheck_spec_condition</a> (<a class="el" href="classexprt.html">exprt</a> &amp;condition)</td></tr>
+<tr class="separator:a8838f2f757fb29a15393b93f6a45f5da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8184a35225928c855d72f684ba769edf"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__typecheck__baset.html#a8184a35225928c855d72f684ba769edf">typecheck_spec_assigns_target</a> (<a class="el" href="classexprt.html">exprt</a> &amp;target)</td></tr>
 <tr class="separator:a8184a35225928c855d72f684ba769edf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e044732c3e87ac9be83bb3e4da18806"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__typecheck__baset.html#a6e044732c3e87ac9be83bb3e4da18806">typecheck_spec_frees_target</a> (<a class="el" href="classexprt.html">exprt</a> &amp;target)</td></tr>
+<tr class="separator:a6e044732c3e87ac9be83bb3e4da18806"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8eeabced3b6bbfd4e60d1fb1c35401a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__typecheck__baset.html#ac8eeabced3b6bbfd4e60d1fb1c35401a">typecheck_spec_loop_invariant</a> (<a class="el" href="classcodet.html">codet</a> &amp;code)</td></tr>
 <tr class="separator:ac8eeabced3b6bbfd4e60d1fb1c35401a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51a642f44848bf4df93ac5b7674ba82a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__typecheck__baset.html#a51a642f44848bf4df93ac5b7674ba82a">typecheck_spec_decreases</a> (<a class="el" href="classcodet.html">codet</a> &amp;code)</td></tr>
 <tr class="separator:a51a642f44848bf4df93ac5b7674ba82a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a429d27cda4cbda2548d5f53d46c5725f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__typecheck__baset.html#a429d27cda4cbda2548d5f53d46c5725f">throw_on_side_effects</a> (const <a class="el" href="classexprt.html">exprt</a> &amp;expr)</td></tr>
+<tr class="separator:a429d27cda4cbda2548d5f53d46c5725f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e18da9e4d352c7eb7e4d0c47d10abef"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__typecheck__baset.html#a5e18da9e4d352c7eb7e4d0c47d10abef">typecheck_expr_builtin_va_arg</a> (<a class="el" href="classexprt.html">exprt</a> &amp;expr)</td></tr>
 <tr class="separator:a5e18da9e4d352c7eb7e4d0c47d10abef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd353941c89acc14aa09869d05cb9c1f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__typecheck__baset.html#afd353941c89acc14aa09869d05cb9c1f">typecheck_expr_builtin_offsetof</a> (<a class="el" href="classexprt.html">exprt</a> &amp;expr)</td></tr>
@@ -617,7 +633,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__base_8h_source.html#l00292">292</a> of file <a class="el" href="c__typecheck__base_8h_source.html">c_typecheck_base.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__base_8h_source.html#l00308">308</a> of file <a class="el" href="c__typecheck__base_8h_source.html">c_typecheck_base.h</a>.</p>
 
 </div>
 </div>
@@ -794,7 +810,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Create symbols for parameter of the code-typed symbol <code>symbol</code>. </p>
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__base_8cpp_source.html#l00910">910</a> of file <a class="el" href="c__typecheck__base_8cpp_source.html">c_typecheck_base.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__base_8cpp_source.html#l00963">963</a> of file <a class="el" href="c__typecheck__base_8cpp_source.html">c_typecheck_base.cpp</a>.</p>
 
 </div>
 </div>
@@ -850,7 +866,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l01313">1313</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l01315">1315</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
 
 </div>
 </div>
@@ -878,7 +894,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__type_8cpp_source.html#l01655">1655</a> of file <a class="el" href="c__typecheck__type_8cpp_source.html">c_typecheck_type.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__type_8cpp_source.html#l01665">1665</a> of file <a class="el" href="c__typecheck__type_8cpp_source.html">c_typecheck_type.cpp</a>.</p>
 
 </div>
 </div>
@@ -917,6 +933,86 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="c__typecheck__base_8cpp_source.html#l00612">612</a> of file <a class="el" href="c__typecheck__base_8cpp_source.html">c_typecheck_base.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a05e157cfcaf3396341bccbc967e7cb2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05e157cfcaf3396341bccbc967e7cb2c">&#9670;&nbsp;</a></span>check_history_expr_return_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void c_typecheck_baset::check_history_expr_return_value </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classexprt.html">exprt</a> &amp;&#160;</td>
+          <td class="paramname"><em>expr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>clause_type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks that no history expr or return_value exists in expr. </p>
+
+<p class="definition">Definition at line <a class="el" href="c__typecheck__base_8cpp_source.html#l00677">677</a> of file <a class="el" href="c__typecheck__base_8cpp_source.html">c_typecheck_base.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a2f04c70f93bebaf7eb53552075c17fcb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f04c70f93bebaf7eb53552075c17fcb">&#9670;&nbsp;</a></span>check_was_freed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void c_typecheck_baset::check_was_freed </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classexprt.html">exprt</a> &amp;&#160;</td>
+          <td class="paramname"><em>expr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>clause_type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks that no occurence of the <code>CPROVER_PREFIX was_freed</code> predicate is found in expr. </p>
+
+<p class="definition">Definition at line <a class="el" href="c__typecheck__base_8cpp_source.html#l00704">704</a> of file <a class="el" href="c__typecheck__base_8cpp_source.html">c_typecheck_base.cpp</a>.</p>
 
 </div>
 </div>
@@ -998,7 +1094,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l04367">4367</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l04460">4460</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
 
 </div>
 </div>
@@ -1244,7 +1340,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l02186">2186</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l02249">2249</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
 
 </div>
 </div>
@@ -1282,7 +1378,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__type_8cpp_source.html#l01093">1093</a> of file <a class="el" href="c__typecheck__type_8cpp_source.html">c_typecheck_type.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__type_8cpp_source.html#l01103">1103</a> of file <a class="el" href="c__typecheck__type_8cpp_source.html">c_typecheck_type.cpp</a>.</p>
 
 </div>
 </div>
@@ -1326,7 +1422,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__type_8cpp_source.html#l01125">1125</a> of file <a class="el" href="c__typecheck__type_8cpp_source.html">c_typecheck_type.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__type_8cpp_source.html#l01135">1135</a> of file <a class="el" href="c__typecheck__type_8cpp_source.html">c_typecheck_type.cpp</a>.</p>
 
 </div>
 </div>
@@ -1402,7 +1498,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l03714">3714</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l03807">3807</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
 
 </div>
 </div>
@@ -1658,7 +1754,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__base_8h_source.html#l00277">277</a> of file <a class="el" href="c__typecheck__base_8h_source.html">c_typecheck_base.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__base_8h_source.html#l00293">293</a> of file <a class="el" href="c__typecheck__base_8h_source.html">c_typecheck_base.h</a>.</p>
 
 </div>
 </div>
@@ -1686,7 +1782,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l04333">4333</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l04426">4426</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
 
 </div>
 </div>
@@ -1714,7 +1810,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l04353">4353</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l04446">4446</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
 
 </div>
 </div>
@@ -1780,7 +1876,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l01250">1250</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l01252">1252</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
 
 </div>
 </div>
@@ -1808,7 +1904,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__base_8h_source.html#l00260">260</a> of file <a class="el" href="c__typecheck__base_8h_source.html">c_typecheck_base.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__base_8h_source.html#l00276">276</a> of file <a class="el" href="c__typecheck__base_8h_source.html">c_typecheck_base.h</a>.</p>
 
 </div>
 </div>
@@ -1874,6 +1970,34 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="c__typecheck__code_8cpp_source.html#l00024">24</a> of file <a class="el" href="c__typecheck__code_8cpp_source.html">c_typecheck_code.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a429d27cda4cbda2548d5f53d46c5725f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a429d27cda4cbda2548d5f53d46c5725f">&#9670;&nbsp;</a></span>throw_on_side_effects()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void c_typecheck_baset::throw_on_side_effects </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classexprt.html">exprt</a> &amp;&#160;</td>
+          <td class="paramname"><em>expr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="c__typecheck__code_8cpp_source.html#l00868">868</a> of file <a class="el" href="c__typecheck__code_8cpp_source.html">c_typecheck_code.cpp</a>.</p>
 
 </div>
 </div>
@@ -1990,7 +2114,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l03943">3943</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l04036">4036</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
 
 </div>
 </div>
@@ -2170,7 +2294,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l03491">3491</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l03589">3589</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
 
 </div>
 </div>
@@ -2198,7 +2322,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__type_8cpp_source.html#l01490">1490</a> of file <a class="el" href="c__typecheck__type_8cpp_source.html">c_typecheck_type.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__type_8cpp_source.html#l01500">1500</a> of file <a class="el" href="c__typecheck__type_8cpp_source.html">c_typecheck_type.cpp</a>.</p>
 
 </div>
 </div>
@@ -2226,7 +2350,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__type_8cpp_source.html#l01426">1426</a> of file <a class="el" href="c__typecheck__type_8cpp_source.html">c_typecheck_type.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__type_8cpp_source.html#l01436">1436</a> of file <a class="el" href="c__typecheck__type_8cpp_source.html">c_typecheck_type.cpp</a>.</p>
 
 </div>
 </div>
@@ -2254,7 +2378,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__type_8cpp_source.html#l01183">1183</a> of file <a class="el" href="c__typecheck__type_8cpp_source.html">c_typecheck_type.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__type_8cpp_source.html#l01193">1193</a> of file <a class="el" href="c__typecheck__type_8cpp_source.html">c_typecheck_type.cpp</a>.</p>
 
 </div>
 </div>
@@ -2376,6 +2500,50 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a9a5dd2ee6e2a742a7eb053261dffcc4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a5dd2ee6e2a742a7eb053261dffcc4d">&#9670;&nbsp;</a></span>typecheck_conditional_targets()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void c_typecheck_baset::typecheck_conditional_targets </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classexprt.html#a10c073e5cdd14b181d56cf53def8b378">exprt::operandst</a> &amp;&#160;</td>
+          <td class="paramname"><em>targets</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::function&lt; void(<a class="el" href="classexprt.html">exprt</a> &amp;)&gt;&#160;</td>
+          <td class="paramname"><em>typecheck_target</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>clause_type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="c__typecheck__code_8cpp_source.html#l00931">931</a> of file <a class="el" href="c__typecheck__code_8cpp_source.html">c_typecheck_code.cpp</a>.</p>
+
+</div>
+</div>
 <a id="a5cd1f2827a4e926493ea9d391f55b4a7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5cd1f2827a4e926493ea9d391f55b4a7">&#9670;&nbsp;</a></span>typecheck_continue()</h2>
 
@@ -2486,7 +2654,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__base_8cpp_source.html#l00677">677</a> of file <a class="el" href="c__typecheck__base_8cpp_source.html">c_typecheck_base.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__base_8cpp_source.html#l00725">725</a> of file <a class="el" href="c__typecheck__base_8cpp_source.html">c_typecheck_base.cpp</a>.</p>
 
 </div>
 </div>
@@ -2514,7 +2682,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__code_8cpp_source.html#l00810">810</a> of file <a class="el" href="c__typecheck__code_8cpp_source.html">c_typecheck_code.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__code_8cpp_source.html#l00822">822</a> of file <a class="el" href="c__typecheck__code_8cpp_source.html">c_typecheck_code.cpp</a>.</p>
 
 </div>
 </div>
@@ -2574,7 +2742,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classcpp__typecheckt.html#af531d9461a0a21e6c5fac1f2d2e50806">cpp_typecheckt</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l01711">1711</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l01713">1713</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
 
 </div>
 </div>
@@ -2602,7 +2770,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l01045">1045</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l01047">1047</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
 
 </div>
 </div>
@@ -2632,7 +2800,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classcpp__typecheckt.html#a93237ef96c17bd87a950cf8507e67408">cpp_typecheckt</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l03743">3743</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l03836">3836</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
 
 </div>
 </div>
@@ -2660,7 +2828,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l04063">4063</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l04156">4156</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
 
 </div>
 </div>
@@ -2688,7 +2856,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l00574">574</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l00576">576</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
 
 </div>
 </div>
@@ -2716,7 +2884,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l00516">516</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l00518">518</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
 
 </div>
 </div>
@@ -2746,7 +2914,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classcpp__typecheckt.html#abeb0841e276eade6ced10e4a6826f234">cpp_typecheckt</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l00507">507</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l00509">509</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
 
 </div>
 </div>
@@ -2774,7 +2942,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l03667">3667</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l03760">3760</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
 
 </div>
 </div>
@@ -2802,7 +2970,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l00557">557</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l00559">559</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
 
 </div>
 </div>
@@ -2832,7 +3000,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classcpp__typecheckt.html#a5c7830a85489e72ed57f011d8e820635">cpp_typecheckt</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l01780">1780</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l01782">1782</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
 
 </div>
 </div>
@@ -2862,7 +3030,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classcpp__typecheckt.html#afda5954301283121731e2b028ca37f5b">cpp_typecheckt</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l01825">1825</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l01827">1827</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
 
 </div>
 </div>
@@ -2892,7 +3060,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classcpp__typecheckt.html#ad6634c59ee85222e2b1284313b25d2d3">cpp_typecheckt</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l01255">1255</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l01257">1257</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
 
 </div>
 </div>
@@ -2952,7 +3120,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classcpp__typecheckt.html#afdab7aa53f890ae9e78cbf362316ae80">cpp_typecheckt</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l01492">1492</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l01494">1494</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
 
 </div>
 </div>
@@ -2980,7 +3148,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l00734">734</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l00736">736</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
 
 </div>
 </div>
@@ -3008,7 +3176,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l03976">3976</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l04069">4069</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
 
 </div>
 </div>
@@ -3038,7 +3206,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classcpp__typecheckt.html#ae537a95fbbc42066e9745e8ef4fdbadf">cpp_typecheckt</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l01458">1458</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l01460">1460</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
 
 </div>
 </div>
@@ -3068,7 +3236,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classcpp__typecheckt.html#a8ccb633435762fc17a8e634e476f2b94">cpp_typecheckt</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l01325">1325</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l01327">1327</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
 
 </div>
 </div>
@@ -3096,7 +3264,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l01427">1427</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l01429">1429</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
 
 </div>
 </div>
@@ -3124,7 +3292,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l03872">3872</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l03965">3965</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
 
 </div>
 </div>
@@ -3154,7 +3322,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classcpp__typecheckt.html#abdb25c7f09e7c00cee3ab58e3c77b901">cpp_typecheckt</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l01836">1836</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l01838">1838</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
 
 </div>
 </div>
@@ -3184,7 +3352,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classcpp__typecheckt.html#a486e0eb6ee65f467016e1c2308ada9c0">cpp_typecheckt</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l00945">945</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l00947">947</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
 
 </div>
 </div>
@@ -3212,7 +3380,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l00809">809</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l00811">811</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
 
 </div>
 </div>
@@ -3242,7 +3410,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classcpp__typecheckt.html#a89700cb37471326fb68a378603befa05">cpp_typecheckt</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l01571">1571</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l01573">1573</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
 
 </div>
 </div>
@@ -3272,7 +3440,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classcpp__typecheckt.html#a17679080de05005d80385c796440f337">cpp_typecheckt</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l01067">1067</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l01069">1069</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
 
 </div>
 </div>
@@ -3300,7 +3468,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l03672">3672</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l03765">3765</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
 
 </div>
 </div>
@@ -3328,7 +3496,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l03702">3702</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l03795">3795</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
 
 </div>
 </div>
@@ -3444,7 +3612,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classcpp__typecheckt.html#ae2e259ff56a596b42df7241126347395">cpp_typecheckt</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l03586">3586</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l03684">3684</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
 
 </div>
 </div>
@@ -3472,7 +3640,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__code_8cpp_source.html#l00590">590</a> of file <a class="el" href="c__typecheck__code_8cpp_source.html">c_typecheck_code.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__code_8cpp_source.html#l00596">596</a> of file <a class="el" href="c__typecheck__code_8cpp_source.html">c_typecheck_code.cpp</a>.</p>
 
 </div>
 </div>
@@ -3500,7 +3668,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__code_8cpp_source.html#l00578">578</a> of file <a class="el" href="c__typecheck__code_8cpp_source.html">c_typecheck_code.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__code_8cpp_source.html#l00584">584</a> of file <a class="el" href="c__typecheck__code_8cpp_source.html">c_typecheck_code.cpp</a>.</p>
 
 </div>
 </div>
@@ -3572,7 +3740,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__code_8cpp_source.html#l00559">559</a> of file <a class="el" href="c__typecheck__code_8cpp_source.html">c_typecheck_code.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__code_8cpp_source.html#l00565">565</a> of file <a class="el" href="c__typecheck__code_8cpp_source.html">c_typecheck_code.cpp</a>.</p>
 
 </div>
 </div>
@@ -3600,7 +3768,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__code_8cpp_source.html#l00584">584</a> of file <a class="el" href="c__typecheck__code_8cpp_source.html">c_typecheck_code.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__code_8cpp_source.html#l00590">590</a> of file <a class="el" href="c__typecheck__code_8cpp_source.html">c_typecheck_code.cpp</a>.</p>
 
 </div>
 </div>
@@ -3630,7 +3798,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classcpp__typecheckt.html#a9cb19a0d5ba6554bc3fb0878f1610f76">cpp_typecheckt</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__code_8cpp_source.html#l00613">613</a> of file <a class="el" href="c__typecheck__code_8cpp_source.html">c_typecheck_code.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__code_8cpp_source.html#l00619">619</a> of file <a class="el" href="c__typecheck__code_8cpp_source.html">c_typecheck_code.cpp</a>.</p>
 
 </div>
 </div>
@@ -3658,7 +3826,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__code_8cpp_source.html#l00510">510</a> of file <a class="el" href="c__typecheck__code_8cpp_source.html">c_typecheck_code.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__code_8cpp_source.html#l00516">516</a> of file <a class="el" href="c__typecheck__code_8cpp_source.html">c_typecheck_code.cpp</a>.</p>
 
 </div>
 </div>
@@ -3790,7 +3958,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__code_8cpp_source.html#l00670">670</a> of file <a class="el" href="c__typecheck__code_8cpp_source.html">c_typecheck_code.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__code_8cpp_source.html#l00676">676</a> of file <a class="el" href="c__typecheck__code_8cpp_source.html">c_typecheck_code.cpp</a>.</p>
 
 </div>
 </div>
@@ -3818,7 +3986,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l03554">3554</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l03652">3652</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
 
 </div>
 </div>
@@ -3876,7 +4044,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classcpp__typecheckt.html#a21f0252f72882edff9b011afc0abc82c">cpp_typecheckt</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l04077">4077</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l04170">4170</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
 
 </div>
 </div>
@@ -3906,7 +4074,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classcpp__typecheckt.html#a6e04fdbbd6ebaf7f5f75acd5c2b42764">cpp_typecheckt</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l01925">1925</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l01982">1982</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
 
 </div>
 </div>
@@ -3934,7 +4102,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l01683">1683</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l01685">1685</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
 
 </div>
 </div>
@@ -3962,7 +4130,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l00912">912</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l00914">914</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
 
 </div>
 </div>
@@ -3990,35 +4158,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__code_8cpp_source.html#l01070">1070</a> of file <a class="el" href="c__typecheck__code_8cpp_source.html">c_typecheck_code.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a491f78c7735ba2c6ed2bf0f839c6e7ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a491f78c7735ba2c6ed2bf0f839c6e7ba">&#9670;&nbsp;</a></span>typecheck_spec_assigns_condition()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void c_typecheck_baset::typecheck_spec_assigns_condition </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classexprt.html">exprt</a> &amp;&#160;</td>
-          <td class="paramname"><em>condition</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="c__typecheck__code_8cpp_source.html#l00850">850</a> of file <a class="el" href="c__typecheck__code_8cpp_source.html">c_typecheck_code.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__code_8cpp_source.html#l00984">984</a> of file <a class="el" href="c__typecheck__code_8cpp_source.html">c_typecheck_code.cpp</a>.</p>
 
 </div>
 </div>
@@ -4046,7 +4186,35 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__code_8cpp_source.html#l00906">906</a> of file <a class="el" href="c__typecheck__code_8cpp_source.html">c_typecheck_code.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__code_8cpp_source.html#l01000">1000</a> of file <a class="el" href="c__typecheck__code_8cpp_source.html">c_typecheck_code.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8838f2f757fb29a15393b93f6a45f5da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8838f2f757fb29a15393b93f6a45f5da">&#9670;&nbsp;</a></span>typecheck_spec_condition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void c_typecheck_baset::typecheck_spec_condition </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classexprt.html">exprt</a> &amp;&#160;</td>
+          <td class="paramname"><em>condition</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="c__typecheck__code_8cpp_source.html#l00884">884</a> of file <a class="el" href="c__typecheck__code_8cpp_source.html">c_typecheck_code.cpp</a>.</p>
 
 </div>
 </div>
@@ -4074,7 +4242,63 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__code_8cpp_source.html#l01143">1143</a> of file <a class="el" href="c__typecheck__code_8cpp_source.html">c_typecheck_code.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__code_8cpp_source.html#l01198">1198</a> of file <a class="el" href="c__typecheck__code_8cpp_source.html">c_typecheck_code.cpp</a>.</p>
+
+</div>
+</div>
+<a id="abc59dc2e25b62da265c89238619349b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc59dc2e25b62da265c89238619349b2">&#9670;&nbsp;</a></span>typecheck_spec_frees()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void c_typecheck_baset::typecheck_spec_frees </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classexprt.html#a10c073e5cdd14b181d56cf53def8b378">exprt::operandst</a> &amp;&#160;</td>
+          <td class="paramname"><em>targets</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="c__typecheck__code_8cpp_source.html#l00992">992</a> of file <a class="el" href="c__typecheck__code_8cpp_source.html">c_typecheck_code.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6e044732c3e87ac9be83bb3e4da18806"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e044732c3e87ac9be83bb3e4da18806">&#9670;&nbsp;</a></span>typecheck_spec_frees_target()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void c_typecheck_baset::typecheck_spec_frees_target </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classexprt.html">exprt</a> &amp;&#160;</td>
+          <td class="paramname"><em>target</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="c__typecheck__code_8cpp_source.html#l01054">1054</a> of file <a class="el" href="c__typecheck__code_8cpp_source.html">c_typecheck_code.cpp</a>.</p>
 
 </div>
 </div>
@@ -4102,7 +4326,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__code_8cpp_source.html#l00988">988</a> of file <a class="el" href="c__typecheck__code_8cpp_source.html">c_typecheck_code.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__code_8cpp_source.html#l01099">1099</a> of file <a class="el" href="c__typecheck__code_8cpp_source.html">c_typecheck_code.cpp</a>.</p>
 
 </div>
 </div>
@@ -4130,7 +4354,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__code_8cpp_source.html#l01126">1126</a> of file <a class="el" href="c__typecheck__code_8cpp_source.html">c_typecheck_code.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__code_8cpp_source.html#l01181">1181</a> of file <a class="el" href="c__typecheck__code_8cpp_source.html">c_typecheck_code.cpp</a>.</p>
 
 </div>
 </div>
@@ -4158,7 +4382,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__code_8cpp_source.html#l00658">658</a> of file <a class="el" href="c__typecheck__code_8cpp_source.html">c_typecheck_code.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__code_8cpp_source.html#l00664">664</a> of file <a class="el" href="c__typecheck__code_8cpp_source.html">c_typecheck_code.cpp</a>.</p>
 
 </div>
 </div>
@@ -4188,7 +4412,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classcpp__typecheckt.html#a360c4d1c046725d9b6b0b97da6d5e456">cpp_typecheckt</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__code_8cpp_source.html#l00707">707</a> of file <a class="el" href="c__typecheck__code_8cpp_source.html">c_typecheck_code.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__code_8cpp_source.html#l00713">713</a> of file <a class="el" href="c__typecheck__code_8cpp_source.html">c_typecheck_code.cpp</a>.</p>
 
 </div>
 </div>
@@ -4216,7 +4440,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__code_8cpp_source.html#l00523">523</a> of file <a class="el" href="c__typecheck__code_8cpp_source.html">c_typecheck_code.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__code_8cpp_source.html#l00529">529</a> of file <a class="el" href="c__typecheck__code_8cpp_source.html">c_typecheck_code.cpp</a>.</p>
 
 </div>
 </div>
@@ -4278,6 +4502,34 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="ab2989017c32946b064ce395be74bd2bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2989017c32946b064ce395be74bd2bd">&#9670;&nbsp;</a></span>typecheck_typed_target_call()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void c_typecheck_baset::typecheck_typed_target_call </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classside__effect__expr__function__callt.html">side_effect_expr_function_callt</a> &amp;&#160;</td>
+          <td class="paramname"><em>expr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="c__typecheck__expr_8cpp_source.html#l01927">1927</a> of file <a class="el" href="c__typecheck__expr_8cpp_source.html">c_typecheck_expr.cpp</a>.</p>
+
+</div>
+</div>
 <a id="ad2f8df708a6f6b30107b561dcddf00af"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad2f8df708a6f6b30107b561dcddf00af">&#9670;&nbsp;</a></span>typecheck_typedef_type()</h2>
 
@@ -4302,7 +4554,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__type_8cpp_source.html#l01606">1606</a> of file <a class="el" href="c__typecheck__type_8cpp_source.html">c_typecheck_type.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__type_8cpp_source.html#l01616">1616</a> of file <a class="el" href="c__typecheck__type_8cpp_source.html">c_typecheck_type.cpp</a>.</p>
 
 </div>
 </div>
@@ -4330,7 +4582,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__type_8cpp_source.html#l01570">1570</a> of file <a class="el" href="c__typecheck__type_8cpp_source.html">c_typecheck_type.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__type_8cpp_source.html#l01580">1580</a> of file <a class="el" href="c__typecheck__type_8cpp_source.html">c_typecheck_type.cpp</a>.</p>
 
 </div>
 </div>
@@ -4388,7 +4640,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classcpp__typecheckt.html#ad45c36a1d923e63350c5485c4838a6ed">cpp_typecheckt</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__code_8cpp_source.html#l00770">770</a> of file <a class="el" href="c__typecheck__code_8cpp_source.html">c_typecheck_code.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__code_8cpp_source.html#l00776">776</a> of file <a class="el" href="c__typecheck__code_8cpp_source.html">c_typecheck_code.cpp</a>.</p>
 
 </div>
 </div>
@@ -4413,7 +4665,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__base_8h_source.html#l00293">293</a> of file <a class="el" href="c__typecheck__base_8h_source.html">c_typecheck_base.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__base_8h_source.html#l00309">309</a> of file <a class="el" href="c__typecheck__base_8h_source.html">c_typecheck_base.h</a>.</p>
 
 </div>
 </div>
@@ -4437,7 +4689,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__base_8h_source.html#l00156">156</a> of file <a class="el" href="c__typecheck__base_8h_source.html">c_typecheck_base.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__base_8h_source.html#l00172">172</a> of file <a class="el" href="c__typecheck__base_8h_source.html">c_typecheck_base.h</a>.</p>
 
 </div>
 </div>
@@ -4461,7 +4713,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__base_8h_source.html#l00158">158</a> of file <a class="el" href="c__typecheck__base_8h_source.html">c_typecheck_base.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__base_8h_source.html#l00174">174</a> of file <a class="el" href="c__typecheck__base_8h_source.html">c_typecheck_base.h</a>.</p>
 
 </div>
 </div>
@@ -4485,7 +4737,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__base_8h_source.html#l00256">256</a> of file <a class="el" href="c__typecheck__base_8h_source.html">c_typecheck_base.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__base_8h_source.html#l00272">272</a> of file <a class="el" href="c__typecheck__base_8h_source.html">c_typecheck_base.h</a>.</p>
 
 </div>
 </div>
@@ -4509,7 +4761,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__base_8h_source.html#l00157">157</a> of file <a class="el" href="c__typecheck__base_8h_source.html">c_typecheck_base.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__base_8h_source.html#l00173">173</a> of file <a class="el" href="c__typecheck__base_8h_source.html">c_typecheck_base.h</a>.</p>
 
 </div>
 </div>
@@ -4557,7 +4809,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__base_8h_source.html#l00163">163</a> of file <a class="el" href="c__typecheck__base_8h_source.html">c_typecheck_base.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__base_8h_source.html#l00179">179</a> of file <a class="el" href="c__typecheck__base_8h_source.html">c_typecheck_base.h</a>.</p>
 
 </div>
 </div>
@@ -4581,7 +4833,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__base_8h_source.html#l00163">163</a> of file <a class="el" href="c__typecheck__base_8h_source.html">c_typecheck_base.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__base_8h_source.html#l00179">179</a> of file <a class="el" href="c__typecheck__base_8h_source.html">c_typecheck_base.h</a>.</p>
 
 </div>
 </div>
@@ -4677,7 +4929,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__base_8h_source.html#l00160">160</a> of file <a class="el" href="c__typecheck__base_8h_source.html">c_typecheck_base.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__base_8h_source.html#l00176">176</a> of file <a class="el" href="c__typecheck__base_8h_source.html">c_typecheck_base.h</a>.</p>
 
 </div>
 </div>
@@ -4701,7 +4953,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c__typecheck__base_8h_source.html#l00159">159</a> of file <a class="el" href="c__typecheck__base_8h_source.html">c_typecheck_base.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c__typecheck__base_8h_source.html#l00175">175</a> of file <a class="el" href="c__typecheck__base_8h_source.html">c_typecheck_base.h</a>.</p>
 
 </div>
 </div>
