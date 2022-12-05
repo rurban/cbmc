@@ -138,7 +138,7 @@ $(document).ready(function(){initNavTree('instrumenter__strategies_8cpp_source.h
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <a class="code" href="classinstrumentert.html#a6942425eb9cc3b141f186a2f8a0bb529">instrument_one_write_per_cycle_inserter</a>(<a class="code" href="classinstrumentert.html#a4400d2b766986c619f4c5fc1c16e9b43">set_of_cycles</a>);</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      <span class="keywordflow">case</span> <a class="code" href="wmm_8h.html#a784e9d462591bf5c232a25442e283b4ba014cd2adf7b4f9edbdbac69e89444ddb">my_events</a>:</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        assert(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <a class="code" href="src_2util_2invariant_8h.html#a3af99897b60119951af8961dbd52dd3f">UNREACHABLE</a>;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  }</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<a class="code" href="classinstrumentert.html#a2584f0bcdffb7925232bf74615536ad6">num_sccs</a>!=0)</div>
@@ -163,7 +163,7 @@ $(document).ready(function(){initNavTree('instrumenter__strategies_8cpp_source.h
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;          <a class="code" href="classinstrumentert.html#a6942425eb9cc3b141f186a2f8a0bb529">instrument_one_write_per_cycle_inserter</a>(<a class="code" href="classinstrumentert.html#ac850c60e0b0093eae62349ff5dc9bcd2">set_of_cycles_per_SCC</a>[i]);</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;          <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="wmm_8h.html#a784e9d462591bf5c232a25442e283b4ba014cd2adf7b4f9edbdbac69e89444ddb">my_events</a>:</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;          assert(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;          <a class="code" href="src_2util_2invariant_8h.html#a3af99897b60119951af8961dbd52dd3f">UNREACHABLE</a>;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      }</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    }</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  }</div>
@@ -516,6 +516,7 @@ $(document).ready(function(){initNavTree('instrumenter__strategies_8cpp_source.h
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="agoto2graph_8h_html"><div class="ttname"><a href="goto2graph_8h.html">goto2graph.h</a></div></div>
+<div class="ttc" id="asrc_2util_2invariant_8h_html_a3af99897b60119951af8961dbd52dd3f"><div class="ttname"><a href="src_2util_2invariant_8h.html#a3af99897b60119951af8961dbd52dd3f">UNREACHABLE</a></div><div class="ttdeci">#define UNREACHABLE</div><div class="ttdoc">This should be used to mark dead code.</div><div class="ttdef"><b>Definition:</b> <a href="src_2util_2invariant_8h_source.html#l00503">invariant.h:503</a></div></div>
 <div class="ttc" id="aclassinstrumentert_html_ac850c60e0b0093eae62349ff5dc9bcd2"><div class="ttname"><a href="classinstrumentert.html#ac850c60e0b0093eae62349ff5dc9bcd2">instrumentert::set_of_cycles_per_SCC</a></div><div class="ttdeci">std::vector&lt; std::set&lt; event_grapht::critical_cyclet &gt; &gt; set_of_cycles_per_SCC</div><div class="ttdef"><b>Definition:</b> <a href="goto2graph_8h_source.html#l00314">goto2graph.h:314</a></div></div>
 <div class="ttc" id="aclassinstrumentert_html_ab372beec05c0368ea53b966d3e5747f8"><div class="ttname"><a href="classinstrumentert.html#ab372beec05c0368ea53b966d3e5747f8">instrumentert::instrument_my_events_inserter</a></div><div class="ttdeci">void instrument_my_events_inserter(const set_of_cyclest &amp;set, const std::set&lt; event_idt &gt; &amp;events)</div><div class="ttdef"><b>Definition:</b> <a href="instrumenter__strategies_8cpp_source.html#l00354">instrumenter_strategies.cpp:354</a></div></div>
 <div class="ttc" id="aclassabstract__eventt_html_a89d09d24592bb04855b74bbc6dd879b7"><div class="ttname"><a href="classabstract__eventt.html#a89d09d24592bb04855b74bbc6dd879b7">abstract_eventt::source_location</a></div><div class="ttdeci">source_locationt source_location</div><div class="ttdef"><b>Definition:</b> <a href="abstract__event_8h_source.html#l00036">abstract_event.h:36</a></div></div>

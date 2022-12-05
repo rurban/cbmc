@@ -239,9 +239,9 @@
 <path fill="none" stroke="midnightblue" d="M3757.46,-238.14C3772.93,-236.47 3789.05,-234.97 3804.19,-234 3841.45,-231.61 6465.97,-224.58 6492.19,-198 6505.3,-184.71 6503.43,-170.9 6492.19,-156 6488.3,-150.83 6424.88,-133.29 6371.23,-119.2"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="3756.95,-234.68 3747.4,-239.26 3757.73,-241.63 3756.95,-234.68"/>
 </g>
-<!-- Node665 -->
+<!-- Node664 -->
 <g id="node10" class="node">
-<title>Node665</title>
+<title>Node664</title>
 <g id="a_node10"><a xlink:href="journalling__symbol__table_8h.html" target="_top" xlink:title="Author: Diffblue Ltd.">
 <polygon fill="none" stroke="red" points="510.19,-156.5 510.19,-197.5 648.19,-197.5 648.19,-156.5 510.19,-156.5"/>
 <text text-anchor="start" x="518.19" y="-185.5" font-family="Helvetica,sans-Serif" font-size="10.00">/home/runner/work/cbmc</text>
@@ -250,9 +250,9 @@
 </a>
 </g>
 </g>
-<!-- Node4&#45;&gt;Node665 -->
+<!-- Node4&#45;&gt;Node664 -->
 <g id="edge9" class="edge">
-<title>Node4&#45;&gt;Node665</title>
+<title>Node4&#45;&gt;Node664</title>
 <path fill="none" stroke="midnightblue" d="M3598.85,-248.28C3151.72,-246.92 955.79,-238.21 657.19,-198 654.28,-197.61 651.33,-197.15 648.35,-196.63"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="3599.08,-251.78 3609.09,-248.32 3599.1,-244.79 3599.08,-251.78"/>
 </g>
@@ -773,9 +773,9 @@
 <path fill="none" stroke="midnightblue" d="M3757.47,-238.34C3772.94,-236.65 3789.06,-235.09 3804.19,-234 4339.03,-195.31 4479.23,-273.05 5010.19,-198 5013.1,-197.59 5016.05,-197.11 5019.03,-196.58"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="3756.96,-234.88 3747.41,-239.47 3757.74,-241.83 3756.96,-234.88"/>
 </g>
-<!-- Node932 -->
+<!-- Node931 -->
 <g id="node43" class="node">
-<title>Node932</title>
+<title>Node931</title>
 <g id="a_node43"><a xlink:href="remove__returns_8h.html" target="_top" xlink:title=" ">
 <polygon fill="none" stroke="red" points="5175.19,-156.5 5175.19,-197.5 5313.19,-197.5 5313.19,-156.5 5175.19,-156.5"/>
 <text text-anchor="start" x="5183.19" y="-185.5" font-family="Helvetica,sans-Serif" font-size="10.00">/home/runner/work/cbmc</text>
@@ -784,9 +784,9 @@
 </a>
 </g>
 </g>
-<!-- Node4&#45;&gt;Node932 -->
+<!-- Node4&#45;&gt;Node931 -->
 <g id="edge48" class="edge">
-<title>Node4&#45;&gt;Node932</title>
+<title>Node4&#45;&gt;Node931</title>
 <path fill="none" stroke="midnightblue" d="M3757.47,-238.3C3772.94,-236.61 3789.06,-235.07 3804.19,-234 4106.21,-212.67 4866.33,-239.86 5166.19,-198 5169.1,-197.59 5172.06,-197.12 5175.03,-196.59"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="3756.96,-234.83 3747.41,-239.42 3757.74,-241.79 3756.96,-234.83"/>
 </g>

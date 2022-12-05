@@ -1,6 +1,5 @@
 var NAVTREEINDEX26 =
 {
-"classdjb__manglert.html":[6,0,382],
 "classdjb__manglert.html#afd2596ddd75bbc16690a17379f2fcc18":[6,0,382,1],
 "classdjb__manglert.html#afd68276039203d96044d8d2791e31695":[6,0,382,0],
 "classdocument__propertiest.html":[6,0,383],
@@ -249,5 +248,6 @@ var NAVTREEINDEX26 =
 "classenumerator__factoryt.html#a2f41a59efbc22e3a44c4ba565b56fd5a":[6,0,412,0],
 "classenumerator__factoryt.html#a2fbbebd003cfbd64b0f08851470fc13b":[6,0,412,1],
 "classenumerator__factoryt.html#a5ba8dabbe1630308bfc930ee344600dd":[6,0,412,3],
-"classenumerator__factoryt.html#a611d886bbed44377c8b379a100c09d12":[6,0,412,5]
+"classenumerator__factoryt.html#a611d886bbed44377c8b379a100c09d12":[6,0,412,5],
+"classenumerator__factoryt.html#a915ef395dbafd9c17c2672be33a63be3":[6,0,412,2]
 };
