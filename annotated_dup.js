@@ -1,13 +1,25 @@
 var annotated_dup =
 [
-    [ "detail", "namespacedetail.html", "namespacedetail" ],
-    [ "require_goto_statements", "namespacerequire__goto__statements.html", "namespacerequire__goto__statements" ],
-    [ "require_parse_tree", "namespacerequire__parse__tree.html", "namespacerequire__parse__tree" ],
-    [ "require_type", "namespacerequire__type.html", "namespacerequire__type" ],
+    [ "detail", "namespacedetail.html", [
+      [ "make_voidt", "structdetail_1_1make__voidt.html", "structdetail_1_1make__voidt" ],
+      [ "expr_try_dynamic_cast_return_typet", "structdetail_1_1expr__try__dynamic__cast__return__typet.html", "structdetail_1_1expr__try__dynamic__cast__return__typet" ],
+      [ "expr_dynamic_cast_return_typet", "structdetail_1_1expr__dynamic__cast__return__typet.html", "structdetail_1_1expr__dynamic__cast__return__typet" ],
+      [ "always_falset", "structdetail_1_1always__falset.html", null ]
+    ] ],
+    [ "require_goto_statements", "namespacerequire__goto__statements.html", [
+      [ "pointer_assignment_locationt", "structrequire__goto__statements_1_1pointer__assignment__locationt.html", "structrequire__goto__statements_1_1pointer__assignment__locationt" ],
+      [ "no_decl_found_exceptiont", "classrequire__goto__statements_1_1no__decl__found__exceptiont.html", "classrequire__goto__statements_1_1no__decl__found__exceptiont" ]
+    ] ],
+    [ "require_parse_tree", "namespacerequire__parse__tree.html", [
+      [ "expected_instructiont", "structrequire__parse__tree_1_1expected__instructiont.html", "structrequire__parse__tree_1_1expected__instructiont" ]
+    ] ],
+    [ "require_type", "namespacerequire__type.html", [
+      [ "expected_type_argumentt", "structrequire__type_1_1expected__type__argumentt.html", "structrequire__type_1_1expected__type__argumentt" ]
+    ] ],
     [ "std", null, [
-      [ "hash< dstringt >", "structstd_1_1hash_3_01dstringt_01_4.html", "structstd_1_1hash_3_01dstringt_01_4" ],
       [ "hash< solver_hardnesst::hardness_ssa_keyt >", "structstd_1_1hash_3_01solver__hardnesst_1_1hardness__ssa__keyt_01_4.html", "structstd_1_1hash_3_01solver__hardnesst_1_1hardness__ssa__keyt_01_4" ],
       [ "hash< string_not_contains_constraintt >", "structstd_1_1hash_3_01string__not__contains__constraintt_01_4.html", "structstd_1_1hash_3_01string__not__contains__constraintt_01_4" ],
+      [ "hash< dstringt >", "structstd_1_1hash_3_01dstringt_01_4.html", "structstd_1_1hash_3_01dstringt_01_4" ],
       [ "hash<::symbol_exprt >", "structstd_1_1hash_3_1_1symbol__exprt_01_4.html", "structstd_1_1hash_3_1_1symbol__exprt_01_4" ]
     ] ],
     [ "__CPROVER_jsa_abstract_heap", "struct_____c_p_r_o_v_e_r__jsa__abstract__heap.html", "struct_____c_p_r_o_v_e_r__jsa__abstract__heap" ],
@@ -74,6 +86,11 @@ var annotated_dup =
     [ "ansi_c_parsert", "classansi__c__parsert.html", "classansi__c__parsert" ],
     [ "ansi_c_scopet", "classansi__c__scopet.html", "classansi__c__scopet" ],
     [ "ansi_c_typecheckt", "classansi__c__typecheckt.html", "classansi__c__typecheckt" ],
+    [ "api_message_handlert", "classapi__message__handlert.html", "classapi__message__handlert" ],
+    [ "api_messaget", "structapi__messaget.html", "structapi__messaget" ],
+    [ "api_optionst", "classapi__optionst.html", "classapi__optionst" ],
+    [ "api_session_implementationt", "structapi__session__implementationt.html", "structapi__session__implementationt" ],
+    [ "api_sessiont", "structapi__sessiont.html", "structapi__sessiont" ],
     [ "armcc_cmdlinet", "classarmcc__cmdlinet.html", "classarmcc__cmdlinet" ],
     [ "armcc_modet", "classarmcc__modet.html", "classarmcc__modet" ],
     [ "array_aggregate_typet", "structarray__aggregate__typet.html", "structarray__aggregate__typet" ],
@@ -163,7 +180,9 @@ var annotated_dup =
     [ "casting_replace_symbolt", "classcasting__replace__symbolt.html", "classcasting__replace__symbolt" ],
     [ "cbmc_invariants_should_throwt", "structcbmc__invariants__should__throwt.html", "structcbmc__invariants__should__throwt" ],
     [ "cbmc_parse_optionst", "classcbmc__parse__optionst.html", "classcbmc__parse__optionst" ],
+    [ "cegis_verifiert", "classcegis__verifiert.html", "classcegis__verifiert" ],
     [ "cerr_message_handlert", "classcerr__message__handlert.html", "classcerr__message__handlert" ],
+    [ "cext", "classcext.html", "classcext" ],
     [ "cfg_base_nodet", "structcfg__base__nodet.html", "structcfg__base__nodet" ],
     [ "cfg_baset", "classcfg__baset.html", "classcfg__baset" ],
     [ "cfg_dominators_templatet", "classcfg__dominators__templatet.html", "classcfg__dominators__templatet" ],
@@ -368,7 +387,9 @@ var annotated_dup =
     [ "dfcc_is_freeablet", "classdfcc__is__freeablet.html", "classdfcc__is__freeablet" ],
     [ "dfcc_is_fresht", "classdfcc__is__fresht.html", "classdfcc__is__fresht" ],
     [ "dfcc_libraryt", "classdfcc__libraryt.html", "classdfcc__libraryt" ],
+    [ "dfcc_lift_memory_predicatest", "classdfcc__lift__memory__predicatest.html", "classdfcc__lift__memory__predicatest" ],
     [ "dfcc_obeys_contractt", "classdfcc__obeys__contractt.html", "classdfcc__obeys__contractt" ],
+    [ "dfcc_pointer_in_ranget", "classdfcc__pointer__in__ranget.html", "classdfcc__pointer__in__ranget" ],
     [ "dfcc_spec_functionst", "classdfcc__spec__functionst.html", "classdfcc__spec__functionst" ],
     [ "dfcc_swap_and_wrapt", "classdfcc__swap__and__wrapt.html", "classdfcc__swap__and__wrapt" ],
     [ "dfcc_utilst", "classdfcc__utilst.html", "classdfcc__utilst" ],
@@ -415,7 +436,7 @@ var annotated_dup =
     [ "enter_scope_state_exprt", "classenter__scope__state__exprt.html", "classenter__scope__state__exprt" ],
     [ "enumerating_loop_accelerationt", "classenumerating__loop__accelerationt.html", "classenumerating__loop__accelerationt" ],
     [ "enumeration_typet", "classenumeration__typet.html", "classenumeration__typet" ],
-    [ "enumerative_loop_invariant_synthesizert", "classenumerative__loop__invariant__synthesizert.html", "classenumerative__loop__invariant__synthesizert" ],
+    [ "enumerative_loop_contracts_synthesizert", "classenumerative__loop__contracts__synthesizert.html", "classenumerative__loop__contracts__synthesizert" ],
     [ "enumerator_baset", "classenumerator__baset.html", "classenumerator__baset" ],
     [ "enumerator_factoryt", "classenumerator__factoryt.html", "classenumerator__factoryt" ],
     [ "equal_exprt", "classequal__exprt.html", "classequal__exprt" ],
@@ -549,6 +570,7 @@ var annotated_dup =
     [ "goto_symex_property_decidert", "classgoto__symex__property__decidert.html", "classgoto__symex__property__decidert" ],
     [ "goto_symex_statet", "classgoto__symex__statet.html", "classgoto__symex__statet" ],
     [ "goto_symext", "classgoto__symext.html", "classgoto__symext" ],
+    [ "goto_synthesizer_parse_optionst", "classgoto__synthesizer__parse__optionst.html", "classgoto__synthesizer__parse__optionst" ],
     [ "goto_trace_providert", "classgoto__trace__providert.html", "classgoto__trace__providert" ],
     [ "goto_trace_stept", "classgoto__trace__stept.html", "classgoto__trace__stept" ],
     [ "goto_trace_storaget", "classgoto__trace__storaget.html", "classgoto__trace__storaget" ],
@@ -622,6 +644,7 @@ var annotated_dup =
     [ "interval_uniont", "classinterval__uniont.html", "classinterval__uniont" ],
     [ "inv_object_storet", "classinv__object__storet.html", "classinv__object__storet" ],
     [ "invalid_command_line_argument_exceptiont", "classinvalid__command__line__argument__exceptiont.html", "classinvalid__command__line__argument__exceptiont" ],
+    [ "invalid_function_contract_pair_exceptiont", "classinvalid__function__contract__pair__exceptiont.html", "classinvalid__function__contract__pair__exceptiont" ],
     [ "invalid_input_exceptiont", "classinvalid__input__exceptiont.html", "classinvalid__input__exceptiont" ],
     [ "invalid_restriction_exceptiont", "classinvalid__restriction__exceptiont.html", "classinvalid__restriction__exceptiont" ],
     [ "invalid_source_file_exceptiont", "classinvalid__source__file__exceptiont.html", "classinvalid__source__file__exceptiont" ],
@@ -766,8 +789,8 @@ var annotated_dup =
     [ "location_update_visitort", "classlocation__update__visitort.html", "classlocation__update__visitort" ],
     [ "loop_analysist", "classloop__analysist.html", "classloop__analysist" ],
     [ "loop_cfg_infot", "classloop__cfg__infot.html", "classloop__cfg__infot" ],
+    [ "loop_contracts_synthesizer_baset", "classloop__contracts__synthesizer__baset.html", "classloop__contracts__synthesizer__baset" ],
     [ "loop_idt", "structloop__idt.html", "structloop__idt" ],
-    [ "loop_invariant_synthesizer_baset", "classloop__invariant__synthesizer__baset.html", "classloop__invariant__synthesizer__baset" ],
     [ "loop_templatet", "classloop__templatet.html", "classloop__templatet" ],
     [ "loop_with_parent_analysis_templatet", "classloop__with__parent__analysis__templatet.html", "classloop__with__parent__analysis__templatet" ],
     [ "lshr_exprt", "classlshr__exprt.html", "classlshr__exprt" ],
