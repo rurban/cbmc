@@ -1,5 +1,13 @@
 var NAVTREEINDEX112 =
 {
+"qbf__qube_8cpp.html":[7,0,2,26,5,5],
+"qbf__qube_8cpp_source.html":[7,0,2,26,5,5],
+"qbf__qube_8h.html":[7,0,2,26,5,6],
+"qbf__qube_8h_source.html":[7,0,2,26,5,6],
+"qbf__qube__core_8cpp.html":[7,0,2,26,5,7],
+"qbf__qube__core_8cpp_source.html":[7,0,2,26,5,7],
+"qbf__qube__core_8h.html":[7,0,2,26,5,8],
+"qbf__qube__core_8h_source.html":[7,0,2,26,5,8],
 "qbf__skizzo_8cpp.html":[7,0,2,26,5,9],
 "qbf__skizzo_8cpp_source.html":[7,0,2,26,5,9],
 "qbf__skizzo_8h.html":[7,0,2,26,5,10],
@@ -241,13 +249,5 @@ var NAVTREEINDEX112 =
 "remove__instanceof_8h_source.html":[7,0,1,0,1,108],
 "remove__internal__symbols_8cpp.html":[7,0,2,22,3],
 "remove__internal__symbols_8cpp.html#a3760d2ecc4ff4dacfffc75125b0b82a6":[7,0,2,22,3,2],
-"remove__internal__symbols_8cpp.html#a5c3e4e7da5a4f874a6adb3e48a5a2c99":[7,0,2,22,3,0],
-"remove__internal__symbols_8cpp.html#af24e984d10e87325924d01beaea3d56b":[7,0,2,22,3,1],
-"remove__internal__symbols_8cpp_source.html":[7,0,2,22,3],
-"remove__internal__symbols_8h.html":[7,0,2,22,4],
-"remove__internal__symbols_8h.html#a073835dd8f3541377218232c372bbdd6":[7,0,2,22,4,1],
-"remove__internal__symbols_8h.html#aa040adf30085f0cd39a90c27ca3bb597":[7,0,2,22,4,0],
-"remove__internal__symbols_8h_source.html":[7,0,2,22,4],
-"remove__java__new_8cpp.html":[7,0,1,0,1,109],
-"remove__java__new_8cpp.html#a039ad70d13f90266f91403abc1333501":[7,0,1,0,1,109,3]
+"remove__internal__symbols_8cpp.html#a5c3e4e7da5a4f874a6adb3e48a5a2c99":[7,0,2,22,3,0]
 };
