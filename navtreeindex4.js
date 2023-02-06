@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"bytecode__info_8h.html#a2bbba785d4f8ff649e2f0f02d171180c":[7,0,1,0,1,3,195],
 "bytecode__info_8h.html#a2c617c59e4fa4ec2ef8b4a58cfa7f8a5":[7,0,1,0,1,3,156],
 "bytecode__info_8h.html#a2f85f84a9db9143ec276c412220a54c9":[7,0,1,0,1,3,177],
 "bytecode__info_8h.html#a2fa3186927663e0d6de2e12d5af1f87e":[7,0,1,0,1,3,50],
@@ -175,6 +176,7 @@ var NAVTREEINDEX4 =
 "bytecode__info_8h.html#affb90d01313b7fc9e7b1b0762ecd7f21":[7,0,1,0,1,3,184],
 "bytecode__info_8h_source.html":[7,0,1,0,1,3],
 "c__api_8h.html":[7,0,2,22,0,0],
+"c__api_8h.html#a21ff5bf9e7f38edc407311580a62acfa":[7,0,2,22,0,0,3],
 "c__api_8h.html#a37f2b7fe39903a443ba2758db46afd3f":[7,0,2,22,0,0,2],
 "c__api_8h.html#a38df5c9067730560413887bbd987e848":[7,0,2,22,0,0,1],
 "c__api_8h.html#afa6f17e0c0db689461b4e3acf7ae10dc":[7,0,2,22,0,0,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX4 =
 "c__qualifiers_8cpp.html":[7,0,2,1,35],
 "c__qualifiers_8cpp.html#ac9ee305290bc1d70b5933cfa449d89ed":[7,0,2,1,35,0],
 "c__qualifiers_8cpp_source.html":[7,0,2,1,35],
-"c__qualifiers_8h.html":[7,0,2,1,36],
-"c__qualifiers_8h_source.html":[7,0,2,1,36],
-"c__safety__checks_8cpp.html":[7,0,2,6,6]
+"c__qualifiers_8h.html":[7,0,2,1,36]
 };
