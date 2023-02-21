@@ -1400,6 +1400,10 @@ var hierarchy =
     [ "smt2_incremental_decision_proceduret::sequencet", "classsmt2__incremental__decision__proceduret_1_1sequencet.html", null ],
     [ "sese_region_analysist", "classsese__region__analysist.html", null ],
     [ "address_of_aware_replace_symbolt::set_require_lvalue_and_backupt", "classaddress__of__aware__replace__symbolt_1_1set__require__lvalue__and__backupt.html", null ],
+    [ "shadow_memory_field_definitionst", "classshadow__memory__field__definitionst.html", null ],
+    [ "shadow_memory_statet", "classshadow__memory__statet.html", null ],
+    [ "shadow_memoryt", "classshadow__memoryt.html", null ],
+    [ "shadow_memory_statet::shadowed_addresst", "structshadow__memory__statet_1_1shadowed__addresst.html", null ],
     [ "shared_bufferst", "classshared__bufferst.html", null ],
     [ "concurrency_instrumentationt::shared_vart", "classconcurrency__instrumentationt_1_1shared__vart.html", null ],
     [ "sharing_mapt< keyT, valueT, fail_if_equal, hashT, equalT >::sharing_map_statst", "structsharing__mapt_1_1sharing__map__statst.html", null ],
@@ -1643,6 +1647,7 @@ var hierarchy =
               [ "unary_minus_exprt", "classunary__minus__exprt.html", null ],
               [ "unary_plus_exprt", "classunary__plus__exprt.html", null ],
               [ "unary_predicate_exprt", "classunary__predicate__exprt.html", [
+                [ "enum_is_in_range_exprt", "classenum__is__in__range__exprt.html", null ],
                 [ "initial_state_exprt", "classinitial__state__exprt.html", null ],
                 [ "is_cstring_exprt", "classis__cstring__exprt.html", null ],
                 [ "is_dynamic_object_exprt", "classis__dynamic__object__exprt.html", null ],

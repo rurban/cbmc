@@ -96,7 +96,7 @@ $(document).ready(function(){initNavTree('classcleanert.html',''); initResizable
 </div><!--header-->
 <div class="contents">
 
-<p>Allows to clean expressions of side effects.  
+<p>Class that allows to clean expressions of side effects and to generate havoc_slice expressions.  
  <a href="classcleanert.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="utils_8h_source.html">utils.h</a>&gt;</code></p>
@@ -426,9 +426,6 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a7c6fd63b1487ab9eb4a8baebc40db6ef inherit pro_methods_classgoto__convertt"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a233e527fdbe44177319cebec3c4b9e2c inherit pro_methods_classgoto__convertt"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classexprt.html">exprt</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgoto__convertt.html#a233e527fdbe44177319cebec3c4b9e2c">get_constant</a> (const <a class="el" href="classexprt.html">exprt</a> &amp;expr)</td></tr>
 <tr class="separator:a233e527fdbe44177319cebec3c4b9e2c inherit pro_methods_classgoto__convertt"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4dae7695c1ac4dda98213c815963973d inherit pro_methods_classgoto__convertt"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgoto__convertt.html#a4dae7695c1ac4dda98213c815963973d">do_enum_is_in_range</a> (const <a class="el" href="classexprt.html">exprt</a> &amp;lhs, const <a class="el" href="classsymbol__exprt.html">symbol_exprt</a> &amp;function, const <a class="el" href="classexprt.html#a10c073e5cdd14b181d56cf53def8b378">exprt::operandst</a> &amp;arguments, <a class="el" href="classgoto__programt.html">goto_programt</a> &amp;dest)</td></tr>
-<tr class="memdesc:a4dae7695c1ac4dda98213c815963973d inherit pro_methods_classgoto__convertt"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts calls to the built in <code>enum_is_in_range</code> function to a test that the given enum value is in the valid range of values for that enum type.  <a href="classgoto__convertt.html#a4dae7695c1ac4dda98213c815963973d">More...</a><br /></td></tr>
-<tr class="separator:a4dae7695c1ac4dda98213c815963973d inherit pro_methods_classgoto__convertt"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad45545f672b3863525644b415f52ec37 inherit pro_methods_classgoto__convertt"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgoto__convertt.html#ad45545f672b3863525644b415f52ec37">do_atomic_begin</a> (const <a class="el" href="classexprt.html">exprt</a> &amp;lhs, const <a class="el" href="classsymbol__exprt.html">symbol_exprt</a> &amp;function, const <a class="el" href="classexprt.html#a10c073e5cdd14b181d56cf53def8b378">exprt::operandst</a> &amp;arguments, <a class="el" href="classgoto__programt.html">goto_programt</a> &amp;dest)</td></tr>
 <tr class="separator:ad45545f672b3863525644b415f52ec37 inherit pro_methods_classgoto__convertt"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d7f809b9508c0c97d390d38fcdfc859 inherit pro_methods_classgoto__convertt"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgoto__convertt.html#a4d7f809b9508c0c97d390d38fcdfc859">do_atomic_end</a> (const <a class="el" href="classexprt.html">exprt</a> &amp;lhs, const <a class="el" href="classsymbol__exprt.html">symbol_exprt</a> &amp;function, const <a class="el" href="classexprt.html#a10c073e5cdd14b181d56cf53def8b378">exprt::operandst</a> &amp;arguments, <a class="el" href="classgoto__programt.html">goto_programt</a> &amp;dest)</td></tr>
@@ -488,9 +485,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:ae6e4fdebf71f20d1d7a00fa79effa9af inherit pro_attribs_classmessaget"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Allows to clean expressions of side effects. </p>
+<div class="textblock"><p>Class that allows to clean expressions of side effects and to generate havoc_slice expressions. </p>
 
-<p class="definition">Definition at line <a class="el" href="utils_8h_source.html#l00166">166</a> of file <a class="el" href="utils_8h_source.html">utils.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="utils_8h_source.html#l00029">29</a> of file <a class="el" href="utils_8h_source.html">utils.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a114f987f5a751a8ff2518fa28031fa4d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a114f987f5a751a8ff2518fa28031fa4d">&#9670;&nbsp;</a></span>cleanert()</h2>
@@ -526,7 +523,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="utils_8h_source.html#l00169">169</a> of file <a class="el" href="utils_8h_source.html">utils.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="utils_8h_source.html#l00032">32</a> of file <a class="el" href="utils_8h_source.html">utils.h</a>.</p>
 
 </div>
 </div>
@@ -571,7 +568,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="utils_8h_source.html#l00176">176</a> of file <a class="el" href="utils_8h_source.html">utils.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="utils_8h_source.html#l00039">39</a> of file <a class="el" href="utils_8h_source.html">utils.h</a>.</p>
 
 </div>
 </div>
@@ -621,7 +618,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="utils_8h_source.html#l00181">181</a> of file <a class="el" href="utils_8h_source.html">utils.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="utils_8h_source.html#l00044">44</a> of file <a class="el" href="utils_8h_source.html">utils.h</a>.</p>
 
 </div>
 </div>
