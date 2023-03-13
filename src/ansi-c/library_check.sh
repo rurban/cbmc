@@ -102,6 +102,11 @@ perl -p -i -e 's/^_mm_setr_pi16\n//' __functions # cbmc/SIMD1
 perl -p -i -e 's/^_mm_subs_ep[iu]16\n//' __functions # cbmc/SIMD1
 
 ls ../../regression/cbmc-library/ | grep -- - | cut -f1 -d- | sort -u > __tests
+perl -p -i -e 's/^__builtin_ffs\n//' __tests
+perl -p -i -e 's/^Double\n//' __tests
+perl -p -i -e 's/^[fF]loat\n//' __tests
+perl -p -i -e 's/^int\n//' __tests
+perl -p -i -e 's/^string\n//' __tests
 diff -u __tests __functions
 ec="${?}"
 rm __functions __tests
