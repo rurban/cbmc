@@ -1,11 +1,5 @@
 var NAVTREEINDEX134 =
 {
-"structref__expr__set__dt.html#af2f4953010a3e6255c74b1c2f8e00544":[9,0,967,3],
-"structrequire__goto__statements_1_1pointer__assignment__locationt.html":[9,0,1,0],
-"structrequire__goto__statements_1_1pointer__assignment__locationt.html#a0821d12e02d09bde225402c92da2482f":[9,0,1,0,0],
-"structrequire__goto__statements_1_1pointer__assignment__locationt.html#abd5990c7984acdd61e0cde3b6ce1979d":[9,0,1,0,1],
-"structrequire__parse__tree_1_1expected__instructiont.html":[9,0,2,0],
-"structrequire__parse__tree_1_1expected__instructiont.html#a046f6557da676b14ab32fbbb4d0d2b91":[9,0,2,0,3],
 "structrequire__parse__tree_1_1expected__instructiont.html#a30184c6c3612e6bde9ec37f0280a14fe":[9,0,2,0,0],
 "structrequire__parse__tree_1_1expected__instructiont.html#a51d90caccd2b9c0873ca51854b6572df":[9,0,2,0,1],
 "structrequire__parse__tree_1_1expected__instructiont.html#a58f319a751e9b70845b92226ae77db39":[9,0,2,0,2],
@@ -249,5 +243,11 @@ var NAVTREEINDEX134 =
 "structsmt__core__theoryt_1_1equalt.html#a1d0651d79417f6d06cc3c9fc5e983992":[9,0,1096,2,0],
 "structsmt__core__theoryt_1_1equalt.html#a4f23c47ea9538e5005d74eeaaad40061":[9,0,1096,2,1],
 "structsmt__core__theoryt_1_1equalt.html#a8175319d3524125f6eb9f3adf7c09f94":[9,0,1096,2,2],
-"structsmt__core__theoryt_1_1if__then__elset.html":[9,0,1096,3]
+"structsmt__core__theoryt_1_1if__then__elset.html":[9,0,1096,3],
+"structsmt__core__theoryt_1_1if__then__elset.html#a28c48805f0af1142deb7930cf51986a8":[9,0,1096,3,2],
+"structsmt__core__theoryt_1_1if__then__elset.html#a8fed6208ba2c2fd1fff3b0f77d325fda":[9,0,1096,3,0],
+"structsmt__core__theoryt_1_1if__then__elset.html#accfd4a5623c4dff2f02db891c1cdfe57":[9,0,1096,3,1],
+"structsmt__core__theoryt_1_1impliest.html":[9,0,1096,4],
+"structsmt__core__theoryt_1_1impliest.html#a4b7a46746815ffdc0824790dc0d0380e":[9,0,1096,4,1],
+"structsmt__core__theoryt_1_1impliest.html#a8a5c952ce6c85bb7ea1e1787172bbc5a":[9,0,1096,4,0]
 };
