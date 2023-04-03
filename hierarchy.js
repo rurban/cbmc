@@ -764,7 +764,8 @@ var hierarchy =
       [ "abstract_eventt", "classabstract__eventt.html", null ],
       [ "cfg_base_nodet< T, I >", "structcfg__base__nodet.html", null ],
       [ "class_hierarchy_graph_nodet", "classclass__hierarchy__graph__nodet.html", null ],
-      [ "destructor_treet::destructor_nodet", "classdestructor__treet_1_1destructor__nodet.html", null ]
+      [ "destructor_treet::destructor_nodet", "classdestructor__treet_1_1destructor__nodet.html", null ],
+      [ "dfcc_loop_nesting_graph_nodet", "structdfcc__loop__nesting__graph__nodet.html", null ]
     ] ],
     [ "graph_nodet< vs_dep_edget >", "classgraph__nodet.html", [
       [ "vs_dep_nodet", "structvs__dep__nodet.html", null ]
@@ -2151,6 +2152,8 @@ var hierarchy =
     ] ],
     [ "irep_hash_container_baset::vector_hasht", "structirep__hash__container__baset_1_1vector__hasht.html", null ],
     [ "custom_bitvector_domaint::vectorst", "structcustom__bitvector__domaint_1_1vectorst.html", null ],
+    [ "verification_resultt::verification_result_implt", "classverification__resultt_1_1verification__result__implt.html", null ],
+    [ "verification_resultt", "structverification__resultt.html", null ],
     [ "java_bytecode_parse_treet::methodt::verification_type_infot", "structjava__bytecode__parse__treet_1_1methodt_1_1verification__type__infot.html", null ],
     [ "configt::verilogt", "structconfigt_1_1verilogt.html", null ],
     [ "vs_dep_edget", "classvs__dep__edget.html", null ],

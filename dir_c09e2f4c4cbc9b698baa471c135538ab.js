@@ -19,6 +19,8 @@ var dir_c09e2f4c4cbc9b698baa471c135538ab =
     [ "dfcc_instrument.h", "dfcc__instrument_8h.html", [
       [ "dfcc_instrumentt", "classdfcc__instrumentt.html", "classdfcc__instrumentt" ]
     ] ],
+    [ "dfcc_is_cprover_symbol.cpp", "dfcc__is__cprover__symbol_8cpp.html", "dfcc__is__cprover__symbol_8cpp" ],
+    [ "dfcc_is_cprover_symbol.h", "dfcc__is__cprover__symbol_8h.html", "dfcc__is__cprover__symbol_8h" ],
     [ "dfcc_is_freeable.cpp", "dfcc__is__freeable_8cpp.html", null ],
     [ "dfcc_is_freeable.h", "dfcc__is__freeable_8h.html", [
       [ "dfcc_is_freeablet", "classdfcc__is__freeablet.html", "classdfcc__is__freeablet" ]
@@ -33,6 +35,8 @@ var dir_c09e2f4c4cbc9b698baa471c135538ab =
     [ "dfcc_lift_memory_predicates.h", "dfcc__lift__memory__predicates_8h.html", [
       [ "dfcc_lift_memory_predicatest", "classdfcc__lift__memory__predicatest.html", "classdfcc__lift__memory__predicatest" ]
     ] ],
+    [ "dfcc_loop_nesting_graph.cpp", "dfcc__loop__nesting__graph_8cpp.html", "dfcc__loop__nesting__graph_8cpp" ],
+    [ "dfcc_loop_nesting_graph.h", "dfcc__loop__nesting__graph_8h.html", "dfcc__loop__nesting__graph_8h" ],
     [ "dfcc_obeys_contract.cpp", "dfcc__obeys__contract_8cpp.html", null ],
     [ "dfcc_obeys_contract.h", "dfcc__obeys__contract_8h.html", [
       [ "dfcc_obeys_contractt", "classdfcc__obeys__contractt.html", "classdfcc__obeys__contractt" ]
