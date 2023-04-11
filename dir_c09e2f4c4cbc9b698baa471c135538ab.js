@@ -2,6 +2,8 @@ var dir_c09e2f4c4cbc9b698baa471c135538ab =
 [
     [ "dfcc.cpp", "dfcc_8cpp.html", "dfcc_8cpp" ],
     [ "dfcc.h", "dfcc_8h.html", "dfcc_8h" ],
+    [ "dfcc_check_loop_normal_form.cpp", "dfcc__check__loop__normal__form_8cpp.html", "dfcc__check__loop__normal__form_8cpp" ],
+    [ "dfcc_check_loop_normal_form.h", "dfcc__check__loop__normal__form_8h.html", "dfcc__check__loop__normal__form_8h" ],
     [ "dfcc_contract_clauses_codegen.cpp", "dfcc__contract__clauses__codegen_8cpp.html", null ],
     [ "dfcc_contract_clauses_codegen.h", "dfcc__contract__clauses__codegen_8h.html", [
       [ "dfcc_contract_clauses_codegent", "classdfcc__contract__clauses__codegent.html", "classdfcc__contract__clauses__codegent" ]
@@ -14,6 +16,7 @@ var dir_c09e2f4c4cbc9b698baa471c135538ab =
     [ "dfcc_contract_handler.h", "dfcc__contract__handler_8h.html", [
       [ "dfcc_contract_handlert", "classdfcc__contract__handlert.html", "classdfcc__contract__handlert" ]
     ] ],
+    [ "dfcc_contract_mode.cpp", "dfcc__contract__mode_8cpp.html", "dfcc__contract__mode_8cpp" ],
     [ "dfcc_contract_mode.h", "dfcc__contract__mode_8h.html", "dfcc__contract__mode_8h" ],
     [ "dfcc_instrument.cpp", "dfcc__instrument_8cpp.html", null ],
     [ "dfcc_instrument.h", "dfcc__instrument_8h.html", [
@@ -35,8 +38,12 @@ var dir_c09e2f4c4cbc9b698baa471c135538ab =
     [ "dfcc_lift_memory_predicates.h", "dfcc__lift__memory__predicates_8h.html", [
       [ "dfcc_lift_memory_predicatest", "classdfcc__lift__memory__predicatest.html", "classdfcc__lift__memory__predicatest" ]
     ] ],
+    [ "dfcc_loop_contract_mode.cpp", "dfcc__loop__contract__mode_8cpp.html", "dfcc__loop__contract__mode_8cpp" ],
+    [ "dfcc_loop_contract_mode.h", "dfcc__loop__contract__mode_8h.html", "dfcc__loop__contract__mode_8h" ],
     [ "dfcc_loop_nesting_graph.cpp", "dfcc__loop__nesting__graph_8cpp.html", "dfcc__loop__nesting__graph_8cpp" ],
     [ "dfcc_loop_nesting_graph.h", "dfcc__loop__nesting__graph_8h.html", "dfcc__loop__nesting__graph_8h" ],
+    [ "dfcc_loop_tags.cpp", "dfcc__loop__tags_8cpp.html", "dfcc__loop__tags_8cpp" ],
+    [ "dfcc_loop_tags.h", "dfcc__loop__tags_8h.html", "dfcc__loop__tags_8h" ],
     [ "dfcc_obeys_contract.cpp", "dfcc__obeys__contract_8cpp.html", null ],
     [ "dfcc_obeys_contract.h", "dfcc__obeys__contract_8h.html", [
       [ "dfcc_obeys_contractt", "classdfcc__obeys__contractt.html", "classdfcc__obeys__contractt" ]
