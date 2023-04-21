@@ -18,6 +18,8 @@ var dir_c09e2f4c4cbc9b698baa471c135538ab =
     ] ],
     [ "dfcc_contract_mode.cpp", "dfcc__contract__mode_8cpp.html", "dfcc__contract__mode_8cpp" ],
     [ "dfcc_contract_mode.h", "dfcc__contract__mode_8h.html", "dfcc__contract__mode_8h" ],
+    [ "dfcc_infer_loop_assigns.cpp", "dfcc__infer__loop__assigns_8cpp.html", "dfcc__infer__loop__assigns_8cpp" ],
+    [ "dfcc_infer_loop_assigns.h", "dfcc__infer__loop__assigns_8h.html", "dfcc__infer__loop__assigns_8h" ],
     [ "dfcc_instrument.cpp", "dfcc__instrument_8cpp.html", null ],
     [ "dfcc_instrument.h", "dfcc__instrument_8h.html", [
       [ "dfcc_instrumentt", "classdfcc__instrumentt.html", "classdfcc__instrumentt" ]
@@ -52,6 +54,8 @@ var dir_c09e2f4c4cbc9b698baa471c135538ab =
     [ "dfcc_pointer_in_range.h", "dfcc__pointer__in__range_8h.html", [
       [ "dfcc_pointer_in_ranget", "classdfcc__pointer__in__ranget.html", "classdfcc__pointer__in__ranget" ]
     ] ],
+    [ "dfcc_root_object.cpp", "dfcc__root__object_8cpp.html", "dfcc__root__object_8cpp" ],
+    [ "dfcc_root_object.h", "dfcc__root__object_8h.html", "dfcc__root__object_8h" ],
     [ "dfcc_spec_functions.cpp", "dfcc__spec__functions_8cpp.html", null ],
     [ "dfcc_spec_functions.h", "dfcc__spec__functions_8h.html", [
       [ "dfcc_spec_functionst", "classdfcc__spec__functionst.html", "classdfcc__spec__functionst" ]
