@@ -1,6 +1,5 @@
 var NAVTREEINDEX32 =
 {
-"classfrequency__mapt.html#a301f494f9d0020a9b0ba5f6896f2dfeb":[8,0,498,3],
 "classfrequency__mapt.html#a58511ddfb5ddf631a0ed0b188f341126":[8,0,498,2],
 "classfrequency__mapt.html#a69cd77ec7e035b5e9f6cc1cd8b95b47d":[8,0,498,1],
 "classfrequency__mapt.html#ae4a100f198fc6e9287df28850d54337c":[8,0,498,4],
@@ -249,5 +248,6 @@ var NAVTREEINDEX32 =
 "classgdb__interaction__exceptiont.html#ae0f6b221e13209f07534d2c98b97f7f3":[8,0,519,0],
 "classgdb__value__extractort.html":[8,0,520],
 "classgdb__value__extractort.html#a0013b2d8bfe60c68b5d2b7bb5da8ff62":[8,0,520,13],
-"classgdb__value__extractort.html#a02c3c8709f3cef042b1524dac6c763cc":[8,0,520,18]
+"classgdb__value__extractort.html#a02c3c8709f3cef042b1524dac6c763cc":[8,0,520,18],
+"classgdb__value__extractort.html#a05dfa6dedf80c1f52692d6afba2e3148":[8,0,520,30]
 };
