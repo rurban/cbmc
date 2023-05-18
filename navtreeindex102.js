@@ -1,6 +1,5 @@
 var NAVTREEINDEX102 =
 {
-"gcc__cmdline_8cpp.html#a07a91f839933e4be02facd519f85ad2f":[9,0,2,9,18,1],
 "gcc__cmdline_8cpp.html#a61ad2e9ba31a8893d9666909a719ba94":[9,0,2,9,18,2],
 "gcc__cmdline_8cpp.html#a671a31a753e36d6b249e303f6bff8279":[9,0,2,9,18,4],
 "gcc__cmdline_8cpp.html#a7743f30ccd1b1bd2026bb69a7d2468d3":[9,0,2,9,18,3],
@@ -249,5 +248,6 @@ var NAVTREEINDEX102 =
 "goto-program-transformations.html#assertions-transform":[0,4,9,2,1,2],
 "goto-program-transformations.html#check-c-transform":[0,4,9,2,0,9],
 "goto-program-transformations.html#complex-transform":[0,4,9,2,0,7],
-"goto-program-transformations.html#coverage-transform":[0,4,9,2,1,6]
+"goto-program-transformations.html#coverage-transform":[0,4,9,2,1,6],
+"goto-program-transformations.html#failed-symbols-transform":[0,4,9,2,0,12]
 };
