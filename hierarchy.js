@@ -1015,6 +1015,7 @@ var hierarchy =
     [ "linear_functiont", "classlinear__functiont.html", null ],
     [ "document_propertiest::linet", "structdocument__propertiest_1_1linet.html", null ],
     [ "linker_script_merget", "classlinker__script__merget.html", null ],
+    [ "linkingt", "classlinkingt.html", null ],
     [ "literalt", "classliteralt.html", null ],
     [ "local_may_aliast::loc_infot", "classlocal__may__aliast_1_1loc__infot.html", null ],
     [ "local_bitvector_analysist", "classlocal__bitvector__analysist.html", null ],
@@ -1107,7 +1108,6 @@ var hierarchy =
         ] ],
         [ "java_bytecode_typecheckt", "classjava__bytecode__typecheckt.html", null ],
         [ "jsil_typecheckt", "classjsil__typecheckt.html", null ],
-        [ "linkingt", "classlinkingt.html", null ],
         [ "statement_list_typecheckt", "classstatement__list__typecheckt.html", null ]
       ] ]
     ] ],
@@ -1205,6 +1205,7 @@ var hierarchy =
       [ "goto_analyzer_parse_optionst", "classgoto__analyzer__parse__optionst.html", null ],
       [ "goto_diff_parse_optionst", "classgoto__diff__parse__optionst.html", null ],
       [ "goto_harness_parse_optionst", "classgoto__harness__parse__optionst.html", null ],
+      [ "goto_inspect_parse_optionst", "structgoto__inspect__parse__optionst.html", null ],
       [ "goto_instrument_parse_optionst", "classgoto__instrument__parse__optionst.html", null ],
       [ "goto_synthesizer_parse_optionst", "classgoto__synthesizer__parse__optionst.html", null ],
       [ "janalyzer_parse_optionst", "classjanalyzer__parse__optionst.html", null ],
