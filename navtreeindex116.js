@@ -1,5 +1,6 @@
 var NAVTREEINDEX116 =
 {
+"natural__loops_8h.html#ac8f4c8a242860bfde4e8e36691f0e67d":[9,0,2,0,64,3],
 "natural__loops_8h_source.html":[9,0,2,0,64],
 "netdb_8c.html":[9,0,2,1,1,19],
 "netdb_8c.html#a5238a05cb76d39b53ef8e000ee941058":[9,0,2,1,1,19,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX116 =
 "pbs__dimacs__cnf_8h_source.html":[9,0,2,28,7,9],
 "piped__process_8cpp.html":[9,0,2,31,156],
 "piped__process_8cpp.html#aeca034f67218340ecb2261a22c2f3dcd":[9,0,2,31,156,0],
-"piped__process_8cpp_source.html":[9,0,2,31,156],
-"piped__process_8h.html":[9,0,2,31,157]
+"piped__process_8cpp_source.html":[9,0,2,31,156]
 };
