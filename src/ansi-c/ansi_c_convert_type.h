@@ -47,7 +47,7 @@ public:
   bool constructor, destructor;
 
   // contracts
-  exprt::operandst assigns, frees, ensures, requires;
+  exprt::operandst assigns, frees, ensures, requires_;
 
   // storage spec
   c_storage_spect c_storage_spec;
@@ -87,7 +87,7 @@ public:
     gcc_attribute_mode.make_nil();
 
     assigns.clear();
-    requires.clear();
+    requires_.clear();
     ensures.clear();
 
     packed=aligned=constructor=destructor=false;

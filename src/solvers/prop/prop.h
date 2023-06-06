@@ -12,6 +12,7 @@ Author: Daniel Kroening, kroening@kroening.com
 
 // decision procedure wrapper for boolean propositional logics
 
+#include <cstdint>
 #include <util/message.h>
 #include <util/threeval.h>
 
@@ -112,7 +113,7 @@ public:
   virtual void set_frozen(literalt) { }
 
   // Resource limits:
-  virtual void set_time_limit_seconds(uint32_t)
+  virtual void set_time_limit_seconds(std::uint32_t)
   {
     log.warning() << "CPU limit ignored (not implemented)" << messaget::eom;
   }

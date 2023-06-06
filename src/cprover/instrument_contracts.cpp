@@ -286,11 +286,11 @@ void instrument_contract_checks(
   goto_programt add_at_beginning;
 
   // precondition?
-  if(!contract.requires().empty())
+  if(!contract.requires_().empty())
   {
     // stick these in as assumptions, preserving the ordering
     goto_programt dest;
-    for(auto &assumption : contract.requires())
+    for(auto &assumption : contract.requires_())
     {
       exprt assumption_instance = instantiate_contract_lambda(assumption);
       auto fixed_assumption = add_function(f.first, assumption_instance);
@@ -338,7 +338,7 @@ void instrument_contract_checks(
 
   // do 'old' in the body
   if(
-    !contract.assigns().empty() || !contract.requires().empty() ||
+    !contract.assigns().empty() || !contract.requires_().empty() ||
     !contract.ensures().empty())
   {
     for(auto &instruction : body.instructions)
@@ -359,7 +359,7 @@ void instrument_contract_checks(
 
   // assigns?
   if(
-    !contract.assigns().empty() || !contract.requires().empty() ||
+    !contract.assigns().empty() || !contract.requires_().empty() ||
     !contract.ensures().empty())
   {
     for(auto it = body.instructions.begin(); it != body.instructions.end();
@@ -449,7 +449,7 @@ void replace_function_calls_by_contracts(
         goto_programt dest;
 
         // assert the preconditions
-        for(auto &precondition : contract.requires())
+        for(auto &precondition : contract.requires_())
         {
           auto instantiated_precondition =
             instantiate_contract_lambda(precondition);

@@ -15,6 +15,7 @@ Author: Daniel Kroening, kroening@kroening.com
 #include "optional.h"
 #include "std_expr.h"
 
+#include <cstdint>
 #include <limits>
 
 class typet;

@@ -860,16 +860,16 @@ void c_typecheck_baset::typecheck_declaration(
             parameter_identifier, p.type());
         }
 
-        for(auto &requires : code_type.requires())
+        for(auto &requires_ : code_type.requires_())
         {
-          typecheck_expr(requires);
-          implicit_typecast_bool(requires);
+          typecheck_expr(requires_);
+          implicit_typecast_bool(requires_);
           std::string clause_type = "preconditions";
-          check_history_expr_return_value(requires, clause_type);
-          check_was_freed(requires, clause_type);
-          lambda_exprt lambda{temporary_parameter_symbols, requires};
-          lambda.add_source_location() = requires.source_location();
-          requires.swap(lambda);
+          check_history_expr_return_value(requires_, clause_type);
+          check_was_freed(requires_, clause_type);
+          lambda_exprt lambda{temporary_parameter_symbols, requires_};
+          lambda.add_source_location() = requires_.source_location();
+          requires_.swap(lambda);
         }
 
         typecheck_spec_assigns(code_type.assigns());

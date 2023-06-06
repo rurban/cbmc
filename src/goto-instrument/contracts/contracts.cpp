@@ -631,7 +631,7 @@ void code_contractst::apply_function_contract(
   is_fresh.add_memory_map_decl(new_program);
 
   // Generate: assert(requires)
-  for(const auto &clause : type.requires())
+  for(const auto &clause : type.requires_())
   {
     auto instantiated_clause =
       to_lambda_expr(clause).application(instantiation_values);
@@ -1251,7 +1251,7 @@ void code_contractst::add_contract_check(
   visitor.add_memory_map_decl(check);
 
   // Generate: assume(requires)
-  for(const auto &clause : code_type.requires())
+  for(const auto &clause : code_type.requires_())
   {
     auto instantiated_clause =
       to_lambda_expr(clause).application(instantiation_values);

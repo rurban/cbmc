@@ -9,6 +9,7 @@ Author: Daniel Kroening, kroening@kroening.com
 #include "ieee_float.h"
 
 #include <limits>
+#include <cstdint>
 
 #include "arith_tools.h"
 #include "bitvector_types.h"

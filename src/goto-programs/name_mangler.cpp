@@ -11,6 +11,7 @@ Author: Kareem Khazem <karkhaz@karkhaz.com>, 2019
 #include <util/get_base_name.h>
 
 #include <iomanip>
+#include <cstdint>
 #include <sstream>
 
 irep_idt file_name_manglert::
