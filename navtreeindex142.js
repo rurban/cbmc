@@ -1,5 +1,7 @@
 var NAVTREEINDEX142 =
 {
+"write__goto__binary_8h.html#aeed7f74a8375072af10f3b2330d3832d":[9,0,2,16,151,2],
+"write__goto__binary_8h_source.html":[9,0,2,16,151],
 "write__location__context_8cpp.html":[9,0,2,0,0,51],
 "write__location__context_8cpp.html#a0e4b1745ef2783b8427852b6bbe13f6e":[9,0,2,0,0,51,0],
 "write__location__context_8cpp_source.html":[9,0,2,0,0,51],
