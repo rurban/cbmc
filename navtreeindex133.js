@@ -1,5 +1,6 @@
 var NAVTREEINDEX133 =
 {
+"structjava__bytecode__language__optionst.html#a24cc0a60a7c8ed6a4cb734ee9d050fab":[8,0,687,3],
 "structjava__bytecode__language__optionst.html#a2d4e0cb870e43c97e15c5404427c4dc9":[8,0,687,2],
 "structjava__bytecode__language__optionst.html#a3b1fd2391e8f2ae0f00093bd24803128":[8,0,687,14],
 "structjava__bytecode__language__optionst.html#a44f4493f13e13dc03c55e22695257c1e":[8,0,687,20],
@@ -248,6 +249,5 @@ var NAVTREEINDEX133 =
 "structlocal__bitvector__analysist_1_1flagst.html#a11e47a50249f6cc211cab86790315b35":[8,0,775,0,13],
 "structlocal__bitvector__analysist_1_1flagst.html#a13c42601ccc4f88e2f3ff2c240c4f1da":[8,0,775,0,21],
 "structlocal__bitvector__analysist_1_1flagst.html#a2970ca61142766376ba50c6cfe552163":[8,0,775,0,17],
-"structlocal__bitvector__analysist_1_1flagst.html#a2db08530c08ba8e720ee0505ee4587f8":[8,0,775,0,19],
-"structlocal__bitvector__analysist_1_1flagst.html#a4623ea5d36492142b7e4111cc3ac402d":[8,0,775,0,14]
+"structlocal__bitvector__analysist_1_1flagst.html#a2db08530c08ba8e720ee0505ee4587f8":[8,0,775,0,19]
 };
