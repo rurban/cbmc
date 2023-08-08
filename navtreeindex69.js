@@ -1,5 +1,6 @@
 var NAVTREEINDEX69 =
 {
+"classunion__typet.html#a5262c291bd43d6cd758fef66c2d4e573":[8,0,1313,2],
 "classunion__typet.html#ad67a1e2b7951a77a4205baa61ff10ccb":[8,0,1313,1],
 "classunsigned__union__find.html":[8,0,1314],
 "classunsigned__union__find.html#a06331e71f1fd6651e1ebc2b0ae47bd6e":[8,0,1314,8],
@@ -59,8 +60,8 @@ var NAVTREEINDEX69 =
 "classupdate__state__exprt.html#aac524aaf3a97e2b5c52120bddc13461e":[8,0,1320,1],
 "classupdate__state__exprt.html#ab93580b825f307cc36ee03c6b887d9b6":[8,0,1320,4],
 "classupdate__state__exprt.html#ab93580b825f307cc36ee03c6b887d9b6":[8,0,1320,5],
-"classupdate__state__exprt.html#abe18cfb13b08b8eca51aa3c3a1121356":[8,0,1320,2],
 "classupdate__state__exprt.html#abe18cfb13b08b8eca51aa3c3a1121356":[8,0,1320,3],
+"classupdate__state__exprt.html#abe18cfb13b08b8eca51aa3c3a1121356":[8,0,1320,2],
 "classuser__input__error__exceptiont.html":[8,0,1321],
 "classuser__input__error__exceptiont.html#a0fd45dbb67217c339ed4484cb97e8bbe":[8,0,1321,0],
 "classvalue__expr__from__smt__factoryt.html":[8,0,1322],
@@ -248,6 +249,5 @@ var NAVTREEINDEX69 =
 "classvalue__set__fit.html#addc8d37ed2eaef79a835068a92dca462":[8,0,1333,48],
 "classvalue__set__fit.html#aea47d0017eabfe303324f2f0c7644173":[8,0,1333,45],
 "classvalue__set__fit.html#aef1795b9824cfef52058d92fc813a363":[8,0,1333,36],
-"classvalue__set__fit.html#af0fe94e12eddc76dfe8effb801903441":[8,0,1333,49],
-"classvalue__set__fit.html#af32d831141d89748d52ffdab67046d22":[8,0,1333,37]
+"classvalue__set__fit.html#af0fe94e12eddc76dfe8effb801903441":[8,0,1333,49]
 };
