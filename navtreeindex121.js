@@ -122,6 +122,7 @@ var NAVTREEINDEX121 =
 "satcheck__core_8h_source.html":[9,0,2,29,7,17],
 "satcheck__glucose_8cpp.html":[9,0,2,29,7,18],
 "satcheck__glucose_8cpp.html#a40b69ebeceecc72659aee95f58495208":[9,0,2,29,7,18,0],
+"satcheck__glucose_8cpp.html#a42e52b6bfce8600b34cfc3c7da751b51":[9,0,2,29,7,18,1],
 "satcheck__glucose_8cpp_source.html":[9,0,2,29,7,18],
 "satcheck__glucose_8h.html":[9,0,2,29,7,19],
 "satcheck__glucose_8h_source.html":[9,0,2,29,7,19],
@@ -134,8 +135,9 @@ var NAVTREEINDEX121 =
 "satcheck__lingeling_8h.html":[9,0,2,29,7,23],
 "satcheck__lingeling_8h_source.html":[9,0,2,29,7,23],
 "satcheck__minisat2_8cpp.html":[9,0,2,29,7,26],
-"satcheck__minisat2_8cpp.html#a075f860aa9ba72c736fbebd1390c3ec7":[9,0,2,29,7,26,2],
-"satcheck__minisat2_8cpp.html#a22a0bc2658cb8d521ef0d536650ac832":[9,0,2,29,7,26,1],
+"satcheck__minisat2_8cpp.html#a075f860aa9ba72c736fbebd1390c3ec7":[9,0,2,29,7,26,3],
+"satcheck__minisat2_8cpp.html#a22a0bc2658cb8d521ef0d536650ac832":[9,0,2,29,7,26,2],
+"satcheck__minisat2_8cpp.html#a279ed7329a9c9f9314c2b08c94693128":[9,0,2,29,7,26,1],
 "satcheck__minisat2_8cpp.html#a6a4cbf4ac896acd692c200b4b9c9f127":[9,0,2,29,7,26,0],
 "satcheck__minisat2_8cpp_source.html":[9,0,2,29,7,26],
 "satcheck__minisat2_8h.html":[9,0,2,29,7,27],
@@ -247,7 +249,5 @@ var NAVTREEINDEX121 =
 "shadow__memory__util_8cpp.html#a1e7997b6b193ba69598a8dd3f851cdd1":[9,0,2,17,42,5],
 "shadow__memory__util_8cpp.html#a2452eaf7cfa3f9d3d3e3182b48db9505":[9,0,2,17,42,13],
 "shadow__memory__util_8cpp.html#a2909c4734476f16c5091a0b767ebc6fc":[9,0,2,17,42,11],
-"shadow__memory__util_8cpp.html#a2d598517b651e011bdea4b17d612c5aa":[9,0,2,17,42,32],
-"shadow__memory__util_8cpp.html#a35f3c4f9630820408ef9a3c091ac9b08":[9,0,2,17,42,9],
-"shadow__memory__util_8cpp.html#a3938f88acd850e5a8317f962c0a0e922":[9,0,2,17,42,1]
+"shadow__memory__util_8cpp.html#a2d598517b651e011bdea4b17d612c5aa":[9,0,2,17,42,32]
 };
