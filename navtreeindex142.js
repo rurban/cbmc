@@ -1,6 +1,5 @@
 var NAVTREEINDEX142 =
 {
-"version_8h.html":[9,0,2,31,267],
 "version_8h.html#a1a24d8124c3c2a9ed466d3ff1a63b92d":[9,0,2,31,267,0],
 "version_8h_source.html":[9,0,2,31,267],
 "wcwidth_8c.html":[9,0,2,6,61],
