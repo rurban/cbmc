@@ -1,5 +1,6 @@
 var NAVTREEINDEX134 =
 {
+"structmonomialt_1_1termt.html#ae2d4efe23c25127248961cb6b755dcf6":[8,0,823,0,1],
 "structmonomialt_1_1termt.html#af7f31a0408f3bc346c2c50c8319312ce":[8,0,823,0,0],
 "structmz__stream__s.html":[8,0,836],
 "structmz__stream__s.html#a24c6cf42b5b6a655f4664dd15203dce7":[8,0,836,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX134 =
 "structref__count__ift.html":[8,0,970],
 "structref__count__ift_3_01true_01_4.html":[8,0,971],
 "structref__count__ift_3_01true_01_4.html#aa7c3f47abb61357389f5f47f69bd5115":[8,0,971,0],
-"structref__expr__set__dt.html":[8,0,972],
-"structref__expr__set__dt.html#a12f7ba14b8a099f3f6a8097b9577eeed":[8,0,972,1]
+"structref__expr__set__dt.html":[8,0,972]
 };

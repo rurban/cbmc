@@ -1,5 +1,6 @@
 var NAVTREEINDEX115 =
 {
+"namespace_glucose.html":[7,0,2],
 "namespace_minisat.html":[7,0,4],
 "namespacedetail.html":[7,0,1],
 "namespacedetail.html#a1e78b96b30ab3780ae8ded64d5058ce4":[7,0,1,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX115 =
 "padding_8cpp.html":[9,0,2,1,66],
 "padding_8cpp.html#a4741a4d1120e3aa9fe608f788dccfd4a":[9,0,2,1,66,4],
 "padding_8cpp.html#a99d3d8f78529edfda0e8828fe4d0fafd":[9,0,2,1,66,3],
-"padding_8cpp.html#a9ac9627e514b409ffd5e8ea4315175d0":[9,0,2,1,66,2],
-"padding_8cpp.html#aa1e15c315479e9154a8667b171ec1332":[9,0,2,1,66,1]
+"padding_8cpp.html#a9ac9627e514b409ffd5e8ea4315175d0":[9,0,2,1,66,2]
 };

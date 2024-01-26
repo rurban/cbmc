@@ -1,5 +1,6 @@
 var NAVTREEINDEX121 =
 {
+"sentinel__dll_8h.html#a82f87c7c017473280887a8b623c2d12d":[9,0,2,6,44,2],
 "sentinel__dll_8h.html#ab2fc6fd261664f269afc2b8eb945751d":[9,0,2,6,44,3],
 "sentinel__dll_8h.html#ae2584f23a4dc4a16ddf6cb41c25649ae":[9,0,2,6,44,1],
 "sentinel__dll_8h_source.html":[9,0,2,6,44],
@@ -248,6 +249,5 @@ var NAVTREEINDEX121 =
 "show__vcc_8h_source.html":[9,0,2,17,47],
 "signal_8c.html":[9,0,2,1,1,26],
 "signal_8c.html#a06a67ed84b34243cb2ff3da36f27502c":[9,0,2,1,1,26,0],
-"signal_8c.html#a4539db972bcf3dd8c8b429af0dc3789d":[9,0,2,1,1,26,3],
-"signal_8c.html#a8cb534abb228896759dded0be6ac4351":[9,0,2,1,1,26,2]
+"signal_8c.html#a4539db972bcf3dd8c8b429af0dc3789d":[9,0,2,1,1,26,3]
 };
