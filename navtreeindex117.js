@@ -1,5 +1,6 @@
 var NAVTREEINDEX117 =
 {
+"pointer__offset__size_8cpp.html":[9,0,2,30,155],
 "pointer__offset__size_8cpp.html#a349157d88463ecbc37f1ef6adeee3bf7":[9,0,2,30,155,0],
 "pointer__offset__size_8cpp.html#a3751585c30852e85bf3f6c089b5308f1":[9,0,2,30,155,6],
 "pointer__offset__size_8cpp.html#a3b37477af3bfef0e740adcc6b4ccf2e1":[9,0,2,30,155,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX117 =
 "qbf__quantor_8cpp_source.html":[9,0,2,27,5,3],
 "qbf__quantor_8h.html":[9,0,2,27,5,4],
 "qbf__quantor_8h_source.html":[9,0,2,27,5,4],
-"qbf__qube_8cpp.html":[9,0,2,27,5,5],
-"qbf__qube_8cpp_source.html":[9,0,2,27,5,5]
+"qbf__qube_8cpp.html":[9,0,2,27,5,5]
 };
