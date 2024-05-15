@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>CBMC: /home/runner/work/cbmc/cbmc/src/goto-programs/allocate_objects.cpp Source File</title>
+<title>CBMC: /home/runner/work/cbmc/cbmc/src/ansi-c/allocate_objects.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -108,7 +108,7 @@ $(document).ready(function(){initNavTree('allocate__objects_8cpp_source.html',''
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="pointer__offset__size_8h.html">util/pointer_offset_size.h</a>&gt;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="symbol_8h.html">util/symbol.h</a>&gt;</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="goto__instruction__code_8h.html">goto_instruction_code.h</a>&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="goto__instruction__code_8h.html">goto-programs/goto_instruction_code.h</a>&gt;</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
 <div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classallocate__objectst.html#a965e01aba4d88ee4a0e2888d83572899">   34</a></span>&#160;<a class="code" href="classexprt.html">exprt</a> <a class="code" href="classallocate__objectst.html#a965e01aba4d88ee4a0e2888d83572899">allocate_objectst::allocate_object</a>(</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <a class="code" href="classcode__blockt.html">code_blockt</a> &amp;assignments,</div>
@@ -360,7 +360,7 @@ $(document).ready(function(){initNavTree('allocate__objects_8cpp_source.html',''
 <div class="ttc" id="airep_8h_html_aec473a7cdee5da3223f587aa2c1c4132"><div class="ttname"><a href="irep_8h.html#aec473a7cdee5da3223f587aa2c1c4132">id2string</a></div><div class="ttdeci">const std::string &amp; id2string(const irep_idt &amp;d)</div><div class="ttdef"><b>Definition:</b> <a href="irep_8h_source.html#l00040">irep.h:40</a></div></div>
 <div class="ttc" id="apointer__expr_8h_html"><div class="ttname"><a href="pointer__expr_8h.html">pointer_expr.h</a></div><div class="ttdoc">API to expression classes for Pointers.</div></div>
 <div class="ttc" id="apointer__expr_8h_html_a803796648f3f21fa7835f4509b7ea0a2"><div class="ttname"><a href="pointer__expr_8h.html#a803796648f3f21fa7835f4509b7ea0a2">to_pointer_type</a></div><div class="ttdeci">const pointer_typet &amp; to_pointer_type(const typet &amp;type)</div><div class="ttdoc">Cast a typet to a pointer_typet.</div><div class="ttdef"><b>Definition:</b> <a href="pointer__expr_8h_source.html#l00093">pointer_expr.h:93</a></div></div>
-<div class="ttc" id="apointer__offset__size_8cpp_html_a40b117fcb74b388205d50cc4f2f31e6e"><div class="ttname"><a href="pointer__offset__size_8cpp.html#a40b117fcb74b388205d50cc4f2f31e6e">size_of_expr</a></div><div class="ttdeci">std::optional&lt; exprt &gt; size_of_expr(const typet &amp;type, const namespacet &amp;ns)</div><div class="ttdef"><b>Definition:</b> <a href="pointer__offset__size_8cpp_source.html#l00281">pointer_offset_size.cpp:281</a></div></div>
+<div class="ttc" id="apointer__offset__size_8cpp_html_a40b117fcb74b388205d50cc4f2f31e6e"><div class="ttname"><a href="pointer__offset__size_8cpp.html#a40b117fcb74b388205d50cc4f2f31e6e">size_of_expr</a></div><div class="ttdeci">std::optional&lt; exprt &gt; size_of_expr(const typet &amp;type, const namespacet &amp;ns)</div><div class="ttdef"><b>Definition:</b> <a href="pointer__offset__size_8cpp_source.html#l00287">pointer_offset_size.cpp:287</a></div></div>
 <div class="ttc" id="apointer__offset__size_8h_html"><div class="ttname"><a href="pointer__offset__size_8h.html">pointer_offset_size.h</a></div><div class="ttdoc">Pointer Logic.</div></div>
 <div class="ttc" id="apointer__predicates_8cpp_html_a4f4f8c2889a0c8ee9c61a7389bd29cbc"><div class="ttname"><a href="pointer__predicates_8cpp.html#a4f4f8c2889a0c8ee9c61a7389bd29cbc">object_size</a></div><div class="ttdeci">exprt object_size(const exprt &amp;pointer)</div><div class="ttdef"><b>Definition:</b> <a href="pointer__predicates_8cpp_source.html#l00033">pointer_predicates.cpp:33</a></div></div>
 <div class="ttc" id="asrc_2util_2invariant_8h_html_a3af99897b60119951af8961dbd52dd3f"><div class="ttname"><a href="src_2util_2invariant_8h.html#a3af99897b60119951af8961dbd52dd3f">UNREACHABLE</a></div><div class="ttdeci">#define UNREACHABLE</div><div class="ttdoc">This should be used to mark dead code.</div><div class="ttdef"><b>Definition:</b> <a href="src_2util_2invariant_8h_source.html#l00525">invariant.h:525</a></div></div>
@@ -371,7 +371,7 @@ $(document).ready(function(){initNavTree('allocate__objects_8cpp_source.html',''
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_807c5b2c83e0c14a10083f60cf67ca05.html">goto-programs</a></li><li class="navelem"><a class="el" href="allocate__objects_8cpp.html">allocate_objects.cpp</a></li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_f88182c44268ef6b082d02d66ccc5f99.html">ansi-c</a></li><li class="navelem"><a class="el" href="allocate__objects_8cpp.html">allocate_objects.cpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
