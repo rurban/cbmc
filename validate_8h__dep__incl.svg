@@ -565,9 +565,9 @@
 <path fill="none" stroke="midnightblue" d="M4457.96,-270.64C4465,-269.17 4472.13,-267.9 4479,-267 5014.51,-197.05 6375.83,-316.99 6909,-231 6917.59,-229.62 6926.52,-227.51 6935.18,-225.1"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="4456.73,-267.33 4447.73,-272.93 4458.26,-274.16 4456.73,-267.33"/>
 </g>
-<!-- Node66 -->
+<!-- Node61 -->
 <g id="node30" class="node">
-<title>Node66</title>
+<title>Node61</title>
 <g id="a_node30"><a xlink:href="contracts__wrangler_8cpp.html" target="_top" xlink:title="Parse and annotate contracts.">
 <polygon fill="none" stroke="black" points="7081,-184 7081,-225 7261,-225 7261,-184 7081,-184"/>
 <text text-anchor="start" x="7089" y="-213" font-family="Helvetica,sans-Serif" font-size="10.00">/home/runner/work/cbmc</text>
@@ -576,9 +576,9 @@
 </a>
 </g>
 </g>
-<!-- Node723&#45;&gt;Node66 -->
+<!-- Node723&#45;&gt;Node61 -->
 <g id="edge36" class="edge">
-<title>Node723&#45;&gt;Node66</title>
+<title>Node723&#45;&gt;Node61</title>
 <path fill="none" stroke="midnightblue" d="M4457.96,-270.64C4465,-269.16 4472.13,-267.89 4479,-267 5050.46,-192.62 6500.81,-307.41 7072,-231 7082.47,-229.6 7093.42,-227.47 7104.06,-225.03"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="4456.73,-267.32 4447.73,-272.92 4458.26,-274.16 4456.73,-267.32"/>
 </g>
