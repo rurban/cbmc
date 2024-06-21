@@ -1,5 +1,6 @@
 var NAVTREEINDEX142 =
 {
+"structletifyt_1_1let__count__idt.html#ae4c88b7ba787376ac3f40463011ac776":[8,0,756,0,1],
 "structlevenshtein__automatont.html":[8,0,757],
 "structlevenshtein__automatont.html#a14a1f7ade33a02bf7e11ce2b404f0aa4":[8,0,757,1],
 "structlevenshtein__automatont.html#a21b9fe937c616c76cf810639a94e17e7":[8,0,757,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX142 =
 "structobject__factory__parameterst.html#a03ea849d39f74ae37f11535346857da8":[8,0,882,4],
 "structobject__factory__parameterst.html#a3f0ea28332d40244d479e21857d538a4":[8,0,882,1],
 "structobject__factory__parameterst.html#a52e1f8b989852370d38ca4a50083b13d":[8,0,882,5],
-"structobject__factory__parameterst.html#a56fabd016b414693956b2063c4bafd21":[8,0,882,10],
-"structobject__factory__parameterst.html#a61642ee9609c06a8f3500223d753ed9d":[8,0,882,7]
+"structobject__factory__parameterst.html#a56fabd016b414693956b2063c4bafd21":[8,0,882,10]
 };
