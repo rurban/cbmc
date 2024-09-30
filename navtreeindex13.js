@@ -1,5 +1,8 @@
 var NAVTREEINDEX13 =
 {
+"classboolbvt.html#af622ec529b7a0790cd7643183f6eccf9":[8,0,129,83],
+"classboolbvt.html#af65e2176205dcf5a85b06484278435f4":[8,0,129,22],
+"classboolbvt.html#af6d9881dca0528fc7f2edf69b01025fe":[8,0,129,63],
 "classboolbvt.html#af78c5a7a2e0aca78bf5d099e095e6143":[8,0,129,64],
 "classboolbvt.html#afaa3a6c62eddace858591cabed324d08":[8,0,129,2],
 "classboolbvt.html#afc30e3a26633fdd144110fdba10050db":[8,0,129,16],
@@ -47,10 +50,11 @@ var NAVTREEINDEX13 =
 "classbv__arithmetict.html#afc883bff42fc5e96e8405f90217a6987":[8,0,133,22],
 "classbv__arithmetict.html#afe09a0462e80890bb4fb23f14152265e":[8,0,133,24],
 "classbv__dimacst.html":[8,0,134],
+"classbv__dimacst.html#a0f92825fda7880beab61ff796de2f66e":[8,0,134,4],
 "classbv__dimacst.html#a3bd7f1cb125de24e94c794fedb01a21b":[8,0,134,3],
 "classbv__dimacst.html#aadb073d4290f86f7e1067a585efc687d":[8,0,134,2],
-"classbv__dimacst.html#ad51e83dfeb3c9e34ab07111e7e5f0e88":[8,0,134,4],
-"classbv__dimacst.html#ad5d64b3c8f6f54cfd58591eb156232a3":[8,0,134,0],
+"classbv__dimacst.html#ad51e83dfeb3c9e34ab07111e7e5f0e88":[8,0,134,5],
+"classbv__dimacst.html#ae9d7b6486278d9ce0dc43cae9ef7b77c":[8,0,134,0],
 "classbv__dimacst.html#aeb59cf74d0bbae2a13586229e00984e9":[8,0,134,1],
 "classbv__endianness__mapt.html":[8,0,135],
 "classbv__endianness__mapt.html#a79bcec4a0e1cc70489af81d5c03e9c80":[8,0,135,2],
@@ -245,9 +249,5 @@ var NAVTREEINDEX13 =
 "classbyte__extract__exprt.html#a7ec98d0d6876570d5b03324094c49787":[8,0,144,3],
 "classbyte__extract__exprt.html#ace44c0eb8ba39f599e1bafb98dd3a84b":[8,0,144,5],
 "classbyte__extract__exprt.html#aff6e0476347b31a58e874004c5cd25d1":[8,0,144,2],
-"classbyte__update__exprt.html":[8,0,145],
-"classbyte__update__exprt.html#a12efe4bed12e6752f8db2b8e7a3eac6a":[8,0,145,0],
-"classbyte__update__exprt.html#a6f086c89f073dba2c06dc4eb36188322":[8,0,145,8],
-"classbyte__update__exprt.html#a6f6f71d1bb080a2cb3a665feae71d3f0":[8,0,145,5],
-"classbyte__update__exprt.html#a7b99c7a96216f543a6e24a7523472a22":[8,0,145,4]
+"classbyte__update__exprt.html":[8,0,145]
 };

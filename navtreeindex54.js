@@ -1,10 +1,8 @@
 var NAVTREEINDEX54 =
 {
-"classrange__typet.html#a7d3bfda2782b1e2138bfba84aa1a71b5":[8,0,961,3],
-"classrange__typet.html#a7f8e00bb3cfaef43f5bdfb247cad9595":[8,0,961,2],
-"classrange__typet.html#a985f080519dd42d39f8869baa5ec3c8b":[8,0,961,0],
-"classrange__typet.html#ae83d9e06a61d345bd9f108495dc4091d":[8,0,961,1],
 "classrational__typet.html":[8,0,963],
+"classrational__typet.html#a0e1e8195bf3dcc6cd7647edb036a8ee4":[8,0,963,2],
+"classrational__typet.html#a1072ab3b4c74a0d4629f986fcb781397":[8,0,963,1],
 "classrational__typet.html#a97972d4b7406b74c298d1bd535ff95da":[8,0,963,0],
 "classrationalt.html":[8,0,964],
 "classrationalt.html#a05234bcb7d150c1f394dddd52bfc9a77":[8,0,964,15],
@@ -96,7 +94,9 @@ var NAVTREEINDEX54 =
 "classreaching__definitions__analysist.html#ad0b59de9d4670dcd4775ad9fe58f2de1":[8,0,968,2],
 "classreaching__definitions__analysist.html#ae25e5c3a9f3d26c74077173dac54cec3":[8,0,968,5],
 "classreal__typet.html":[8,0,970],
+"classreal__typet.html#a2fd044b89ed0651dff8ca6fdb38dca5b":[8,0,970,2],
 "classreal__typet.html#a3f1511a4d75423fe4e2ee9c85d82def3":[8,0,970,0],
+"classreal__typet.html#ac942744e742321328efa42147d433cce":[8,0,970,1],
 "classreallocate__exprt.html":[8,0,971],
 "classreallocate__exprt.html#a37cd4ae851dce11b1b402aa6a4f9512c":[8,0,971,1],
 "classreallocate__exprt.html#a6a6a67760e253c9ee77ab17fb1c79e05":[8,0,971,4],
