@@ -70,7 +70,7 @@ foreach(SOLVER ${sat_impl})
         # to 2 times)
         download_project(PROJ minisat2
             URL http://ftp.debian.org/debian/pool/main/m/minisat2/minisat2_2.2.1.orig.tar.gz
-            PATCH_COMMAND patch -p1 -i ${CBMC_SOURCE_DIR}/scripts/minisat-2.2.1-patch
+            PATCH_COMMAND patch -N -p1 -i ${CBMC_SOURCE_DIR}/scripts/minisat-2.2.1-patch
             COMMAND cmake -E copy ${CBMC_SOURCE_DIR}/scripts/minisat2_CMakeLists.txt CMakeLists.txt
             URL_MD5 27faa19ee0508660bd6fb7f894646d42
         )
@@ -103,7 +103,7 @@ foreach(SOLVER ${sat_impl})
 
         download_project(PROJ glucose
             URL https://github.com/BrunoDutertre/glucose-syrup/archive/0bb2afd3b9baace6981cbb8b4a1c7683c44968b7.tar.gz
-            PATCH_COMMAND patch -p1 -i ${CBMC_SOURCE_DIR}/scripts/glucose-syrup-patch
+            PATCH_COMMAND patch -N -p1 -i ${CBMC_SOURCE_DIR}/scripts/glucose-syrup-patch
             COMMAND cmake -E copy ${CBMC_SOURCE_DIR}/scripts/glucose_CMakeLists.txt CMakeLists.txt
             URL_MD5 7c539c62c248b74210aef7414787323a
         )
@@ -122,7 +122,7 @@ foreach(SOLVER ${sat_impl})
 
         download_project(PROJ cadical
             URL https://github.com/arminbiere/cadical/archive/rel-2.0.0.tar.gz
-            PATCH_COMMAND patch -p1 -i ${CBMC_SOURCE_DIR}/scripts/cadical-2.0.0-patch
+            PATCH_COMMAND patch -N -p1 -i ${CBMC_SOURCE_DIR}/scripts/cadical-2.0.0-patch
             COMMAND cmake -E copy ${CBMC_SOURCE_DIR}/scripts/cadical_CMakeLists.txt CMakeLists.txt
             COMMAND ./configure
             URL_MD5 9fc2a66196b86adceb822a583318cc35
@@ -145,7 +145,7 @@ foreach(SOLVER ${sat_impl})
 
         download_project(PROJ cadical
             URL https://github.com/arminbiere/cadical/archive/rel-2.0.0.tar.gz
-            PATCH_COMMAND patch -p1 -i ${CBMC_SOURCE_DIR}/scripts/cadical-2.0.0-patch
+            PATCH_COMMAND patch -N -p1 -i ${CBMC_SOURCE_DIR}/scripts/cadical-2.0.0-patch
             COMMAND ./configure
             URL_MD5 9fc2a66196b86adceb822a583318cc35
         )
