@@ -152,7 +152,7 @@ void satcheck_minisat1_baset::lcnf(const bvt &bv)
 
 propt::resultt satcheck_minisat1_baset::do_prop_solve(const bvt &assumptions)
 {
-  PRECONDITION(status != ERROR);
+  PRECONDITION(status != statust::ERROR);
 
   log.statistics() << (_no_variables - 1) << " variables, "
                    << solver->nClauses() << " clauses" << messaget::eom;
@@ -180,16 +180,16 @@ propt::resultt satcheck_minisat1_baset::do_prop_solve(const bvt &assumptions)
     {
       msg="SAT checker: instance is SATISFIABLE";
       log.status() << msg << messaget::eom;
-      status=SAT;
-      return P_SATISFIABLE;
+      status=statust::SAT;
+      return resultt::P_SATISFIABLE;
     }
     else
       msg="SAT checker: instance is UNSATISFIABLE";
   }
 
   log.status() << msg << messaget::eom;
-  status=UNSAT;
-  return P_UNSATISFIABLE;
+  status=statust::UNSAT;
+  return resultt::P_UNSATISFIABLE;
 }
 
 void satcheck_minisat1_baset::set_assignment(literalt a, bool value)
@@ -258,7 +258,7 @@ propt::resultt satcheck_minisat1_coret::do_prop_solve(const bvt &assumptions)
 
   r = satcheck_minisat1_prooft::do_prop_solve(assumptions);
 
-  if(status==UNSAT)
+  if(status==statust::UNSAT)
   {
     in_core.resize(no_variables(), false);
     minisat_proof->resolution_proof.build_core(in_core);

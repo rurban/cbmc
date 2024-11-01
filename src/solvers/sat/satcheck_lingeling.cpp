@@ -29,14 +29,14 @@ tvt satcheck_lingelingt::l_get(literalt a) const
 
   tvt result;
 
-  if(a.var_no()>lglmaxvar(solver))
+  if(a.var_no() > (unsigned)lglmaxvar(solver))
     return tvt(tvt::tv_enumt::TV_UNKNOWN);
 
-  const int val=lglderef(solver, a.dimacs());
-  if(val>0)
-    result=tvt(true);
-  else if(val<0)
-    result=tvt(false);
+  const int val = lglderef(solver, a.dimacs());
+  if(val > 0)
+    result = tvt(true);
+  else if(val < 0)
+    result = tvt(false);
   else
     return tvt(tvt::tv_enumt::TV_UNKNOWN);
 
@@ -65,13 +65,13 @@ void satcheck_lingelingt::lcnf(const bvt &bv)
 
 propt::resultt satcheck_lingelingt::do_prop_solve(const bvt &assumptions)
 {
-  PRECONDITION(status != ERROR);
+  PRECONDITION(status != statust::ERROR);
 
   // We start counting at 1, thus there is one variable fewer.
   {
-    std::string msg=
-      std::to_string(no_variables()-1)+" variables, "+
-      std::to_string(clause_counter)+" clauses";
+    std::string msg =
+      std::to_string(no_variables() - 1) + " variables, " +
+      std::to_string(clause_counter) + " clauses";
     log.statistics() << msg << messaget::eom;
   }
 
@@ -81,25 +81,25 @@ propt::resultt satcheck_lingelingt::do_prop_solve(const bvt &assumptions)
     if(!literal.is_true())
       lglassume(solver, literal.dimacs());
 
-  const int res=lglsat(solver);
+  const int res = lglsat(solver);
   CHECK_RETURN(res == 10 || res == 20);
 
   if(res==10)
   {
-    msg="SAT checker: instance is SATISFIABLE";
+    msg = "SAT checker: instance is SATISFIABLE";
     log.status() << msg << messaget::eom;
-    status=SAT;
-    return P_SATISFIABLE;
+    status = statust::SAT;
+    return resultt::P_SATISFIABLE;
   }
   else
   {
     INVARIANT(res == 20, "result value is either 10 or 20");
-    msg="SAT checker: instance is UNSATISFIABLE";
+    msg = "SAT checker: instance is UNSATISFIABLE";
     log.status() << msg << messaget::eom;
   }
 
-  status=UNSAT;
-  return P_UNSATISFIABLE;
+  status = statust::UNSAT;
+  return resultt::P_UNSATISFIABLE;
 }
 
 void satcheck_lingelingt::set_assignment(literalt a, bool value)
@@ -107,15 +107,15 @@ void satcheck_lingelingt::set_assignment(literalt a, bool value)
   UNREACHABLE;
 }
 
-satcheck_lingelingt::satcheck_lingelingt() :
-  solver(lglinit())
+satcheck_lingelingt::satcheck_lingelingt(message_handlert &message_handler)
+  : cnf_solvert(message_handler), solver(lglinit())
 {
 }
 
 satcheck_lingelingt::~satcheck_lingelingt()
 {
   lglrelease(solver);
-  solver=0;
+  solver = nullptr;
 }
 
 void satcheck_lingelingt::set_frozen(literalt a)
@@ -131,5 +131,5 @@ void satcheck_lingelingt::set_frozen(literalt a)
 bool satcheck_lingelingt::is_in_conflict(literalt a) const
 {
   PRECONDITION(!a.is_constant());
-  return lglfailed(solver, a.dimacs())!=0;
+  return lglfailed(solver, a.dimacs()) != 0;
 }

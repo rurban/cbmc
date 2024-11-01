@@ -12,9 +12,10 @@ Author: Daniel Kroening, kroening@kroening.com
 
 #include <zchaff_solver.h>
 
-satcheck_zchaff_baset::satcheck_zchaff_baset(CSolver *_solver):solver(_solver)
+satcheck_zchaff_baset::satcheck_zchaff_baset(CSolver *_solver)
+  : solver(_solver)
 {
-  status=INIT;
+  status=statust::INIT;
   solver->set_randomness(0);
   solver->set_variable_number(0);
 }
@@ -25,7 +26,7 @@ satcheck_zchaff_baset::~satcheck_zchaff_baset()
 
 tvt satcheck_zchaff_baset::l_get(literalt a) const
 {
-  PRECONDITION(status == SAT);
+  PRECONDITION(status == statust::SAT);
 
   if(a.is_true())
     return tvt(true);
@@ -58,7 +59,7 @@ std::string satcheck_zchaff_baset::solver_text() const
 
 void satcheck_zchaff_baset::copy_cnf()
 {
-  PRECONDITION(status == INIT);
+  PRECONDITION(status == statust::INIT);
 
   // this can only be called once
   solver->set_variable_number(no_variables());
@@ -74,7 +75,7 @@ propt::resultt satcheck_zchaff_baset::do_prop_solve(const bvt &assumptions)
 {
   // this is *not* incremental
   PRECONDITION(assumptions.empty());
-  PRECONDITION(status == INIT);
+  PRECONDITION(status == statust::INIT);
 
   copy_cnf();
 
@@ -144,19 +145,19 @@ propt::resultt satcheck_zchaff_baset::do_prop_solve(const bvt &assumptions)
 
   if(result==UNSATISFIABLE)
   {
-    status=UNSAT;
-    return P_UNSATISFIABLE;
+    status=statust::UNSAT;
+    return resultt::P_UNSATISFIABLE;
   }
 
   if(result==SATISFIABLE)
   {
-    status=SAT;
-    return P_SATISFIABLE;
+    status=statust::SAT;
+    return resultt::P_SATISFIABLE;
   }
 
-  status=ERROR;
+  status=statust::ERROR;
 
-  return P_ERROR;
+  return resultt::P_ERROR;
 }
 
 void satcheck_zchaff_baset::set_assignment(literalt a, bool value)
@@ -167,8 +168,8 @@ void satcheck_zchaff_baset::set_assignment(literalt a, bool value)
   solver->variables()[v].set_value(value);
 }
 
-satcheck_zchafft::satcheck_zchafft():
-  satcheck_zchaff_baset(new CSolver)
+satcheck_zchafft::satcheck_zchafft(message_handlert &message_handler)
+  : cnf_solvert(message_handler), satcheck_zchaff_baset(new CSolver)
 {
 }
 

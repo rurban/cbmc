@@ -103,12 +103,12 @@ propt::resultt satcheck_zcoret::do_prop_solve(const bvt &assumptions)
   }
 
   if(in_core.empty())
-    return P_ERROR;
+    return resultt::P_ERROR;
 
   remove(cnf_file.c_str());
   // remove(core_file.c_str());
   remove(trace_file.c_str());
   // remove(output_file.c_str());
 
-  return P_UNSATISFIABLE;
+  return resultt::P_UNSATISFIABLE;
 }

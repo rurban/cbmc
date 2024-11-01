@@ -18,7 +18,7 @@ struct PicoSAT;
 class satcheck_picosatt:public cnf_solvert
 {
 public:
-  satcheck_picosatt();
+  satcheck_picosatt(message_handlert &message_handler);
   ~satcheck_picosatt();
 
   std::string solver_text() const override;

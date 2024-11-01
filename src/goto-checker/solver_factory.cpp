@@ -220,7 +220,7 @@ get_sat_solver(message_handlert &message_handler, const optionst &options)
     }
     else if(solver_option == "booleforce")
     {
-#if defined SATCHECK_BOOLERFORCE
+#if defined SATCHECK_BOOLEFORCE
       return make_satcheck_prop<satcheck_booleforcet>(message_handler, options);
 #else
       emit_solver_warning(message_handler, "booleforce");

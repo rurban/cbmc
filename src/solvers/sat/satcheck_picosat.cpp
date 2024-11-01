@@ -32,11 +32,11 @@ tvt satcheck_picosatt::l_get(literalt a) const
   if(static_cast<int>(a.var_no())>picosat_variables(picosat))
     return tvt(tvt::tv_enumt::TV_UNKNOWN);
 
-  const int val=picosat_deref(picosat, a.dimacs());
+  const int val = picosat_deref(picosat, a.dimacs());
   if(val>0)
-    result=tvt(true);
+    result = tvt(true);
   else if(val<0)
-    result=tvt(false);
+    result = tvt(false);
   else
     return tvt(tvt::tv_enumt::TV_UNKNOWN);
 
@@ -67,12 +67,12 @@ void satcheck_picosatt::lcnf(const bvt &bv)
 
 propt::resultt satcheck_picosatt::do_prop_solve(const bvt &assumptions)
 {
-  PRECONDITION(status != ERROR);
+  PRECONDITION(status != statust::ERROR);
 
   {
-    std::string msg=
-      std::to_string(_no_variables-1)+" variables, "+
-      std::to_string(picosat_added_original_clauses(picosat))+" clauses";
+    std::string msg =
+      std::to_string(_no_variables - 1) + " variables, " +
+      std::to_string(picosat_added_original_clauses(picosat)) + " clauses";
     log.statistics() << msg << messaget::eom;
   }
 
@@ -82,25 +82,25 @@ propt::resultt satcheck_picosatt::do_prop_solve(const bvt &assumptions)
     if(!literal.is_true())
       picosat_assume(picosat, literal.dimacs());
 
-  const int res=picosat_sat(picosat, -1);
-  if(res==PICOSAT_SATISFIABLE)
+  const int res = picosat_sat(picosat, -1);
+  if(res == PICOSAT_SATISFIABLE)
   {
-    msg="SAT checker: instance is SATISFIABLE";
+    msg = "SAT checker: instance is SATISFIABLE";
     log.status() << msg << messaget::eom;
-    status=SAT;
-    return P_SATISFIABLE;
+    status = statust::SAT;
+    return resultt::P_SATISFIABLE;
   }
   else
   {
     INVARIANT(
       res == PICOSAT_UNSATISFIABLE,
       "picosat result should report either sat or unsat");
-    msg="SAT checker: instance is UNSATISFIABLE";
+    msg = "SAT checker: instance is UNSATISFIABLE";
     log.status() << msg << messaget::eom;
   }
 
-  status=UNSAT;
-  return P_UNSATISFIABLE;
+  status = statust::UNSAT;
+  return resultt::P_UNSATISFIABLE;
 }
 
 void satcheck_picosatt::set_assignment(literalt a, bool value)
@@ -108,7 +108,8 @@ void satcheck_picosatt::set_assignment(literalt a, bool value)
   UNREACHABLE;
 }
 
-satcheck_picosatt::satcheck_picosatt()
+satcheck_picosatt::satcheck_picosatt(message_handlert &message_handler)
+  : cnf_solvert(message_handler)
 {
   picosat = picosat_init();
 }
@@ -122,5 +123,5 @@ bool satcheck_picosatt::is_in_conflict(literalt a) const
 {
   PRECONDITION(!a.is_constant());
 
-  return picosat_failed_assumption(picosat, a.dimacs())!=0;
+  return picosat_failed_assumption(picosat, a.dimacs()) != 0;
 }

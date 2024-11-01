@@ -46,7 +46,7 @@ protected:
 class satcheck_zchafft:public satcheck_zchaff_baset
 {
  public:
-  satcheck_zchafft();
+  satcheck_zchafft(message_handlert &message_handler);
   virtual ~satcheck_zchafft();
 };
 
