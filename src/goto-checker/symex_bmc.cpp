@@ -61,15 +61,15 @@ void symex_bmct::symex_step(
     !state.guard.is_false() && state.source.pc->is_assume() &&
     simplify_expr(state.source.pc->condition(), ns).is_false())
   {
-    log.statistics() << "aborting path on assume(false) at "
-                     << state.source.pc->source_location() << " thread "
-                     << state.source.thread_nr;
+    log.stat_summary() << "aborting path on assume(false) at "
+                       << state.source.pc->source_location() << " thread "
+                       << state.source.thread_nr;
 
     const irep_idt &c = state.source.pc->source_location().get_comment();
     if(!c.empty())
-      log.statistics() << ": " << c;
+      log.stat_summary() << ": " << c;
 
-    log.statistics() << log.eom;
+    log.stat_summary() << log.eom;
   }
 
   goto_symext::symex_step(get_goto_function, state);
@@ -149,14 +149,24 @@ bool symex_bmct::should_stop_unwind(
     abort_unwind_decision.is_known(), "unwind decision should be taken by now");
   bool abort = abort_unwind_decision.is_true();
 
-  log.statistics() << (abort ? "Not unwinding" : "Unwinding") << " loop " << id
-                   << " iteration " << unwind;
+  if (abort) {
+    log.stat_summary() << "Not unwinding loop " << id
+                       << " iteration " << unwind;
+    if(this_loop_limit != std::numeric_limits<unsigned>::max())
+      log.stat_summary() << " (" << this_loop_limit << " max)";
 
-  if(this_loop_limit != std::numeric_limits<unsigned>::max())
-    log.statistics() << " (" << this_loop_limit << " max)";
+    log.stat_summary() << " " << source.pc->source_location() << " thread "
+                       << source.thread_nr << log.eom;
+  }
+  else {
+    log.statistics() << "Unwinding loop " << id
+                     << " iteration " << unwind;
+    if(this_loop_limit != std::numeric_limits<unsigned>::max())
+      log.statistics() << " (" << this_loop_limit << " max)";
 
-  log.statistics() << " " << source.pc->source_location() << " thread "
-                   << source.thread_nr << log.eom;
+    log.statistics() << " " << source.pc->source_location() << " thread "
+                     << source.thread_nr << log.eom;
+  }
 
   return abort;
 }
@@ -196,13 +206,22 @@ bool symex_bmct::get_unwind_recursion(
   {
     const symbolt &symbol = ns.lookup(id);
 
-    log.statistics() << (abort ? "Not unwinding" : "Unwinding") << " recursion "
-                     << symbol.display_name() << " iteration " << unwind;
+    if (abort) {
+      log.stat_summary() << "Not unwinding recursion " << symbol.display_name()
+                         << " iteration " << unwind;
+      if(this_loop_limit != std::numeric_limits<unsigned>::max())
+        log.stat_summary() << " (" << this_loop_limit << " max)";
 
-    if(this_loop_limit != std::numeric_limits<unsigned>::max())
-      log.statistics() << " (" << this_loop_limit << " max)";
+      log.stat_summary() << log.eom;
+    } else {
+      log.statistics() << "Unwinding recursion "
+                       << symbol.display_name() << " iteration " << unwind;
 
-    log.statistics() << log.eom;
+      if(this_loop_limit != std::numeric_limits<unsigned>::max())
+        log.statistics() << " (" << this_loop_limit << " max)";
+
+      log.statistics() << log.eom;
+    }
   }
 
   return abort;
