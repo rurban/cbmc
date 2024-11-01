@@ -1,0 +1,112 @@
+add_library(kissat
+  src/allocate.c
+  src/analyze.c
+  src/ands.c
+  src/arena.c
+  src/assign.c
+  src/averages.c
+  src/backbone.c
+  src/backtrack.c
+  src/build.c
+  src/bump.c
+  src/check.c
+  src/classify.c
+  src/clause.c
+  src/collect.c
+  src/colors.c
+  src/compact.c
+  src/config.c
+  src/congruence.c
+  src/decide.c
+  src/deduce.c
+  src/definition.c
+  src/dense.c
+  src/dump.c
+  src/eliminate.c
+  src/equivalences.c
+  src/error.c
+  src/extend.c
+  src/factor.c
+  src/fastel.c
+  src/file.c
+  src/flags.c
+  src/format.c
+  src/forward.c
+  src/gates.c
+  src/heap.c
+  src/ifthenelse.c
+  src/import.c
+  src/internal.c
+  src/kimits.c
+  src/kitten.c
+  src/krite.c
+  src/learn.c
+  src/logging.c
+  src/lucky.c
+  src/main.c
+  src/minimize.c
+  src/mode.c
+  src/options.c
+  src/parse.c
+  src/phases.c
+  src/preprocess.c
+  src/print.c
+  src/probe.c
+  src/profile.c
+  src/promote.c
+  src/proof.c
+  src/propbeyond.c
+  src/propdense.c
+  src/propinitially.c
+  src/proprobe.c
+  src/propsearch.c
+  src/queue.c
+  src/reduce.c
+  src/reluctant.c
+  src/reorder.c
+  src/rephase.c
+  src/report.c
+  src/resize.c
+  src/resolve.c
+  src/resources.c
+  src/restart.c
+  src/search.c
+  src/shrink.c
+  src/smooth.c
+  src/sort.c
+  src/stack.c
+  src/statistics.c
+  src/strengthen.c
+  src/substitute.c
+  src/sweep.c
+  src/terminate.c
+  src/tiers.c
+  src/trail.c
+  src/transitive.c
+  src/utilities.c
+  src/vector.c
+  src/vivify.c
+  src/walk.c
+  src/warmup.c
+  src/watch.c
+  src/weaken.c
+  )
+
+set_target_properties(
+    kissat
+    PROPERTIES
+    XCODE_ATTRIBUTE_CODE_SIGN_IDENTITY "Developer ID Application: Daniel Kroening"
+)
+
+if(ipo_supported)
+    set_property(TARGET kissat PROPERTY INTERPROCEDURAL_OPTIMIZATION True)
+endif()
+
+if("${CMAKE_CXX_COMPILER_ID}" STREQUAL "MSVC")
+    target_compile_options(kissat PUBLIC /w)
+endif()
+
+target_include_directories(kissat
+    PUBLIC
+    ${CMAKE_CURRENT_SOURCE_DIR}/src
+)

@@ -69,6 +69,20 @@ ifneq ($(CADICAL),)
   CLEANFILES += $(CADICAL_LIB) $(patsubst %$(OBJEXT), %$(DEPEXT), $(CADICAL_LIB))
 endif
 
+ifneq ($(SATCH),)
+  SATCH_SRC=sat/satcheck_satch.cpp
+  SATCH_INCLUDE=-I $(SATCH)
+  SATCH_LIB=$(SATCH)/libsatch.a
+  CP_CXXFLAGS += -DHAVE_SATCH -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS
+endif
+
+ifneq ($(KISSAT),)
+  KISSAT_SRC=sat/satcheck_kissat.cpp
+  KISSAT_INCLUDE=-I $(KISSAT)
+  KISSAT_LIB=$(KISSAT)/build/libkissat.so
+  CP_CXXFLAGS += -DHAVE_KISSAT -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS
+endif
+
 SRC = $(BOOLEFORCE_SRC) \
       $(CHAFF_SRC) \
       $(CUDD_SRC) \
@@ -80,6 +94,8 @@ SRC = $(BOOLEFORCE_SRC) \
       $(PICOSAT_SRC) \
       $(SQUOLEM2_SRC) \
       $(CADICAL_SRC) \
+      $(SATCH_SRC) \
+      $(KISSAT_SRC) \
       decision_procedure.cpp \
       flattening/arrays.cpp \
       flattening/boolbv.cpp \
