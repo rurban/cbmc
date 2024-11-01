@@ -29,8 +29,9 @@ endif
 # SAT-solvers we have
 #PICOSAT = ../../picosat-959
 #LINGELING = ../../lingeling-587f-4882048-110513
-#CHAFF = ../../zChaff
-#BOOLEFORCE = ../../booleforce-0.4
+# latest is zChaff 2007.3.12
+#CHAFF = ../../zchaff
+#BOOLEFORCE = ../../booleforce-1.3
 #MINISAT = ../../MiniSat-p_v1.14
 #MINISAT2 = ../../minisat-2.2.1
 #IPASIR = ../../ipasir

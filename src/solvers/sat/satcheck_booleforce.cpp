@@ -15,24 +15,27 @@ extern "C"
 #include "booleforce.h"
 }
 
-satcheck_booleforcet::satcheck_booleforcet()
+satcheck_booleforcet::satcheck_booleforcet(message_handlert &message_handler)
+  : cnf_solvert(message_handler)
 {
+  booleforce_init();
   booleforce_set_trace(false);
-}
+};
 
 satcheck_booleforce_coret::satcheck_booleforce_coret()
 {
-  booleforce_set_trace(true);
-}
+  booleforce_init();
+  booleforce_set_trace(false);
+};
 
 satcheck_booleforce_baset::~satcheck_booleforce_baset()
 {
   booleforce_reset();
-}
+};
 
 tvt satcheck_booleforce_baset::l_get(literalt a) const
 {
-  PRECONDITION(status == SAT);
+  PRECONDITION(status == statust::SAT);
 
   if(a.is_true())
     return tvt(true);
@@ -82,7 +85,7 @@ void satcheck_booleforce_baset::lcnf(const bvt &bv)
 propt::resultt satcheck_booleforce_baset::do_prop_solve(const bvt &assumptions)
 {
   PRECONDITION(assumptions.empty());
-  PRECONDITION(status == SAT || status == INIT);
+  PRECONDITION(status == statust::SAT || status == statust::INIT);
 
   int result=booleforce_sat();
 
@@ -109,19 +112,19 @@ propt::resultt satcheck_booleforce_baset::do_prop_solve(const bvt &assumptions)
 
   if(result==BOOLEFORCE_UNSATISFIABLE)
   {
-    status=UNSAT;
-    return P_UNSATISFIABLE;
+    status=statust::UNSAT;
+    return resultt::P_UNSATISFIABLE;
   }
 
   if(result==BOOLEFORCE_SATISFIABLE)
   {
-    status=SAT;
-    return P_SATISFIABLE;
+    status=statust::SAT;
+    return resultt::P_SATISFIABLE;
   }
 
-  status=ERROR;
+  status=statust::ERROR;
 
-  return P_ERROR;
+  return resultt::P_ERROR;
 }
 
 bool satcheck_booleforce_coret::is_in_core(literalt l) const
