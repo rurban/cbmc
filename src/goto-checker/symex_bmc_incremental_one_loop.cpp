@@ -96,14 +96,24 @@ bool symex_bmc_incremental_one_loopt::should_stop_unwind(
   bool abort = abort_unwind_decision.is_true();
 
   log_unwinding(unwind);
-  log.statistics() << (abort ? "Not unwinding" : "Unwinding") << " loop " << id
-                   << " iteration " << unwind;
+  if (abort) {
+    log.stat_summary() << "Not unwinding loop " << id
+                       << " iteration " << unwind;
+    if(this_loop_limit != std::numeric_limits<unsigned>::max())
+      log.stat_summary() << " (" << this_loop_limit << " max)";
 
-  if(this_loop_limit != std::numeric_limits<unsigned>::max())
-    log.statistics() << " (" << this_loop_limit << " max)";
+    log.stat_summary() << " " << source.pc->source_location() << " thread "
+                     << source.thread_nr << log.eom;
+  } else {
+    log.statistics() << "Unwinding loop " << id
+                     << " iteration " << unwind;
 
-  log.statistics() << " " << source.pc->source_location() << " thread "
-                   << source.thread_nr << log.eom;
+    if(this_loop_limit != std::numeric_limits<unsigned>::max())
+      log.statistics() << " (" << this_loop_limit << " max)";
+
+    log.statistics() << " " << source.pc->source_location() << " thread "
+                     << source.thread_nr << log.eom;
+  }
 
   return abort;
 }
