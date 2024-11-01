@@ -14,11 +14,12 @@ Author: Daniel Kroening, kroening@kroening.com
 #include <set>
 
 #include "cnf.h"
+#include "booleforce.h"
 
-class satcheck_booleforce_baset:public cnf_solvert
+class satcheck_booleforce_baset :public cnf_solvert
 {
 public:
-  virtual ~satcheck_booleforce_baset();
+  virtual ~satcheck_booleforce_baset(message_handlert &message_handler);
 
   std::string solver_text() const override;
   tvt l_get(literalt a) const override;
@@ -29,17 +30,16 @@ protected:
   resultt do_prop_solve(const bvt &assumptions) override;
 };
 
-class satcheck_booleforcet:public satcheck_booleforce_baset
+class satcheck_booleforcet :public satcheck_booleforce_baset
 {
 public:
-  satcheck_booleforcet();
+  satcheck_booleforcet(message_handlert &message_handler);
 };
 
-class satcheck_booleforce_coret:public satcheck_booleforce_baset
+class satcheck_booleforce_coret :public satcheck_booleforce_baset
 {
 public:
   satcheck_booleforce_coret();
-
   bool is_in_core(literalt l) const;
 };
 

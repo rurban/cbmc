@@ -103,10 +103,11 @@ endif()
 
 set(enable_cbmc_tests on CACHE BOOL "Whether CBMC tests should be enabled")
 
-set(sat_impl "minisat2;glucose,cadical" CACHE STRING
-    "This setting control the SAT libraries which are used. Valid values are
-'minisat2', 'glucose', 'cadical', 'ipasir-cadical' or 'ipasir-custom'.
-Use multiple solvers ; seperated"
+set(sat_impl "minisat2" CACHE STRING
+    "This setting controls the SAT libraries which are used. Valid values are
+'minisat2', 'system-minisat2', 'glucose', 'cadical', 'satch', 'kissat', 'ipasir-cadical',
+'system-cadical', 'ipasir-custom', 'picosat', 'lingeling', 'booleforce', 'chaff' and 'squolem2'.
+Use multiple solvers seperated by ';', the first is the default then."
 )
 
 if(${enable_cbmc_tests})

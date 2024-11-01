@@ -18,7 +18,7 @@ struct LGL;
 class satcheck_lingelingt:public cnf_solvert
 {
 public:
-  satcheck_lingelingt();
+  satcheck_lingelingt(message_handlert &message_handler);
   virtual ~satcheck_lingelingt();
 
   std::string solver_text() const override;
