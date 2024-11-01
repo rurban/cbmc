@@ -1,0 +1,28 @@
+add_library(satch
+  config.c
+  satch.c
+  )
+
+set_custom_target(config.c
+  COMMAND echo "COMPILE=gcc -W -Wall -O3 -DNDEBUG" >makefile
+  COMMAND ./mkconfig.sh >config.c
+  )
+
+set_target_properties(
+    satch
+    PROPERTIES
+    XCODE_ATTRIBUTE_CODE_SIGN_IDENTITY "Developer ID Application: Daniel Kroening"
+)
+
+if(ipo_supported)
+    set_property(TARGET satch PROPERTY INTERPROCEDURAL_OPTIMIZATION True)
+endif()
+
+if("${CMAKE_CXX_COMPILER_ID}" STREQUAL "MSVC")
+    target_compile_options(satch PUBLIC /w)
+endif()
+
+target_include_directories(satch
+    PUBLIC
+    ${CMAKE_CURRENT_SOURCE_DIR}
+)

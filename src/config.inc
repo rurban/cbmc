@@ -40,10 +40,52 @@ endif
 #IPASIR = ../../ipasir
 #GLUCOSE = ../../glucose-syrup
 #CADICAL = ../../cadical
+#SATCH = ../../satch-0.5.5
+#KISSAT = ../../kissat-rel-4.0.1
 
 # select default solver to be minisat2 if no other is specified
 ifeq ($(BOOLEFORCE)$(CHAFF)$(GLUCOSE)$(IPASIR)$(LINGELING)$(MINISAT)$(MINISAT2)$(PICOSAT)$(CADICAL),)
   MINISAT2 = ../../minisat-2.2.1
+endif
+
+ifneq ($(PICOSAT),)
+  CP_CXXFLAGS += -DSATCHECK_PICOSAT
+endif
+
+ifneq ($(LINGELING),)
+  CP_CXXFLAGS += -DSATCHECK_LINGELING
+endif
+
+ifneq ($(CHAFF),)
+  CP_CXXFLAGS += -DSATCHECK_CHAFF
+endif
+
+ifneq ($(BOOLEFORCE),)
+  CP_CXXFLAGS += -DSATCHECK_BOOLEFORCE
+endif
+
+ifneq ($(MINISAT),)
+  CP_CXXFLAGS += -DSATCHECK_MINISAT
+endif
+
+ifneq ($(MINISAT2),)
+  CP_CXXFLAGS += -DSATCHECK_MINISAT2
+endif
+
+ifneq ($(GLUCOSE),)
+  CP_CXXFLAGS += -DSATCHECK_GLUCOSE
+endif
+
+ifneq ($(CADICAL),)
+  CP_CXXFLAGS += -DSATCHECK_CADICAL
+endif
+
+ifneq ($(SATCH),)
+  CP_CXXFLAGS += -DSATCHECK_SATCH
+endif
+
+ifneq ($(KISSAT),)
+  CP_CXXFLAGS += -DSATCHECK_KISSAT
 endif
 
 # Signing identity for MacOS Gatekeeper
