@@ -160,6 +160,7 @@ public:
   //  2 + warnings
   //  4 + results
   //  6 + status/phase information
+  //  7 + statistical summary information
   //  8 + statistical information
   //  9 + progress information
   // 10 + debug info
@@ -167,6 +168,7 @@ public:
   enum message_levelt
   {
     M_ERROR=1, M_WARNING=2, M_RESULT=4, M_STATUS=6,
+    M_STAT_SUMMARY=7, 
     M_STATISTICS=8, M_PROGRESS=9, M_DEBUG=10
   };
 
@@ -406,6 +408,11 @@ public:
   mstreamt &status() const
   {
     return get_mstream(M_STATUS);
+  }
+
+  mstreamt &stat_summary() const
+  {
+    return get_mstream(M_STAT_SUMMARY);
   }
 
   mstreamt &statistics() const
