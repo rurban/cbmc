@@ -303,6 +303,22 @@ get_sat_solver(message_handlert &message_handler, const optionst &options)
       emit_solver_warning(message_handler, "cadical");
 #endif
     }
+    else if(solver_option == "kissat")
+    {
+#if defined SATCHECK_KISSAT
+      return make_satcheck_prop<satcheck_kissatt>(message_handler, options);
+#else
+      emit_solver_warning(message_handler, "kissat");
+#endif
+    }
+    else if(solver_option == "satch")
+    {
+#if defined SATCHECK_SATCH
+      return make_satcheck_prop<satcheck_satcht>(message_handler, options);
+#else
+      emit_solver_warning(message_handler, "satch");
+#endif
+    }
     else
     {
       messaget log(message_handler);

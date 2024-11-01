@@ -38,6 +38,12 @@ set(minibdd_source
 set(ipasir_source
     ${CMAKE_CURRENT_SOURCE_DIR}/sat/satcheck_ipasir.cpp
 )
+set(kissat_source
+    ${CMAKE_CURRENT_SOURCE_DIR}/sat/satcheck_kissat.cpp
+)
+set(satch_source
+    ${CMAKE_CURRENT_SOURCE_DIR}/sat/satcheck_satch.cpp
+)
 
 
 file(GLOB_RECURSE sources "*.cpp" "*.h")
@@ -52,6 +58,8 @@ list(REMOVE_ITEM sources
     ${lingeling_source}
     ${booleforce_source}
     ${minibdd_source}
+    ${satch_source}
+    ${kissat_source}
     # ${ipasir_source}
     ${CMAKE_CURRENT_SOURCE_DIR}/bdd/example.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/smt2/smt2_solver.cpp
@@ -118,7 +126,7 @@ foreach(SOLVER ${sat_impl})
 
         target_link_libraries(solvers glucose-condensed)
     elseif("${SOLVER}" STREQUAL "cadical")
-        message(STATUS "Building solvers with cadical")
+        message(STATUS "Building solvers with CaDiCal")
 
         download_project(PROJ cadical
             URL https://github.com/arminbiere/cadical/archive/rel-2.0.0.tar.gz
@@ -140,6 +148,56 @@ foreach(SOLVER ${sat_impl})
         )
 
         target_link_libraries(solvers cadical)
+    elseif("${SOLVER}" STREQUAL "satch")
+        message(STATUS "Building solvers with satch (in work still)")
+
+        download_project(PROJ satch
+            URL https://github.com/arminbiere/satch/archive/refs/tags/rel-0.5.5.tar.gz
+            PATCH_COMMAND cmake -E copy ${CBMC_SOURCE_DIR}/scripts/satch_CMakeLists.txt CMakeLists.txt
+            COMMAND echo "COMPILE=${CMAKE_C_COMPILER} ${CMAKE_C_FLAGS}" >makefile
+            URL_MD5 e50934d9c4a81d9857bea92e0be610e1
+        )
+
+        add_subdirectory(${satch_SOURCE_DIR} ${satch_BINARY_DIR})
+
+        target_compile_definitions(solvers PUBLIC
+            SATCHECK_SATCH HAVE_SATCH
+        )
+
+        target_include_directories(solvers
+            PUBLIC
+            ${satch_SOURCE_DIR}/src
+        )
+
+        target_link_libraries(solvers satch)
+    elseif("${SOLVER}" STREQUAL "kissat")
+        message(STATUS "Building solvers with kissat")
+
+        download_project(PROJ kissat
+            URL https://github.com/arminbiere/kissat/archive/refs/tags/rel-4.0.1.tar.gz
+            PATCH_COMMAND cmake -E copy ${CBMC_SOURCE_DIR}/scripts/kissat_CMakeLists.txt CMakeLists.txt
+            COMMAND ./configure -shared
+            URL_MD5 fcf566984441fe0703230b15e7d1bff2
+        )
+        #if (NOT EXISTS ${kissat_SOURCE_DIR}/scripts/make-build-header.sh.orig)
+        #  message(STATUS "Patching kissat-4.0.1")
+        #  execute_process(
+        #    COMMAND patch -N -p1 -i ${CBMC_SOURCE_DIR}/scripts/kissat-4.0.1-patch
+        #    WORKING_DIRECTORY ${kissat_SOURCE_DIR})
+        #endif()
+
+        add_subdirectory(${kissat_SOURCE_DIR} ${kissat_BINARY_DIR})
+
+        target_compile_definitions(solvers PUBLIC
+            SATCHECK_KISS HAVE_KISS
+        )
+
+        target_include_directories(solvers
+            PUBLIC
+            ${kissat_SOURCE_DIR}/src
+        )
+
+        target_link_libraries(solvers kiss)
     elseif("${SOLVER}" STREQUAL "ipasir-cadical")
         message(STATUS "Building with IPASIR solver linking against: CaDiCaL")
 
