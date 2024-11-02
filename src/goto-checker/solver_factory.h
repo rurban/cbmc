@@ -99,7 +99,7 @@ void parse_solver_options(const cmdlinet &cmdline, optionst &options);
   "(smt2)"                                                                     \
   "(fpa)"                                                                      \
   "(cvc3)"                                                                     \
-  "(cvc4)(cvc5)(bitwuzla)(boolector)(yices)(z3)"                               \
+  "(cvc4)(cvc5)(bitwuzla)(boolector)(stp)(yices)(z3)"                          \
   "(mathsat)"                                                                  \
   "(cprover-smt2)"                                                             \
   "(incremental-smt2-solver):"                                                 \
@@ -131,6 +131,7 @@ void parse_solver_options(const cmdlinet &cmdline, optionst &options);
   " {y--cvc4} \t use CVC4\n"                                                   \
   " {y--cvc5} \t use CVC5\n"                                                   \
   " {y--mathsat} \t use MathSAT\n"                                             \
+  " {y--stp} \t use STP\n"                                                     \
   " {y--yices} \t use Yices\n"                                                 \
   " {y--z3} \t use Z3\n"                                                       \
   " {y--fpa} \t use theory of floating-point arithmetic\n"                     \

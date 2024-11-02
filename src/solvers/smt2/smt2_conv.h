@@ -51,7 +51,8 @@ public:
     CVC5,
     MATHSAT,
     YICES,
-    Z3
+    Z3,
+    STP
   };
 
   smt2_convt(
