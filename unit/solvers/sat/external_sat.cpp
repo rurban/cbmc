@@ -5,12 +5,13 @@
 #include <solvers/sat/external_sat.h>
 #include <testing-utils/use_catch.h>
 #include <util/cout_message.h>
+#include <util/options.h>
 
 class external_sat_test : public external_satt
 {
 public:
-  external_sat_test(message_handlert &message_handler, std::string cmd)
-    : external_satt(message_handler, cmd)
+  external_sat_test(message_handlert &message_handler, std::string cmd, optionst options)
+    : external_satt(message_handler, cmd, options)
   {
   }
 
@@ -23,11 +24,12 @@ public:
 SCENARIO("external_sat", "[core][solvers][sat][external_sat]")
 {
   console_message_handlert message_handler;
+  optionst options;
   message_handler.set_verbosity(0);
 
   GIVEN("External SAT solver is used")
   {
-    external_sat_test satcheck(message_handler, "cmd");
+    external_sat_test satcheck(message_handler, "cmd", options);
     AND_GIVEN("the output is malformed")
     {
       auto result = GENERATE(
