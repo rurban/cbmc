@@ -105,6 +105,7 @@ void parse_solver_options(const cmdlinet &cmdline, optionst &options);
   "(incremental-smt2-solver):"                                                 \
   "(sat-solver):"                                                              \
   "(external-sat-solver):"                                                     \
+  "(solver-opts):"                                                             \
   "(no-sat-preprocessor)"                                                      \
   "(beautify)"                                                                 \
   "(dimacs)"                                                                   \
@@ -119,6 +120,7 @@ void parse_solver_options(const cmdlinet &cmdline, optionst &options);
 #define HELP_SOLVER                                                            \
   " {y--sat-solver} {usolver} \t use specified SAT solver\n"                   \
   " {y--external-sat-solver} {ucmd} \t command to invoke SAT solver process\n" \
+  " {y--solver-opts} {uopts} \t Add cmdline options to the SAT solver\n"       \
   " {y--no-sat-preprocessor} \t disable the SAT solver's simplifier\n"         \
   " {y--dimacs} \t generate CNF in DIMACS format\n"                            \
   " {y--beautify} \t beautify the counterexample (greedy heuristic)\n"         \

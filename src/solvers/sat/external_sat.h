@@ -6,11 +6,12 @@
 #ifndef CPROVER_SOLVERS_SAT_EXTERNAL_SAT_H
 #define CPROVER_SOLVERS_SAT_EXTERNAL_SAT_H
 
+#include <util/options.h>
 #include "cnf_clause_list.h"
 class external_satt : public cnf_clause_list_assignmentt
 {
 public:
-  explicit external_satt(message_handlert &message_handler, std::string cmd);
+  explicit external_satt(message_handlert &message_handler, std::string cmd, optionst options);
 
   bool has_assumptions() const override final
   {
@@ -29,6 +30,7 @@ public:
 
 protected:
   std::string solver_cmd;
+  const optionst options;
 
   resultt do_prop_solve(const bvt &assumptions) override;
   void write_cnf_file(std::string, const bvt &);

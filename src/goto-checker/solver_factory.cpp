@@ -367,7 +367,7 @@ std::unique_ptr<solver_factoryt::solvert> solver_factoryt::get_external_sat()
 
   std::string external_sat_solver = options.get_option("external-sat-solver");
   auto prop =
-    std::make_unique<external_satt>(message_handler, external_sat_solver);
+    std::make_unique<external_satt>(message_handler, external_sat_solver, options);
 
   std::unique_ptr<boolbvt> bv_pointers =
     std::make_unique<bv_pointerst>(ns, *prop, message_handler);
@@ -455,6 +455,7 @@ solver_factoryt::get_incremental_smt2(std::string solver_command)
 
   const std::string outfile_arg = options.get_option("outfile");
   const std::string dump_smt_formula = options.get_option("dump-smt-formula");
+  // no solver-opts, as incremental-smt2-solver already contains them
 
   if(!outfile_arg.empty() && !dump_smt_formula.empty())
   {
@@ -597,6 +598,11 @@ static void parse_sat_options(const cmdlinet &cmdline, optionst &options)
   {
     options.set_option(
       "external-sat-solver", cmdline.get_value("external-sat-solver"));
+  }
+  if(cmdline.isset("solver-opts"))
+  {
+    options.set_option(
+      "solver-opts", cmdline.get_value("solver-opts"));
   }
 
   options.set_option("sat-preprocessor", !cmdline.isset("no-sat-preprocessor"));

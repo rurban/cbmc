@@ -7,6 +7,7 @@
 
 #include "dimacs_cnf.h"
 
+#include <util/options.h>
 #include <util/run.h>
 #include <util/string_utils.h>
 #include <util/tempfile.h>
@@ -15,9 +16,10 @@
 #include <cstdlib>
 #include <fstream>
 #include <string>
+#include <vector>
 
-external_satt::external_satt(message_handlert &message_handler, std::string cmd)
-  : cnf_clause_list_assignmentt(message_handler), solver_cmd(std::move(cmd))
+external_satt::external_satt(message_handlert &message_handler, std::string cmd, optionst _options)
+  : cnf_clause_list_assignmentt(message_handler), solver_cmd(std::move(cmd)), options(std::move(_options))
 {
 }
 
@@ -63,7 +65,15 @@ std::string external_satt::execute_solver(std::string cnf_file)
 {
   log.status() << "Invoking SAT solver" << messaget::eom;
   std::ostringstream response_ostream;
-  auto cmd_result = run(solver_cmd, {"", cnf_file}, "", response_ostream, "");
+  std::vector<std::string> argv = {"", cnf_file};
+  std::string solver_opts = options.get_option("solver-opts");
+  if (solver_opts.length()) {
+    std::vector<std::string> opts = split_string(solver_opts, ' ', true, true);
+    for (auto o : opts) {
+      argv.push_back(o);
+    }
+  }
+  auto cmd_result = run(solver_cmd, argv, "", response_ostream, "");
 
   log.status() << "Solver returned code: " << cmd_result << messaget::eom;
   return response_ostream.str();
