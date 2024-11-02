@@ -29,6 +29,7 @@ std::string smt2_dect::decision_procedure_text() const
      solver==solvert::MATHSAT?"MathSAT":
      solver==solvert::YICES?"Yices":
      solver==solvert::Z3?"Z3":
+     solver==solvert::STP?"STP":
      "(unknown)");
   // clang-format on
 }
@@ -129,6 +130,10 @@ decision_proceduret::resultt smt2_dect::dec_solve(const exprt &assumption)
 
   case solvert::Z3:
     argv = {"z3", "-smt2", temp_file_problem()};
+    break;
+
+  case solvert::STP:
+    argv = {"stp", "-smt2", temp_file_problem()};
     break;
 
   case solvert::GENERIC:

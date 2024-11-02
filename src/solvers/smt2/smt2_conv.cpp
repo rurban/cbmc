@@ -137,6 +137,9 @@ smt2_convt::smt2_convt(
     emit_set_logic = false;
     use_datatypes = true;
     break;
+
+  case solvert::STP:
+    break;
   }
 
   write_header();
@@ -188,6 +191,7 @@ void smt2_convt::write_header()
   case solvert::MATHSAT: out << "; Generated for MathSAT\n"; break;
   case solvert::YICES: out << "; Generated for Yices\n"; break;
   case solvert::Z3: out << "; Generated for Z3\n"; break;
+  case solvert::STP: out << "; Generated for STP\n"; break;
     // clang-format on
   }
 
