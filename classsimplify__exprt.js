@@ -82,6 +82,7 @@ var classsimplify__exprt =
     [ "simplify_unary_pointer_predicate_preorder", "classsimplify__exprt.html#a4c49e6b2414c72cbd3c94fdcac83c973", null ],
     [ "simplify_update", "classsimplify__exprt.html#ac913c4764c2a86583aaf19e8056bad42", null ],
     [ "simplify_with", "classsimplify__exprt.html#aa450966cb47d0e7ff2839200df642b3e", null ],
+    [ "simplify_zero_extend", "classsimplify__exprt.html#a3842b1e5fc9659caa720c234dd743576", null ],
     [ "unchanged", "classsimplify__exprt.html#abe0382ab13fb829ab12b2058b1255577", null ],
     [ "do_simplify_if", "classsimplify__exprt.html#aeead73ae3d17be163dded212e9b37fa9", null ],
     [ "ns", "classsimplify__exprt.html#a0dc7f96e955895764c4a6525a659000d", null ]

@@ -1,5 +1,5 @@
 <map id="unary_exprt" name="unary_exprt">
-<area shape="rect" id="node1" title="Generic base class for unary expressions." alt="" coords="1028,736,1128,763"/>
+<area shape="rect" id="node1" title="Generic base class for unary expressions." alt="" coords="1028,761,1128,788"/>
 <area shape="rect" id="node7" href="$classabs__exprt.html" title="Absolute value." alt="" coords="1236,5,1323,32"/>
 <area shape="rect" id="node8" href="$classaddress__of__exprt.html" title="Operator to return the address of an object." alt="" coords="1212,56,1347,83"/>
 <area shape="rect" id="node9" href="$classannotated__pointer__constant__exprt.html" title="Pointer&#45;typed bitvector constant annotated with the pointer expression that the bitvector is the nume..." alt="" coords="1177,107,1381,149"/>
@@ -28,11 +28,12 @@
 <area shape="rect" id="node32" href="$classunary__plus__exprt.html" title="The unary plus expression." alt="" coords="1212,1319,1347,1345"/>
 <area shape="rect" id="node33" href="$classunary__predicate__exprt.html" title="A base class for expressions that are predicates, i.e., Boolean&#45;typed, and that take exactly one argu..." alt="" coords="1195,1369,1363,1396"/>
 <area shape="rect" id="node48" href="$classunion__exprt.html" title="Union constructor from single element." alt="" coords="1230,1420,1329,1447"/>
-<area shape="rect" id="node2" href="$classexpr__protectedt.html" title="Base class for all expressions." alt="" coords="853,736,979,763"/>
-<area shape="rect" id="node3" href="$classexprt.html" title="Base class for all expressions." alt="" coords="748,736,804,763"/>
-<area shape="rect" id="node4" href="$classirept.html" title="There are a large number of kinds of tree structured or tree&#45;like data in CPROVER." alt="" coords="647,736,699,763"/>
-<area shape="rect" id="node5" href="$classsharing__treet.html" title=" " alt="" coords="431,721,597,777"/>
-<area shape="rect" id="node6" href="$classsharing__treet.html" title="Base class for tree&#45;like data structures with sharing." alt="" coords="5,729,187,770"/>
+<area shape="rect" id="node49" href="$classzero__extend__exprt.html" title="zero extension The operand is converted to the given type by either a) truncating if the new type is ..." alt="" coords="1208,1471,1351,1497"/>
+<area shape="rect" id="node2" href="$classexpr__protectedt.html" title="Base class for all expressions." alt="" coords="853,761,979,788"/>
+<area shape="rect" id="node3" href="$classexprt.html" title="Base class for all expressions." alt="" coords="748,761,804,788"/>
+<area shape="rect" id="node4" href="$classirept.html" title="There are a large number of kinds of tree structured or tree&#45;like data in CPROVER." alt="" coords="647,761,699,788"/>
+<area shape="rect" id="node5" href="$classsharing__treet.html" title=" " alt="" coords="431,747,597,803"/>
+<area shape="rect" id="node6" href="$classsharing__treet.html" title="Base class for tree&#45;like data structures with sharing." alt="" coords="5,754,187,795"/>
 <area shape="rect" id="node34" href="$classenum__is__in__range__exprt.html" title="A Boolean expression returning true, iff the value of an enum&#45;typed symbol equals one of the enum&#39;s d..." alt="" coords="1432,1049,1613,1076"/>
 <area shape="rect" id="node35" href="$classinitial__state__exprt.html" title=" " alt="" coords="1453,1100,1593,1127"/>
 <area shape="rect" id="node36" href="$classis__cstring__exprt.html" title="A predicate that indicates that a zero&#45;terminated string starts at the given address." alt="" coords="1460,1151,1585,1177"/>

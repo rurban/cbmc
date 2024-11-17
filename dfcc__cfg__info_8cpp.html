@@ -116,7 +116,7 @@ $(document).ready(function(){initNavTree('dfcc__cfg__info_8cpp.html',''); initRe
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="dfcc__cfg__info_8cpp__incl.svg" width="3187" height="976"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="dfcc__cfg__info_8cpp__incl.svg" width="3810" height="991"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -142,17 +142,14 @@ Functions</h2></td></tr>
 <tr class="separator:a49b41f868b8aa1491017595ca177b28e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2600a90a8733ffcfba9b351c9cc905f1"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dfcc__cfg__info_8cpp.html#a2600a90a8733ffcfba9b351c9cc905f1">is_assigned</a> (<a class="el" href="classdirtyt.html">dirtyt</a> &amp;dirty, const <a class="el" href="verification__result_8h.html#a1ad4faefa9ca542d481e74be9cc01c2c">irep_idt</a> &amp;ident, <a class="el" href="havoc__utils_8h.html#a3cb48127eadbd7ae4878b91c91439bee">assignst</a> assigns)</td></tr>
 <tr class="separator:a2600a90a8733ffcfba9b351c9cc905f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af945bfed67dca5baaea0c57d76cb4bc0"><td class="memItemLeft" align="right" valign="top">static std::unordered_set&lt; <a class="el" href="verification__result_8h.html#a1ad4faefa9ca542d481e74be9cc01c2c">irep_idt</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dfcc__cfg__info_8cpp.html#af945bfed67dca5baaea0c57d76cb4bc0">gen_loop_locals_set</a> (const <a class="el" href="dfcc__loop__nesting__graph_8h.html#ab94d6337ec6dcbe3fa7c61ae54045ca2">dfcc_loop_nesting_grapht</a> &amp;loop_nesting_graph, const std::size_t loop_id)</td></tr>
-<tr class="memdesc:af945bfed67dca5baaea0c57d76cb4bc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collect identifiers that are local to this loop only (excluding nested loop).  <a href="dfcc__cfg__info_8cpp.html#af945bfed67dca5baaea0c57d76cb4bc0">More...</a><br /></td></tr>
-<tr class="separator:af945bfed67dca5baaea0c57d76cb4bc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8590c82b7b9bf53ddfa93a02e7b621e5"><td class="memItemLeft" align="right" valign="top">static std::unordered_set&lt; <a class="el" href="verification__result_8h.html#a1ad4faefa9ca542d481e74be9cc01c2c">irep_idt</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dfcc__cfg__info_8cpp.html#a8590c82b7b9bf53ddfa93a02e7b621e5">gen_tracked_set</a> (const std::vector&lt; std::size_t &gt; &amp;inner_loops_ids, const std::unordered_set&lt; <a class="el" href="verification__result_8h.html#a1ad4faefa9ca542d481e74be9cc01c2c">irep_idt</a> &gt; &amp;locals, <a class="el" href="classdirtyt.html">dirtyt</a> &amp;dirty, const std::map&lt; std::size_t, <a class="el" href="classdfcc__loop__infot.html">dfcc_loop_infot</a> &gt; &amp;loop_info_map)</td></tr>
 <tr class="memdesc:a8590c82b7b9bf53ddfa93a02e7b621e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute subset of locals that must be tracked in the loop's write set.  <a href="dfcc__cfg__info_8cpp.html#a8590c82b7b9bf53ddfa93a02e7b621e5">More...</a><br /></td></tr>
 <tr class="separator:a8590c82b7b9bf53ddfa93a02e7b621e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d4ed373dcb4b286ba74fc561175194a"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="structcontract__clausest.html">contract_clausest</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dfcc__cfg__info_8cpp.html#a2d4ed373dcb4b286ba74fc561175194a">default_loop_contract_clauses</a> (const <a class="el" href="dfcc__loop__nesting__graph_8h.html#ab94d6337ec6dcbe3fa7c61ae54045ca2">dfcc_loop_nesting_grapht</a> &amp;loop_nesting_graph, const std::size_t loop_id, const <a class="el" href="verification__result_8h.html#a1ad4faefa9ca542d481e74be9cc01c2c">irep_idt</a> &amp;function_id, <a class="el" href="classlocal__may__aliast.html">local_may_aliast</a> &amp;local_may_alias, const bool check_side_effect, <a class="el" href="classmessage__handlert.html">message_handlert</a> &amp;message_handler, const <a class="el" href="classnamespacet.html">namespacet</a> &amp;ns)</td></tr>
-<tr class="memdesc:a2d4ed373dcb4b286ba74fc561175194a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate defaults for all contract clauses of the loop with ID <code>loop_id</code> if at least one type of clause is defined.  <a href="dfcc__cfg__info_8cpp.html#a2d4ed373dcb4b286ba74fc561175194a">More...</a><br /></td></tr>
-<tr class="separator:a2d4ed373dcb4b286ba74fc561175194a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57fe35c339568253ae3a8554d77c5793"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classdfcc__loop__infot.html">dfcc_loop_infot</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dfcc__cfg__info_8cpp.html#a57fe35c339568253ae3a8554d77c5793">gen_dfcc_loop_info</a> (const <a class="el" href="dfcc__loop__nesting__graph_8h.html#ab94d6337ec6dcbe3fa7c61ae54045ca2">dfcc_loop_nesting_grapht</a> &amp;loop_nesting_graph, const std::size_t loop_id, const <a class="el" href="verification__result_8h.html#a1ad4faefa9ca542d481e74be9cc01c2c">irep_idt</a> &amp;function_id, const std::map&lt; std::size_t, <a class="el" href="classdfcc__loop__infot.html">dfcc_loop_infot</a> &gt; &amp;loop_info_map, <a class="el" href="classdirtyt.html">dirtyt</a> &amp;dirty, <a class="el" href="classlocal__may__aliast.html">local_may_aliast</a> &amp;local_may_alias, const bool check_side_effect, <a class="el" href="classmessage__handlert.html">message_handlert</a> &amp;message_handler, <a class="el" href="classdfcc__libraryt.html">dfcc_libraryt</a> &amp;library, <a class="el" href="classsymbol__table__baset.html">symbol_table_baset</a> &amp;symbol_table)</td></tr>
-<tr class="separator:a57fe35c339568253ae3a8554d77c5793"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7382c039086a37ad48ab9e83d9264d52"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="structcontract__clausest.html">contract_clausest</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dfcc__cfg__info_8cpp.html#a7382c039086a37ad48ab9e83d9264d52">default_loop_contract_clauses</a> (const <a class="el" href="dfcc__loop__nesting__graph_8h.html#ab94d6337ec6dcbe3fa7c61ae54045ca2">dfcc_loop_nesting_grapht</a> &amp;loop_nesting_graph, const std::size_t loop_id, const <a class="el" href="verification__result_8h.html#a1ad4faefa9ca542d481e74be9cc01c2c">irep_idt</a> &amp;function_id, const <a class="el" href="havoc__utils_8h.html#a3cb48127eadbd7ae4878b91c91439bee">assignst</a> &amp;inferred_assigns, const bool check_side_effect, <a class="el" href="classmessage__handlert.html">message_handlert</a> &amp;message_handler, const <a class="el" href="classnamespacet.html">namespacet</a> &amp;ns)</td></tr>
+<tr class="memdesc:a7382c039086a37ad48ab9e83d9264d52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate defaults for all contract clauses of the loop with ID <code>loop_id</code> if at least one type of clause is defined.  <a href="dfcc__cfg__info_8cpp.html#a7382c039086a37ad48ab9e83d9264d52">More...</a><br /></td></tr>
+<tr class="separator:a7382c039086a37ad48ab9e83d9264d52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dde09222d4507f7d8624d193ce71136"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classdfcc__loop__infot.html">dfcc_loop_infot</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dfcc__cfg__info_8cpp.html#a9dde09222d4507f7d8624d193ce71136">gen_dfcc_loop_info</a> (const <a class="el" href="dfcc__loop__nesting__graph_8h.html#ab94d6337ec6dcbe3fa7c61ae54045ca2">dfcc_loop_nesting_grapht</a> &amp;loop_nesting_graph, const std::size_t loop_id, const <a class="el" href="verification__result_8h.html#a1ad4faefa9ca542d481e74be9cc01c2c">irep_idt</a> &amp;function_id, <a class="el" href="classgoto__functiont.html">goto_functiont</a> &amp;goto_function, const std::map&lt; std::size_t, <a class="el" href="classdfcc__loop__infot.html">dfcc_loop_infot</a> &gt; &amp;loop_info_map, <a class="el" href="classdirtyt.html">dirtyt</a> &amp;dirty, const <a class="el" href="havoc__utils_8h.html#a3cb48127eadbd7ae4878b91c91439bee">assignst</a> &amp;inferred_assigns, const bool check_side_effect, <a class="el" href="classmessage__handlert.html">message_handlert</a> &amp;message_handler, <a class="el" href="classdfcc__libraryt.html">dfcc_libraryt</a> &amp;library, <a class="el" href="classsymbol__table__baset.html">symbol_table_baset</a> &amp;symbol_table)</td></tr>
+<tr class="separator:a9dde09222d4507f7d8624d193ce71136"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a543b07008907c0cea0f320c3862656aa"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dfcc__cfg__info_8cpp.html#a543b07008907c0cea0f320c3862656aa">must_check_lhs_from_local_and_tracked</a> (const <a class="el" href="classexprt.html">exprt</a> &amp;lhs, const std::unordered_set&lt; <a class="el" href="verification__result_8h.html#a1ad4faefa9ca542d481e74be9cc01c2c">irep_idt</a> &gt; &amp;local, const std::unordered_set&lt; <a class="el" href="verification__result_8h.html#a1ad4faefa9ca542d481e74be9cc01c2c">irep_idt</a> &gt; &amp;tracked)</td></tr>
 <tr class="memdesc:a543b07008907c0cea0f320c3862656aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the lhs to an assignment must be checked against its write set.  <a href="dfcc__cfg__info_8cpp.html#a543b07008907c0cea0f320c3862656aa">More...</a><br /></td></tr>
 <tr class="separator:a543b07008907c0cea0f320c3862656aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -249,8 +246,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a2d4ed373dcb4b286ba74fc561175194a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2d4ed373dcb4b286ba74fc561175194a">&#9670;&nbsp;</a></span>default_loop_contract_clauses()</h2>
+<a id="a7382c039086a37ad48ab9e83d9264d52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7382c039086a37ad48ab9e83d9264d52">&#9670;&nbsp;</a></span>default_loop_contract_clauses()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -279,8 +276,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classlocal__may__aliast.html">local_may_aliast</a> &amp;&#160;</td>
-          <td class="paramname"><em>local_may_alias</em>, </td>
+          <td class="paramtype">const <a class="el" href="havoc__utils_8h.html#a3cb48127eadbd7ae4878b91c91439bee">assignst</a> &amp;&#160;</td>
+          <td class="paramname"><em>inferred_assigns</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -315,12 +312,12 @@ Functions</h2></td></tr>
 
 <p>Generate defaults for all contract clauses of the loop with ID <code>loop_id</code> if at least one type of clause is defined. </p>
 
-<p class="definition">Definition at line <a class="el" href="dfcc__cfg__info_8cpp_source.html#l00289">289</a> of file <a class="el" href="dfcc__cfg__info_8cpp_source.html">dfcc_cfg_info.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dfcc__cfg__info_8cpp_source.html#l00269">269</a> of file <a class="el" href="dfcc__cfg__info_8cpp_source.html">dfcc_cfg_info.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a57fe35c339568253ae3a8554d77c5793"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a57fe35c339568253ae3a8554d77c5793">&#9670;&nbsp;</a></span>gen_dfcc_loop_info()</h2>
+<a id="a9dde09222d4507f7d8624d193ce71136"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9dde09222d4507f7d8624d193ce71136">&#9670;&nbsp;</a></span>gen_dfcc_loop_info()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -349,6 +346,12 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="classgoto__functiont.html">goto_functiont</a> &amp;&#160;</td>
+          <td class="paramname"><em>goto_function</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">const std::map&lt; std::size_t, <a class="el" href="classdfcc__loop__infot.html">dfcc_loop_infot</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>loop_info_map</em>, </td>
         </tr>
@@ -361,8 +364,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classlocal__may__aliast.html">local_may_aliast</a> &amp;&#160;</td>
-          <td class="paramname"><em>local_may_alias</em>, </td>
+          <td class="paramtype">const <a class="el" href="havoc__utils_8h.html#a3cb48127eadbd7ae4878b91c91439bee">assignst</a> &amp;&#160;</td>
+          <td class="paramname"><em>inferred_assigns</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -401,47 +404,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="dfcc__cfg__info_8cpp_source.html#l00415">415</a> of file <a class="el" href="dfcc__cfg__info_8cpp_source.html">dfcc_cfg_info.cpp</a>.</p>
-
-</div>
-</div>
-<a id="af945bfed67dca5baaea0c57d76cb4bc0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af945bfed67dca5baaea0c57d76cb4bc0">&#9670;&nbsp;</a></span>gen_loop_locals_set()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static std::unordered_set&lt;<a class="el" href="verification__result_8h.html#a1ad4faefa9ca542d481e74be9cc01c2c">irep_idt</a>&gt; gen_loop_locals_set </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="dfcc__loop__nesting__graph_8h.html#ab94d6337ec6dcbe3fa7c61ae54045ca2">dfcc_loop_nesting_grapht</a> &amp;&#160;</td>
-          <td class="paramname"><em>loop_nesting_graph</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::size_t&#160;</td>
-          <td class="paramname"><em>loop_id</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Collect identifiers that are local to this loop only (excluding nested loop). </p>
-
-<p class="definition">Definition at line <a class="el" href="dfcc__cfg__info_8cpp_source.html#l00258">258</a> of file <a class="el" href="dfcc__cfg__info_8cpp_source.html">dfcc_cfg_info.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dfcc__cfg__info_8cpp_source.html#l00393">393</a> of file <a class="el" href="dfcc__cfg__info_8cpp_source.html">dfcc_cfg_info.cpp</a>.</p>
 
 </div>
 </div>
@@ -494,7 +457,7 @@ Functions</h2></td></tr>
 <p>Compute subset of locals that must be tracked in the loop's write set. </p>
 <p>A local must be tracked if it is dirty or if it may be assigned by one of the inner loops. To understand why, just consider what would happen in this situation: The loop-local must be declared in the assigns clause of the inner loop otherwise assigns clause checking for the inner loop would fail (from the point of view of the inner loop, that variable is non-local). Since write sets inclusion checks are performed between a loop and its immediately inner loops, if a loop-local variable that's dirty or that is assigned by an inner loop is not tracked in the loop's write set the inclusion check between the loop write set and inner loop would fail, because the inner loop contains a location that cannot be found in the outer loop's write set. </p>
 
-<p class="definition">Definition at line <a class="el" href="dfcc__cfg__info_8cpp_source.html#l00289">289</a> of file <a class="el" href="dfcc__cfg__info_8cpp_source.html">dfcc_cfg_info.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dfcc__cfg__info_8cpp_source.html#l00269">269</a> of file <a class="el" href="dfcc__cfg__info_8cpp_source.html">dfcc_cfg_info.cpp</a>.</p>
 
 </div>
 </div>
@@ -625,7 +588,7 @@ Functions</h2></td></tr>
 <p>Returns true if the lhs to an assignment must be checked against its write set. </p>
 <p>The set of locally declared identifiers and the subset of that that are tracked explicitly in the write set are used to make the decision. See comments inside the function for explanations. </p>
 
-<p class="definition">Definition at line <a class="el" href="dfcc__cfg__info_8cpp_source.html#l00771">771</a> of file <a class="el" href="dfcc__cfg__info_8cpp_source.html">dfcc_cfg_info.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dfcc__cfg__info_8cpp_source.html#l00786">786</a> of file <a class="el" href="dfcc__cfg__info_8cpp_source.html">dfcc_cfg_info.cpp</a>.</p>
 
 </div>
 </div>

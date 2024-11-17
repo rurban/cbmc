@@ -112,7 +112,7 @@ $(document).ready(function(){initNavTree('bitvector__expr_8h.html',''); initResi
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="bitvector__expr_8h__dep__incl.svg" width="9802" height="527"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="bitvector__expr_8h__dep__incl.svg" width="10055" height="512"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -131,6 +131,9 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbitxor__exprt.html">bitxor_exprt</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bit-wise XOR.  <a href="classbitxor__exprt.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbitxnor__exprt.html">bitxnor_exprt</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bit-wise XNOR.  <a href="classbitxnor__exprt.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbitand__exprt.html">bitand_exprt</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bit-wise AND.  <a href="classbitand__exprt.html#details">More...</a><br /></td></tr>
@@ -206,6 +209,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfind__first__set__exprt.html">find_first_set_exprt</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns one plus the index of the least-significant one bit, or zero if the operand is zero.  <a href="classfind__first__set__exprt.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classzero__extend__exprt.html">zero_extend_exprt</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">zero extension The operand is converted to the given type by either a) truncating if the new type is shorter, or b) padding with most-significant zero bits if the new type is larger, or c) reinterprets the operand as the given type if their widths match.  <a href="classzero__extend__exprt.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -249,6 +255,15 @@ Functions</h2></td></tr>
 <tr class="memitem:adbf3a1c21dc34089a7af098774f7b56e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbitxor__exprt.html">bitxor_exprt</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bitvector__expr_8h.html#adbf3a1c21dc34089a7af098774f7b56e">to_bitxor_expr</a> (<a class="el" href="classexprt.html">exprt</a> &amp;expr)</td></tr>
 <tr class="memdesc:adbf3a1c21dc34089a7af098774f7b56e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cast an exprt to a <a class="el" href="classbitxor__exprt.html">bitxor_exprt</a>.  <a href="bitvector__expr_8h.html#adbf3a1c21dc34089a7af098774f7b56e">More...</a><br /></td></tr>
 <tr class="separator:adbf3a1c21dc34089a7af098774f7b56e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b2774e62e45e2bd975c4e6e33dd65bc"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:a7b2774e62e45e2bd975c4e6e33dd65bc"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="bitvector__expr_8h.html#a7b2774e62e45e2bd975c4e6e33dd65bc">can_cast_expr&lt; bitxnor_exprt &gt;</a> (const <a class="el" href="classexprt.html">exprt</a> &amp;base)</td></tr>
+<tr class="separator:a7b2774e62e45e2bd975c4e6e33dd65bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7046ac09672a6a706d16f537fed5be9"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classbitxnor__exprt.html">bitxnor_exprt</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bitvector__expr_8h.html#af7046ac09672a6a706d16f537fed5be9">to_bitxnor_expr</a> (const <a class="el" href="classexprt.html">exprt</a> &amp;expr)</td></tr>
+<tr class="memdesc:af7046ac09672a6a706d16f537fed5be9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cast an exprt to a <a class="el" href="classbitxnor__exprt.html">bitxnor_exprt</a>.  <a href="bitvector__expr_8h.html#af7046ac09672a6a706d16f537fed5be9">More...</a><br /></td></tr>
+<tr class="separator:af7046ac09672a6a706d16f537fed5be9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0694f58e307e6bceb64f2540694147c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbitxnor__exprt.html">bitxnor_exprt</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bitvector__expr_8h.html#ae0694f58e307e6bceb64f2540694147c">to_bitxnor_expr</a> (<a class="el" href="classexprt.html">exprt</a> &amp;expr)</td></tr>
+<tr class="memdesc:ae0694f58e307e6bceb64f2540694147c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cast an exprt to a <a class="el" href="classbitxnor__exprt.html">bitxnor_exprt</a>.  <a href="bitvector__expr_8h.html#ae0694f58e307e6bceb64f2540694147c">More...</a><br /></td></tr>
+<tr class="separator:ae0694f58e307e6bceb64f2540694147c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41981a9aedb4b8c8da0d94c7a1d14491"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
 <tr class="memitem:a41981a9aedb4b8c8da0d94c7a1d14491"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="bitvector__expr_8h.html#a41981a9aedb4b8c8da0d94c7a1d14491">can_cast_expr&lt; bitand_exprt &gt;</a> (const <a class="el" href="classexprt.html">exprt</a> &amp;base)</td></tr>
 <tr class="separator:a41981a9aedb4b8c8da0d94c7a1d14491"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -471,6 +486,15 @@ Functions</h2></td></tr>
 <tr class="memitem:af288a5fdbd6939b6257f6268700dd121"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfind__first__set__exprt.html">find_first_set_exprt</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bitvector__expr_8h.html#af288a5fdbd6939b6257f6268700dd121">to_find_first_set_expr</a> (<a class="el" href="classexprt.html">exprt</a> &amp;expr)</td></tr>
 <tr class="memdesc:af288a5fdbd6939b6257f6268700dd121"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cast an exprt to a <a class="el" href="classfind__first__set__exprt.html">find_first_set_exprt</a>.  <a href="bitvector__expr_8h.html#af288a5fdbd6939b6257f6268700dd121">More...</a><br /></td></tr>
 <tr class="separator:af288a5fdbd6939b6257f6268700dd121"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e01902cf6975804a0485666f6c29166"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:a6e01902cf6975804a0485666f6c29166"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="bitvector__expr_8h.html#a6e01902cf6975804a0485666f6c29166">can_cast_expr&lt; zero_extend_exprt &gt;</a> (const <a class="el" href="classexprt.html">exprt</a> &amp;base)</td></tr>
+<tr class="separator:a6e01902cf6975804a0485666f6c29166"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab7a16d387560e00512374b0a484456d"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classzero__extend__exprt.html">zero_extend_exprt</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bitvector__expr_8h.html#aab7a16d387560e00512374b0a484456d">to_zero_extend_expr</a> (const <a class="el" href="classexprt.html">exprt</a> &amp;expr)</td></tr>
+<tr class="memdesc:aab7a16d387560e00512374b0a484456d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cast an exprt to a <a class="el" href="classzero__extend__exprt.html">zero_extend_exprt</a>.  <a href="bitvector__expr_8h.html#aab7a16d387560e00512374b0a484456d">More...</a><br /></td></tr>
+<tr class="separator:aab7a16d387560e00512374b0a484456d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22c3b5ec0113f81e5438b108d10ee86c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classzero__extend__exprt.html">zero_extend_exprt</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bitvector__expr_8h.html#a22c3b5ec0113f81e5438b108d10ee86c">to_zero_extend_expr</a> (<a class="el" href="classexprt.html">exprt</a> &amp;expr)</td></tr>
+<tr class="memdesc:a22c3b5ec0113f81e5438b108d10ee86c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cast an exprt to a <a class="el" href="classzero__extend__exprt.html">zero_extend_exprt</a>.  <a href="bitvector__expr_8h.html#a22c3b5ec0113f81e5438b108d10ee86c">More...</a><br /></td></tr>
+<tr class="separator:a22c3b5ec0113f81e5438b108d10ee86c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>API to expression classes for bitvectors. </p>
@@ -503,7 +527,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00353">353</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00388">388</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -533,7 +557,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00917">917</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00952">952</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -563,7 +587,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00204">204</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00239">239</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -653,7 +677,37 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01329">1329</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01364">1364</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+
+</div>
+</div>
+<a id="a7b2774e62e45e2bd975c4e6e33dd65bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b2774e62e45e2bd975c4e6e33dd65bc">&#9670;&nbsp;</a></span>can_cast_expr&lt; bitxnor_exprt &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="expr__cast_8h.html#a42363d1890db7dd905e72b2db8e336e7">can_cast_expr</a>&lt; <a class="el" href="classbitxnor__exprt.html">bitxnor_exprt</a> &gt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classexprt.html">exprt</a> &amp;&#160;</td>
+          <td class="paramname"><em>base</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00204">204</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -743,7 +797,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00784">784</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00819">819</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -773,7 +827,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01185">1185</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01220">1220</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -803,7 +857,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01278">1278</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01313">1313</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -833,7 +887,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00413">413</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00448">448</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -863,7 +917,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00487">487</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00522">522</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -893,7 +947,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01632">1632</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01667">1667</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -923,7 +977,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00374">374</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00409">409</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -953,7 +1007,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00989">989</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01024">1024</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -983,7 +1037,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01008">1008</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01043">1043</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -1013,7 +1067,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01546">1546</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01581">1581</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -1043,7 +1097,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00970">970</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01005">1005</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -1073,7 +1127,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00828">828</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00863">863</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -1103,7 +1157,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00728">728</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00763">763</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -1133,7 +1187,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01427">1427</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01462">1462</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -1163,7 +1217,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01382">1382</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01417">1417</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -1193,7 +1247,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00261">261</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00296">296</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -1223,7 +1277,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00309">309</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00344">344</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -1253,7 +1307,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01023">1023</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01058">1058</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -1283,7 +1337,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01093">1093</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01128">1128</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -1313,7 +1367,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01055">1055</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01090">1090</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -1343,7 +1397,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00581">581</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00616">616</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -1373,7 +1427,37 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00667">667</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00702">702</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+
+</div>
+</div>
+<a id="a6e01902cf6975804a0485666f6c29166"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e01902cf6975804a0485666f6c29166">&#9670;&nbsp;</a></span>can_cast_expr&lt; zero_extend_exprt &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="expr__cast_8h.html#a42363d1890db7dd905e72b2db8e336e7">can_cast_expr</a>&lt; <a class="el" href="classzero__extend__exprt.html">zero_extend_exprt</a> &gt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classexprt.html">exprt</a> &amp;&#160;</td>
+          <td class="paramname"><em>base</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01719">1719</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -1411,7 +1495,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classbinary__overflow__exprt.html">binary_overflow_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00934">934</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00969">969</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -1449,7 +1533,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classbinary__overflow__exprt.html">binary_overflow_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00946">946</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00981">981</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -1487,7 +1571,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classbitand__exprt.html">bitand_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00215">215</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00250">250</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -1525,7 +1609,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classbitand__exprt.html">bitand_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00222">222</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00257">257</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -1715,7 +1799,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classbitreverse__exprt.html">bitreverse_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01345">1345</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01380">1380</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -1753,7 +1837,83 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classbitreverse__exprt.html">bitreverse_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01354">1354</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01389">1389</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+
+</div>
+</div>
+<a id="af7046ac09672a6a706d16f537fed5be9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7046ac09672a6a706d16f537fed5be9">&#9670;&nbsp;</a></span>to_bitxnor_expr() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classbitxnor__exprt.html">bitxnor_exprt</a>&amp; to_bitxnor_expr </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classexprt.html">exprt</a> &amp;&#160;</td>
+          <td class="paramname"><em>expr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Cast an exprt to a <a class="el" href="classbitxnor__exprt.html">bitxnor_exprt</a>. </p>
+<p><em>expr</em> must be known to be <a class="el" href="classbitxnor__exprt.html">bitxnor_exprt</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">expr</td><td>Source expression </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classbitxnor__exprt.html">bitxnor_exprt</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00215">215</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+
+</div>
+</div>
+<a id="ae0694f58e307e6bceb64f2540694147c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0694f58e307e6bceb64f2540694147c">&#9670;&nbsp;</a></span>to_bitxnor_expr() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classbitxnor__exprt.html">bitxnor_exprt</a>&amp; to_bitxnor_expr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classexprt.html">exprt</a> &amp;&#160;</td>
+          <td class="paramname"><em>expr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Cast an exprt to a <a class="el" href="classbitxnor__exprt.html">bitxnor_exprt</a>. </p>
+<p><em>expr</em> must be known to be <a class="el" href="classbitxnor__exprt.html">bitxnor_exprt</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">expr</td><td>Source expression </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classbitxnor__exprt.html">bitxnor_exprt</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00222">222</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -1943,7 +2103,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classconcatenation__exprt.html">concatenation_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00795">795</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00830">830</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -1981,7 +2141,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classconcatenation__exprt.html">concatenation_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00802">802</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00837">837</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -2019,7 +2179,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classcount__leading__zeros__exprt.html">count_leading_zeros_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01202">1202</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01237">1237</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -2057,7 +2217,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classcount__leading__zeros__exprt.html">count_leading_zeros_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01212">1212</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01247">1247</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -2095,7 +2255,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classcount__trailing__zeros__exprt.html">count_trailing_zeros_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01295">1295</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01330">1330</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -2133,7 +2293,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classcount__trailing__zeros__exprt.html">count_trailing_zeros_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01305">1305</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01340">1340</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -2171,7 +2331,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classextractbit__exprt.html">extractbit_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00429">429</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00464">464</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -2209,7 +2369,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classextractbit__exprt.html">extractbit_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00438">438</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00473">473</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -2247,7 +2407,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classextractbits__exprt.html">extractbits_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00503">503</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00538">538</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -2285,7 +2445,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classextractbits__exprt.html">extractbits_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00512">512</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00547">547</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -2323,7 +2483,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classfind__first__set__exprt.html">find_first_set_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01648">1648</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01683">1683</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -2361,7 +2521,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classfind__first__set__exprt.html">find_first_set_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01658">1658</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01693">1693</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -2399,7 +2559,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classoverflow__result__exprt.html">overflow_result_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01571">1571</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01606">1606</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -2437,7 +2597,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classoverflow__result__exprt.html">overflow_result_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01581">1581</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01616">1616</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -2475,7 +2635,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classpopcount__exprt.html">popcount_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00844">844</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00879">879</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -2513,7 +2673,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classpopcount__exprt.html">popcount_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00853">853</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00888">888</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -2551,7 +2711,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classreplication__exprt.html">replication_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00744">744</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00779">779</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -2589,7 +2749,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classreplication__exprt.html">replication_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00753">753</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00788">788</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -2627,7 +2787,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classsaturating__minus__exprt.html">saturating_minus_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01443">1443</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01478">1478</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -2665,7 +2825,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classsaturating__minus__exprt.html">saturating_minus_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01453">1453</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01488">1488</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -2703,7 +2863,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classsaturating__plus__exprt.html">saturating_plus_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01398">1398</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01433">1433</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -2741,7 +2901,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classsaturating__plus__exprt.html">saturating_plus_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01408">1408</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01443">1443</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -2779,7 +2939,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classshift__exprt.html">shift_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00278">278</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00313">313</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -2817,7 +2977,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classshift__exprt.html">shift_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00286">286</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00321">321</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -2855,7 +3015,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classshl__exprt.html">shl_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00320">320</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00355">355</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -2893,7 +3053,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classshl__exprt.html">shl_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00329">329</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00364">364</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -2931,7 +3091,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classunary__overflow__exprt.html">unary_overflow_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01110">1110</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01145">1145</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -2969,7 +3129,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classunary__overflow__exprt.html">unary_overflow_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01120">1120</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01155">1155</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -3007,7 +3167,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classupdate__bit__exprt.html">update_bit_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00592">592</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00627">627</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -3045,7 +3205,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classupdate__bit__exprt.html">update_bit_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00600">600</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00635">635</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -3083,7 +3243,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classupdate__bits__exprt.html">update_bits_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00678">678</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00713">713</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -3121,7 +3281,83 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classupdate__bits__exprt.html">update_bits_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00686">686</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00721">721</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+
+</div>
+</div>
+<a id="aab7a16d387560e00512374b0a484456d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab7a16d387560e00512374b0a484456d">&#9670;&nbsp;</a></span>to_zero_extend_expr() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classzero__extend__exprt.html">zero_extend_exprt</a>&amp; to_zero_extend_expr </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classexprt.html">exprt</a> &amp;&#160;</td>
+          <td class="paramname"><em>expr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Cast an exprt to a <a class="el" href="classzero__extend__exprt.html">zero_extend_exprt</a>. </p>
+<p><em>expr</em> must be known to be <a class="el" href="classzero__extend__exprt.html">zero_extend_exprt</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">expr</td><td>Source expression </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classzero__extend__exprt.html">zero_extend_exprt</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01730">1730</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+
+</div>
+</div>
+<a id="a22c3b5ec0113f81e5438b108d10ee86c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22c3b5ec0113f81e5438b108d10ee86c">&#9670;&nbsp;</a></span>to_zero_extend_expr() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classzero__extend__exprt.html">zero_extend_exprt</a>&amp; to_zero_extend_expr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classexprt.html">exprt</a> &amp;&#160;</td>
+          <td class="paramname"><em>expr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Cast an exprt to a <a class="el" href="classzero__extend__exprt.html">zero_extend_exprt</a>. </p>
+<p><em>expr</em> must be known to be <a class="el" href="classzero__extend__exprt.html">zero_extend_exprt</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">expr</td><td>Source expression </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classzero__extend__exprt.html">zero_extend_exprt</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01738">1738</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -3149,7 +3385,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00922">922</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00957">957</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -3205,7 +3441,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01334">1334</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01369">1369</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -3261,7 +3497,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01190">1190</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01225">1225</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -3289,7 +3525,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01283">1283</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01318">1318</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -3317,7 +3553,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00418">418</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00453">453</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -3345,7 +3581,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00492">492</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00527">527</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -3373,7 +3609,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01637">1637</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01672">1672</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -3401,7 +3637,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01551">1551</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01586">1586</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -3429,7 +3665,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00833">833</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00868">868</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -3457,7 +3693,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00733">733</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00768">768</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -3485,7 +3721,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01432">1432</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01467">1467</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -3513,7 +3749,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01387">1387</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01422">1422</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -3541,7 +3777,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00267">267</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l00302">302</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -3569,7 +3805,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01098">1098</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01133">1133</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
@@ -3597,7 +3833,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01060">1060</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bitvector__expr_8h_source.html#l01095">1095</a> of file <a class="el" href="bitvector__expr_8h_source.html">bitvector_expr.h</a>.</p>
 
 </div>
 </div>
