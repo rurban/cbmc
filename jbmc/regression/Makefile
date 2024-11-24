@@ -16,6 +16,7 @@ DIRS = janalyzer \
 # Run all test directories in sequence
 .PHONY: test
 test:
+	mvn --quiet clean package -T1C
 	@for dir in $(DIRS); do \
 		$(MAKE) "$$dir" || exit 1; \
 	done;
@@ -30,6 +31,7 @@ $(DIRS):
 .PHONY: test-parallel
 .NOTPARALLEL: test-parallel
 test-parallel:
+	mvn --quiet clean package -T1C
 	@echo "Building with $(JOBS) jobs"
 	parallel \
 		--halt soon,fail=1 \
@@ -43,6 +45,7 @@ test-parallel:
 
 .PHONY: clean
 clean:
+	mvn --quiet clean -T1C
 	@for dir in *; do \
 		if [ -d "$$dir" ]; then \
 			$(MAKE) -C "$$dir" clean; \
