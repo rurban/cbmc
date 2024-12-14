@@ -858,7 +858,10 @@ var hierarchy =
       [ "satcheck_minisat2_baset< Minisat::Solver >", "classsatcheck__minisat2__baset.html", [
         [ "satcheck_minisat_no_simplifiert", "classsatcheck__minisat__no__simplifiert.html", null ]
       ] ],
-      [ "satcheck_cadicalt", "classsatcheck__cadicalt.html", null ],
+      [ "satcheck_cadical_baset", "classsatcheck__cadical__baset.html", [
+        [ "satcheck_cadical_no_preprocessingt", "classsatcheck__cadical__no__preprocessingt.html", null ],
+        [ "satcheck_cadical_preprocessingt", "classsatcheck__cadical__preprocessingt.html", null ]
+      ] ],
       [ "satcheck_glucose_baset< T >", "classsatcheck__glucose__baset.html", null ],
       [ "satcheck_ipasirt", "classsatcheck__ipasirt.html", null ],
       [ "satcheck_minisat2_baset< T >", "classsatcheck__minisat2__baset.html", null ]
@@ -1321,7 +1324,7 @@ var hierarchy =
             [ "satcheck_booleforce_coret", "classsatcheck__booleforce__coret.html", null ],
             [ "satcheck_booleforcet", "classsatcheck__booleforcet.html", null ]
           ] ],
-          [ "satcheck_cadicalt", "classsatcheck__cadicalt.html", null ],
+          [ "satcheck_cadical_baset", "classsatcheck__cadical__baset.html", null ],
           [ "satcheck_glucose_baset< T >", "classsatcheck__glucose__baset.html", null ],
           [ "satcheck_ipasirt", "classsatcheck__ipasirt.html", null ],
           [ "satcheck_lingelingt", "classsatcheck__lingelingt.html", null ],
@@ -1691,6 +1694,8 @@ var hierarchy =
                 [ "isnan_exprt", "classisnan__exprt.html", null ],
                 [ "isnormal_exprt", "classisnormal__exprt.html", null ],
                 [ "live_object_exprt", "classlive__object__exprt.html", null ],
+                [ "onehot0_exprt", "classonehot0__exprt.html", null ],
+                [ "onehot_exprt", "classonehot__exprt.html", null ],
                 [ "sign_exprt", "classsign__exprt.html", null ],
                 [ "unary_overflow_exprt", "classunary__overflow__exprt.html", [
                   [ "unary_minus_overflow_exprt", "classunary__minus__overflow__exprt.html", null ]

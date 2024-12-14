@@ -34,7 +34,9 @@ var dir_e391775a03ff229430b5b1f21da1ae18 =
     ] ],
     [ "satcheck_cadical.cpp", "satcheck__cadical_8cpp.html", null ],
     [ "satcheck_cadical.h", "satcheck__cadical_8h.html", [
-      [ "satcheck_cadicalt", "classsatcheck__cadicalt.html", "classsatcheck__cadicalt" ]
+      [ "satcheck_cadical_baset", "classsatcheck__cadical__baset.html", "classsatcheck__cadical__baset" ],
+      [ "satcheck_cadical_no_preprocessingt", "classsatcheck__cadical__no__preprocessingt.html", "classsatcheck__cadical__no__preprocessingt" ],
+      [ "satcheck_cadical_preprocessingt", "classsatcheck__cadical__preprocessingt.html", "classsatcheck__cadical__preprocessingt" ]
     ] ],
     [ "satcheck_core.h", "satcheck__core_8h.html", null ],
     [ "satcheck_glucose.cpp", "satcheck__glucose_8cpp.html", "satcheck__glucose_8cpp" ],

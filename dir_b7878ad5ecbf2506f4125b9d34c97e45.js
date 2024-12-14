@@ -11,7 +11,7 @@ var dir_b7878ad5ecbf2506f4125b9d34c97e45 =
       [ "bad_cast_exceptiont", "classbad__cast__exceptiont.html", "classbad__cast__exceptiont" ],
       [ "nullptr_exceptiont", "classnullptr__exceptiont.html", "classnullptr__exceptiont" ]
     ] ],
-    [ "bitvector_expr.cpp", "bitvector__expr_8cpp.html", null ],
+    [ "bitvector_expr.cpp", "bitvector__expr_8cpp.html", "bitvector__expr_8cpp" ],
     [ "bitvector_expr.h", "bitvector__expr_8h.html", "bitvector__expr_8h" ],
     [ "bitvector_types.cpp", "bitvector__types_8cpp.html", null ],
     [ "bitvector_types.h", "bitvector__types_8h.html", "bitvector__types_8h" ],

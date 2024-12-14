@@ -159,7 +159,7 @@ Checking if a memory segment has at least a given size</h3>
 <li><code>_Bool __CPROVER_r_ok(const void *p, size_t size)</code></li>
 <li><code>_Bool __CPROVER_w_ok(const void *p, size_t size)</code></li>
 </ul>
-<p>At present, both primitives are equivalent as all memory in CBMC is considered both readable and writeable. If <code>p</code> is the null pointer, the primitives return false. If <code>p</code> is valid, the primitives return true if the memory segment starting at the pointer has at least the given size, and false otherwise. If <code>p</code> is neither null nor valid, the semantics is unspecified. It is valid to apply the primitive to pointers that point to within a memory object. For example:</p>
+<p>At present, both primitives are equivalent as all memory in CBMC is considered both readable and writeable. The primitives return true if <code>p</code> points to a live object and the object that <code>p</code> points into extends to at least <code>size</code> more bytes. Else, an assertion encompassing the primitive will be reported to fail. Do not use these primitives in assumptions when <code>p</code> can be not valid as such use can yield spurious verification results.</p>
 <div class="fragment"><div class="line"><span class="keywordtype">char</span> *p = malloc(10);</div>
 <div class="line">assert(__CPROVER_r_ok(p, 10)); <span class="comment">// valid</span></div>
 <div class="line">p += 5;</div>
@@ -182,7 +182,7 @@ Detecting potential misuses of memory primitives</h2>
 </ul>
 <p>Using them on invalid pointers, however, may still be unintended in user programs.</p>
 <p><sup>1</sup> Pointers with negative offsets never point to memory objects. Negative values are used internally to detect pointer underflows.</p>
-<p>Last modified: 2024-11-17 09:10:08 +0000 </p>
+<p>Last modified: 2024-12-10 11:22:08 +0100 </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 <!-- start footer part -->

@@ -38,7 +38,6 @@ var mathematical__expr_8h =
     [ "validate_expr", "mathematical__expr_8h.html#a87d5b87888eddde3f27a208eb338c156", null ],
     [ "validate_expr", "mathematical__expr_8h.html#a5bbce0072b96da05cb776c887839fd9d", null ],
     [ "validate_expr", "mathematical__expr_8h.html#a56581ded85d83c25fb83ff23ea3cd916", null ],
-    [ "validate_expr", "mathematical__expr_8h.html#ac5363d814d186a815201e80af42dd8ec", null ],
     [ "validate_expr", "mathematical__expr_8h.html#ac7c039661636a7108f616261d32972a0", null ],
     [ "validate_expr", "mathematical__expr_8h.html#a2711c6abee5e904ae678dde593aae2ec", null ]
 ];
