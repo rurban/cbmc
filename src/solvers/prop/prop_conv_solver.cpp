@@ -257,7 +257,7 @@ literalt prop_conv_solvert::convert_bool(const exprt &expr)
   }
   else if(
     expr.id() == ID_or || expr.id() == ID_and || expr.id() == ID_xor ||
-    expr.id() == ID_nor || expr.id() == ID_nand)
+    expr.id() == ID_nor || expr.id() == ID_nand || expr.id() == ID_xnor)
   {
     INVARIANT(
       !op.empty(),
@@ -268,19 +268,20 @@ literalt prop_conv_solvert::convert_bool(const exprt &expr)
     for(const auto &operand : op)
       bv.push_back(convert(operand));
 
-    if(!bv.empty())
-    {
-      if(expr.id() == ID_or)
-        return prop.lor(bv);
-      else if(expr.id() == ID_nor)
-        return !prop.lor(bv);
-      else if(expr.id() == ID_and)
-        return prop.land(bv);
-      else if(expr.id() == ID_nand)
-        return !prop.land(bv);
-      else if(expr.id() == ID_xor)
-        return prop.lxor(bv);
-    }
+    CHECK_RETURN(!bv.empty());
+
+    if(expr.id() == ID_or)
+      return prop.lor(bv);
+    else if(expr.id() == ID_nor)
+      return !prop.lor(bv);
+    else if(expr.id() == ID_and)
+      return prop.land(bv);
+    else if(expr.id() == ID_nand)
+      return !prop.land(bv);
+    else if(expr.id() == ID_xor)
+      return prop.lxor(bv);
+    else if(expr.id() == ID_xnor)
+      return !prop.lxor(bv);
   }
   else if(expr.id() == ID_not)
   {
