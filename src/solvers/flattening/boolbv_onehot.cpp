@@ -15,6 +15,10 @@ literalt boolbvt::convert_onehot(const unary_exprt &expr)
 
   bvt op=convert_bv(expr.op());
 
+  // onehot0 is the same as onehot with the input bits flipped
+  if(expr.id() == ID_onehot0)
+    op = bv_utils.inverted(op);
+
   literalt one_seen=const_literal(false);
   literalt more_than_one_seen=const_literal(false);
 
@@ -25,14 +29,5 @@ literalt boolbvt::convert_onehot(const unary_exprt &expr)
     one_seen=prop.lor(*it, one_seen);
   }
 
-  if(expr.id()==ID_onehot)
-    return prop.land(one_seen, !more_than_one_seen);
-  else
-  {
-    INVARIANT(
-      expr.id() == ID_onehot0,
-      "should be a onehot0 expression as other onehot expression kind has been "
-      "handled in other branch");
-    return !more_than_one_seen;
-  }
+  return prop.land(one_seen, !more_than_one_seen);
 }
