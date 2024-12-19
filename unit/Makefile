@@ -96,6 +96,7 @@ SRC += analyses/ai/ai.cpp \
        pointer-analysis/value_set.cpp \
        solvers/bdd/miniBDD/miniBDD.cpp \
        solvers/flattening/boolbv.cpp \
+       solvers/flattening/boolbv_onehot.cpp \
        solvers/flattening/boolbv_update_bit.cpp \
        solvers/floatbv/float_utils.cpp \
        solvers/prop/bdd_expr.cpp \
