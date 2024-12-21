@@ -915,6 +915,8 @@ ieee_floatt &ieee_floatt::operator-=(const ieee_floatt &other)
 
 bool ieee_floatt::operator<(const ieee_floatt &other) const
 {
+  PRECONDITION(other.spec == spec);
+
   if(NaN_flag || other.NaN_flag)
     return false;
 
@@ -961,6 +963,8 @@ bool ieee_floatt::operator<(const ieee_floatt &other) const
 
 bool ieee_floatt::operator<=(const ieee_floatt &other) const
 {
+  PRECONDITION(other.spec == spec);
+
   if(NaN_flag || other.NaN_flag)
     return false;
 
@@ -994,6 +998,8 @@ bool ieee_floatt::operator>=(const ieee_floatt &other) const
 
 bool ieee_floatt::operator==(const ieee_floatt &other) const
 {
+  PRECONDITION(other.spec == spec);
+
   // packed equality!
   if(NaN_flag && other.NaN_flag)
     return true;
@@ -1016,6 +1022,8 @@ bool ieee_floatt::operator==(const ieee_floatt &other) const
 
 bool ieee_floatt::ieee_equal(const ieee_floatt &other) const
 {
+  PRECONDITION(other.spec == spec);
+
   if(NaN_flag || other.NaN_flag)
     return false;
   if(is_zero() && other.is_zero())
@@ -1038,6 +1046,8 @@ bool ieee_floatt::operator!=(const ieee_floatt &other) const
 
 bool ieee_floatt::ieee_not_equal(const ieee_floatt &other) const
 {
+  PRECONDITION(other.spec == spec);
+
   if(NaN_flag || other.NaN_flag)
     return true; // !!!
   if(is_zero() && other.is_zero())
