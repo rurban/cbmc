@@ -157,11 +157,13 @@ protected:
   ///   guard.
   /// \param expr: the expression to be checked
   /// \param guard: the condition for when the check should be made
-  void check_rec(const exprt &expr, const guardt &guard);
+  /// \param is_assigned: the expression is assigned to
+  void check_rec(const exprt &expr, const guardt &guard, bool is_assigned);
 
   /// Initiate the recursively analysis of \p expr with its `guard' set to TRUE.
   /// \param expr: the expression to be checked
-  void check(const exprt &expr);
+  /// \param is_assigned: the expression is assigned to
+  void check(const exprt &expr, bool is_assigned);
 
   struct conditiont
   {
@@ -183,7 +185,7 @@ protected:
   void float_div_by_zero_check(const div_exprt &, const guardt &);
   void mod_by_zero_check(const mod_exprt &, const guardt &);
   void mod_overflow_check(const mod_exprt &, const guardt &);
-  void enum_range_check(const exprt &, const guardt &);
+  void enum_range_check(const exprt &, const guardt &, bool is_assigned);
   void undefined_shift_check(const shift_exprt &, const guardt &);
   void pointer_rel_check(const binary_exprt &, const guardt &);
   void pointer_overflow_check(const exprt &, const guardt &);
@@ -537,10 +539,16 @@ void goto_check_ct::float_div_by_zero_check(
     guard);
 }
 
-void goto_check_ct::enum_range_check(const exprt &expr, const guardt &guard)
+void goto_check_ct::enum_range_check(
+  const exprt &expr,
+  const guardt &guard,
+  bool is_assigned)
 {
   if(!enable_enum_range_check)
     return;
+
+  if(is_assigned)
+    return; // not in range yet
 
   // we might be looking at a lowered enum_is_in_range_exprt, skip over these
   const auto &pragmas = expr.source_location().get_pragmas();
@@ -1807,13 +1815,13 @@ void goto_check_ct::check_rec_address(const exprt &expr, const guardt &guard)
 
   if(expr.id() == ID_dereference)
   {
-    check_rec(to_dereference_expr(expr).pointer(), guard);
+    check_rec(to_dereference_expr(expr).pointer(), guard, false);
   }
   else if(expr.id() == ID_index)
   {
     const index_exprt &index_expr = to_index_expr(expr);
     check_rec_address(index_expr.array(), guard);
-    check_rec(index_expr.index(), guard);
+    check_rec(index_expr.index(), guard, false);
   }
   else
   {
@@ -1843,7 +1851,7 @@ void goto_check_ct::check_rec_logical_op(const exprt &expr, const guardt &guard)
       return guard(implication(conjunction(constraints), expr));
     };
 
-    check_rec(op, new_guard);
+    check_rec(op, new_guard, false);
 
     constraints.push_back(expr.id() == ID_or ? boolean_negate(op) : op);
   }
@@ -1855,20 +1863,20 @@ void goto_check_ct::check_rec_if(const if_exprt &if_expr, const guardt &guard)
     if_expr.cond().is_boolean(),
     "first argument of if must be boolean, but got " + if_expr.cond().pretty());
 
-  check_rec(if_expr.cond(), guard);
+  check_rec(if_expr.cond(), guard, false);
 
   {
     auto new_guard = [&guard, &if_expr](exprt expr) {
       return guard(implication(if_expr.cond(), std::move(expr)));
     };
-    check_rec(if_expr.true_case(), new_guard);
+    check_rec(if_expr.true_case(), new_guard, false);
   }
 
   {
     auto new_guard = [&guard, &if_expr](exprt expr) {
       return guard(implication(not_exprt(if_expr.cond()), std::move(expr)));
     };
-    check_rec(if_expr.false_case(), new_guard);
+    check_rec(if_expr.false_case(), new_guard, false);
   }
 }
 
@@ -1878,7 +1886,7 @@ bool goto_check_ct::check_rec_member(
 {
   const dereference_exprt &deref = to_dereference_expr(member.struct_op());
 
-  check_rec(deref.pointer(), guard);
+  check_rec(deref.pointer(), guard, false);
 
   // avoid building the following expressions when pointer_validity_check
   // would return immediately anyway
@@ -1969,7 +1977,10 @@ void goto_check_ct::check_rec_arithmetic_op(
   }
 }
 
-void goto_check_ct::check_rec(const exprt &expr, const guardt &guard)
+void goto_check_ct::check_rec(
+  const exprt &expr,
+  const guardt &guard,
+  bool is_assigned)
 {
   if(expr.id() == ID_exists || expr.id() == ID_forall)
   {
@@ -1980,7 +1991,7 @@ void goto_check_ct::check_rec(const exprt &expr, const guardt &guard)
       return guard(forall_exprt(quantifier_expr.symbol(), expr));
     };
 
-    check_rec(quantifier_expr.where(), new_guard);
+    check_rec(quantifier_expr.where(), new_guard, false);
     return;
   }
   else if(expr.id() == ID_address_of)
@@ -2007,10 +2018,10 @@ void goto_check_ct::check_rec(const exprt &expr, const guardt &guard)
   }
 
   for(const auto &op : expr.operands())
-    check_rec(op, guard);
+    check_rec(op, guard, false);
 
   if(expr.type().id() == ID_c_enum_tag)
-    enum_range_check(expr, guard);
+    enum_range_check(expr, guard, is_assigned);
 
   if(expr.id() == ID_index)
   {
@@ -2059,9 +2070,9 @@ void goto_check_ct::check_rec(const exprt &expr, const guardt &guard)
   }
 }
 
-void goto_check_ct::check(const exprt &expr)
+void goto_check_ct::check(const exprt &expr, bool is_assigned)
 {
-  check_rec(expr, identity);
+  check_rec(expr, identity, is_assigned);
 }
 
 void goto_check_ct::memory_leak_check(const irep_idt &function_id)
@@ -2151,7 +2162,7 @@ void goto_check_ct::goto_check(
 
     if(i.has_condition())
     {
-      check(i.condition());
+      check(i.condition(), false);
     }
 
     // magic ERROR label?
@@ -2184,12 +2195,12 @@ void goto_check_ct::goto_check(
 
       if(statement == ID_expression)
       {
-        check(code);
+        check(code, false);
       }
       else if(statement == ID_printf)
       {
         for(const auto &op : code.operands())
-          check(op);
+          check(op, false);
       }
     }
     else if(i.is_assign())
@@ -2197,32 +2208,19 @@ void goto_check_ct::goto_check(
       const exprt &assign_lhs = i.assign_lhs();
       const exprt &assign_rhs = i.assign_rhs();
 
-      // Disable enum range checks for left-hand sides as their values are yet
-      // to be set (by this assignment).
-      {
-        flag_overridet resetter(i.source_location());
-        resetter.disable_flag(enable_enum_range_check, "enum_range_check");
-        check(assign_lhs);
-      }
-
-      check(assign_rhs);
+      check(assign_lhs, true);
+      check(assign_rhs, false);
 
       // the LHS might invalidate any assertion
       invalidate(assign_lhs);
     }
     else if(i.is_function_call())
     {
-      // Disable enum range checks for left-hand sides as their values are yet
-      // to be set (by this function call).
-      {
-        flag_overridet resetter(i.source_location());
-        resetter.disable_flag(enable_enum_range_check, "enum_range_check");
-        check(i.call_lhs());
-      }
-      check(i.call_function());
+      check(i.call_lhs(), true);
+      check(i.call_function(), false);
 
       for(const auto &arg : i.call_arguments())
-        check(arg);
+        check(arg, false);
 
       check_shadow_memory_api_calls(i);
 
@@ -2231,7 +2229,7 @@ void goto_check_ct::goto_check(
     }
     else if(i.is_set_return_value())
     {
-      check(i.return_value());
+      check(i.return_value(), false);
       // the return value invalidate any assertion
       invalidate(i.return_value());
     }
@@ -2342,7 +2340,7 @@ void goto_check_ct::check_shadow_memory_api_calls(
   {
     const exprt &expr = i.call_arguments()[0];
     PRECONDITION(expr.type().id() == ID_pointer);
-    check(dereference_exprt(expr));
+    check(dereference_exprt(expr), false);
   }
 }
 
