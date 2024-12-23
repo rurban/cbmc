@@ -25,6 +25,17 @@ bvt boolbvt::convert_bitwise(const exprt &expr)
           expr.id()==ID_bitnand || expr.id()==ID_bitnor ||
           expr.id()==ID_bitxnor)
   {
+    std::function<literalt(literalt, literalt)> f;
+
+    if(expr.id() == ID_bitand || expr.id() == ID_bitnand)
+      f = [this](literalt a, literalt b) { return prop.land(a, b); };
+    else if(expr.id() == ID_bitor || expr.id() == ID_bitnor)
+      f = [this](literalt a, literalt b) { return prop.lor(a, b); };
+    else if(expr.id() == ID_bitxor || expr.id() == ID_bitxnor)
+      f = [this](literalt a, literalt b) { return prop.lxor(a, b); };
+    else
+      UNIMPLEMENTED;
+
     bvt bv;
     bv.resize(width);
 
@@ -38,25 +49,19 @@ bvt boolbvt::convert_bitwise(const exprt &expr)
       {
         for(std::size_t i=0; i<width; i++)
         {
-          if(expr.id()==ID_bitand)
-            bv[i]=prop.land(bv[i], op[i]);
-          else if(expr.id()==ID_bitor)
-            bv[i]=prop.lor(bv[i], op[i]);
-          else if(expr.id()==ID_bitxor)
-            bv[i]=prop.lxor(bv[i], op[i]);
-          else if(expr.id()==ID_bitnand)
-            bv[i]=prop.lnand(bv[i], op[i]);
-          else if(expr.id()==ID_bitnor)
-            bv[i]=prop.lnor(bv[i], op[i]);
-          else if(expr.id()==ID_bitxnor)
-            bv[i]=prop.lequal(bv[i], op[i]);
-          else
-            UNIMPLEMENTED;
+          bv[i] = f(bv[i], op[i]);
         }
       }
     }
 
-    return bv;
+    if(
+      expr.id() == ID_bitnand || expr.id() == ID_bitnor ||
+      expr.id() == ID_bitxnor)
+    {
+      return bv_utils.inverted(bv);
+    }
+    else
+      return bv;
   }
 
   UNIMPLEMENTED;
