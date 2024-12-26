@@ -144,7 +144,8 @@ class optionst;
 
 #define GOTO_ANALYSER_OPTIONS_SPECIFIC_ANALYSES \
   "(taint):(show-taint)" \
-  "(show-local-may-alias)"
+  "(show-local-may-alias)" \
+  "(show-local-bitvector)"
 
 #define GOTO_ANALYSER_OPTIONS \
   OPT_FUNCTIONS \
