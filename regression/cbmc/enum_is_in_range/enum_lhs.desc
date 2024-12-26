@@ -1,11 +1,8 @@
-KNOWNBUG
+CORE
 enum_lhs.c
 --enum-range-check
-^\[main\.enum-range-check\.2\] line 14 enum range check in \(my_enumt\)4: FAILURE$
+^\[main\.enum-range-check\.2\] line 14 enum range check in \(enum my_enum\)4: FAILURE$
 ^EXIT=10$
 ^SIGNAL=0$
 --
 --
-The conversion to enum on the LHS should fail the enum-range check, but
-doesn't.
-
