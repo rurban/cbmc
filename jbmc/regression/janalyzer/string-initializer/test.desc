@@ -1,6 +1,6 @@
 CORE
 Basic1
---location-sensitive --constants --show
+--location-sensitive --constants --show -cp target/classes
 ^EXIT=0$
 ^SIGNAL=0$
 Hello_20 := \{ "java::java\.lang\.String" \}
