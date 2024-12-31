@@ -129,20 +129,11 @@ public:
   // A helper to turn a rounding mode into a constant bitvector expression
   static constant_exprt rounding_mode_expr(rounding_modet);
 
-  rounding_modet rounding_mode;
-
   ieee_float_spect spec;
 
-  explicit ieee_floatt(const ieee_float_spect &_spec):
-    rounding_mode(ROUND_TO_EVEN),
-    spec(_spec), sign_flag(false), exponent(0), fraction(0),
-    NaN_flag(false), infinity_flag(false)
-  {
-  }
-
-  explicit ieee_floatt(ieee_float_spect __spec, rounding_modet __rounding_mode)
-    : rounding_mode(__rounding_mode),
-      spec(std::move(__spec)),
+  explicit ieee_floatt(const ieee_float_spect &_spec)
+    : spec(_spec),
+      rounding_mode(ROUND_TO_EVEN),
       sign_flag(false),
       exponent(0),
       fraction(0),
@@ -151,14 +142,38 @@ public:
   {
   }
 
-  explicit ieee_floatt(const floatbv_typet &type):
-    rounding_mode(ROUND_TO_EVEN),
-    spec(ieee_float_spect(type)),
-    sign_flag(false),
-    exponent(0),
-    fraction(0),
-    NaN_flag(false),
-    infinity_flag(false)
+  ieee_floatt(ieee_float_spect __spec, rounding_modet __rounding_mode)
+    : spec(std::move(__spec)),
+      rounding_mode(__rounding_mode),
+      sign_flag(false),
+      exponent(0),
+      fraction(0),
+      NaN_flag(false),
+      infinity_flag(false)
+  {
+  }
+
+  explicit ieee_floatt(const floatbv_typet &type)
+    : spec(ieee_float_spect(type)),
+      rounding_mode(ROUND_TO_EVEN),
+      sign_flag(false),
+      exponent(0),
+      fraction(0),
+      NaN_flag(false),
+      infinity_flag(false)
+  {
+  }
+
+  explicit ieee_floatt(
+    const floatbv_typet &type,
+    rounding_modet __rounding_mode)
+    : spec(ieee_float_spect(type)),
+      rounding_mode(__rounding_mode),
+      sign_flag(false),
+      exponent(0),
+      fraction(0),
+      NaN_flag(false),
+      infinity_flag(false)
   {
   }
 
@@ -171,6 +186,12 @@ public:
 
   explicit ieee_floatt(const constant_exprt &expr):
     rounding_mode(ROUND_TO_EVEN)
+  {
+    from_expr(expr);
+  }
+
+  ieee_floatt(const constant_exprt &expr, rounding_modet __rounding_mode)
+    : rounding_mode(__rounding_mode)
   {
     from_expr(expr);
   }
@@ -315,6 +336,8 @@ protected:
   void divide_and_round(mp_integer &dividend, const mp_integer &divisor);
   void align();
   void next_representable(bool greater);
+
+  rounding_modet rounding_mode;
 
   // we store the number unpacked
   bool sign_flag;
