@@ -220,6 +220,16 @@ public:
     return result;
   }
 
+  static ieee_floatt zero(const ieee_float_spect &spec)
+  {
+    ieee_floatt result(spec);
+    result.make_zero();
+    return result;
+  }
+
+  static ieee_floatt one(const floatbv_typet &);
+  static ieee_floatt one(const ieee_float_spect &);
+
   void make_NaN();
   void make_plus_infinity();
   void make_minus_infinity();

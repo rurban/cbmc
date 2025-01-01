@@ -470,6 +470,19 @@ void ieee_floatt::extract_base10(
   }
 }
 
+ieee_floatt ieee_floatt::one(const ieee_float_spect &spec)
+{
+  ieee_floatt result{spec};
+  result.exponent = 0;
+  result.fraction = power(2, result.spec.f);
+  return result;
+}
+
+ieee_floatt ieee_floatt::one(const floatbv_typet &type)
+{
+  return one(ieee_float_spect{type});
+}
+
 void ieee_floatt::build(
   const mp_integer &_fraction,
   const mp_integer &_exponent)

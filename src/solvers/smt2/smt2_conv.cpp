@@ -3064,32 +3064,13 @@ void smt2_convt::convert_typecast(const typecast_exprt &expr)
 
     if(src_type.id()==ID_bool)
     {
-      constant_exprt val(irep_idt(), dest_type);
-
-      ieee_floatt a(dest_floatbv_type);
-
-      mp_integer significand;
-      mp_integer exponent;
-
       out << "(ite ";
       convert_expr(src);
-      out << " ";
-
-      significand = 1;
-      exponent = 0;
-      a.build(significand, exponent);
-      val.set_value(integer2bvrep(a.pack(), a.spec.width()));
-
-      convert_constant(val);
-      out << " ";
-
-      significand = 0;
-      exponent = 0;
-      a.build(significand, exponent);
-      val.set_value(integer2bvrep(a.pack(), a.spec.width()));
-
-      convert_constant(val);
-      out << ")";
+      out << ' ';
+      convert_constant(ieee_floatt::one(dest_floatbv_type).to_expr());
+      out << ' ';
+      convert_constant(ieee_floatt::zero(dest_floatbv_type).to_expr());
+      out << ')';
     }
     else if(src_type.id()==ID_c_bool)
     {

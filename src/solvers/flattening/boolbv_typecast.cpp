@@ -204,10 +204,8 @@ bool boolbvt::type_conversion(
         // bool to float
 
         // build a one
-        ieee_floatt f(to_floatbv_type(dest_type));
-        f.from_integer(1);
-
-        dest = convert_bv(f.to_expr());
+        auto one = ieee_floatt::one(to_floatbv_type(dest_type));
+        dest = convert_bv(one.to_expr());
 
         INVARIANT(
           src_width == 1, "bitvector of type boolean shall have width one");
