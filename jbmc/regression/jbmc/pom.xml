@@ -34,6 +34,7 @@
         <module>array-cell-sensitivity-negative-size</module>
         <module>array-cell-sensitivity-static-fields</module>
         <module>array-clone</module>
+        <module>array_nonconstsize_nonconstaccess</module>
         <module>classpath-jar-load-whole-jar</module>
     </modules>
 

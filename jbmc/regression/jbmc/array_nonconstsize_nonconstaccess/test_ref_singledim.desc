@@ -1,6 +1,6 @@
 CORE
 RefSingledim
---function RefSingledim.f --unwind 3
+--function RefSingledim.f --unwind 3 -cp target/classes
 ^EXIT=10$
 ^SIGNAL=0$
 assertion at file RefSingledim.java line 15 .*: FAILURE
