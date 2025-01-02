@@ -33,6 +33,7 @@
         <module>array-cell-sensitivity2</module>
         <module>array-cell-sensitivity-negative-size</module>
         <module>array-cell-sensitivity-static-fields</module>
+        <module>array-clone</module>
         <module>classpath-jar-load-whole-jar</module>
     </modules>
 
