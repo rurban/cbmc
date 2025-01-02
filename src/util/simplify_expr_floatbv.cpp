@@ -190,10 +190,10 @@ simplify_exprt::simplify_floatbv_typecast(const floatbv_typecast_exprt &expr)
       {
         if(dest_type.id()==ID_floatbv) // float to float
         {
-          ieee_floatt result(to_constant_expr(casted_expr));
-          result.rounding_mode =
+          auto rounding_mode =
             (ieee_floatt::rounding_modet)numeric_cast_v<std::size_t>(
               *rounding_mode_index);
+          ieee_floatt result(to_constant_expr(casted_expr), rounding_mode);
           result.change_spec(
             ieee_float_spect(to_floatbv_type(dest_type)));
           return result.to_expr();
@@ -203,10 +203,10 @@ simplify_exprt::simplify_floatbv_typecast(const floatbv_typecast_exprt &expr)
         {
           if(*rounding_mode_index == ieee_floatt::ROUND_TO_ZERO)
           {
-            ieee_floatt result(to_constant_expr(casted_expr));
-            result.rounding_mode =
+            auto rounding_mode =
               (ieee_floatt::rounding_modet)numeric_cast_v<std::size_t>(
                 *rounding_mode_index);
+            ieee_floatt result(to_constant_expr(casted_expr), rounding_mode);
             mp_integer value=result.to_integer();
             return from_integer(value, dest_type);
           }
@@ -220,10 +220,10 @@ simplify_exprt::simplify_floatbv_typecast(const floatbv_typecast_exprt &expr)
         {
           if(dest_type.id()==ID_floatbv) // int to float
           {
-            ieee_floatt result(to_floatbv_type(dest_type));
-            result.rounding_mode =
+            auto rounding_mode =
               (ieee_floatt::rounding_modet)numeric_cast_v<std::size_t>(
                 *rounding_mode_index);
+            ieee_floatt result(to_floatbv_type(dest_type), rounding_mode);
             result.from_integer(*value);
             return result.to_expr();
           }
@@ -296,16 +296,16 @@ simplify_exprt::simplify_floatbv_op(const ieee_float_op_exprt &expr)
 
   if(op0.is_constant() && op1.is_constant() && op2.is_constant())
   {
-    ieee_floatt v0(to_constant_expr(op0));
-    ieee_floatt v1(to_constant_expr(op1));
+    const auto rounding_mode_opt = numeric_cast<mp_integer>(op2);
 
-    const auto rounding_mode = numeric_cast<mp_integer>(op2);
-    if(rounding_mode.has_value())
+    if(rounding_mode_opt.has_value())
     {
-      v0.rounding_mode =
+      const auto rounding_mode =
         (ieee_floatt::rounding_modet)numeric_cast_v<std::size_t>(
-          *rounding_mode);
-      v1.rounding_mode=v0.rounding_mode;
+          *rounding_mode_opt);
+
+      ieee_floatt v0(to_constant_expr(op0), rounding_mode);
+      ieee_floatt v1(to_constant_expr(op1), rounding_mode);
 
       ieee_floatt result=v0;
 

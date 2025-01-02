@@ -171,12 +171,6 @@ void bv_refinementt::check_SAT(approximationt &a)
     if(a.over_state==MAX_STATE)
       return;
 
-    ieee_float_spect spec(to_floatbv_type(type));
-    ieee_floatt o0(spec), o1(spec);
-
-    o0.unpack(a.op0_value);
-    o1.unpack(a.op1_value);
-
     // get actual rounding mode
     constant_exprt rounding_mode_expr =
       to_constant_expr(get(float_op.rounding_mode()));
@@ -185,10 +179,13 @@ void bv_refinementt::check_SAT(approximationt &a)
     ieee_floatt::rounding_modet rounding_mode =
       (ieee_floatt::rounding_modet)rounding_mode_int;
 
-    ieee_floatt result=o0;
-    o0.rounding_mode=rounding_mode;
-    o1.rounding_mode=rounding_mode;
-    result.rounding_mode=rounding_mode;
+    ieee_float_spect spec(to_floatbv_type(type));
+    ieee_floatt o0(spec, rounding_mode), o1(spec, rounding_mode);
+
+    o0.unpack(a.op0_value);
+    o1.unpack(a.op1_value);
+
+    ieee_floatt result = o0;
 
     if(a.expr.id()==ID_floatbv_plus)
       result+=o1;
