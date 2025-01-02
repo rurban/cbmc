@@ -1,6 +1,6 @@
 CORE
 My
---function My.stringArrayArg --java-assume-inputs-non-null
+--function My.stringArrayArg --java-assume-inputs-non-null -cp target/classes
 ^EXIT=10$
 ^SIGNAL=0$
 ^VERIFICATION FAILED$
