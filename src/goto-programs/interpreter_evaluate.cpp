@@ -709,9 +709,7 @@ interpretert::mp_vectort interpretert::evaluate(const exprt &expr)
     }
     else if(expr.type().id()==ID_floatbv)
     {
-      ieee_floatt f(to_floatbv_type(expr.type()));
-      f.from_integer(1);
-      result=f.pack();
+      result = ieee_floatt::one(to_floatbv_type(expr.type())).pack();
     }
     else
       result=1;

@@ -150,6 +150,7 @@ SRC += analyses/ai/ai.cpp \
        util/get_base_name.cpp \
        util/graph.cpp \
        util/help_formatter.cpp \
+       util/ieee_float.cpp \
        util/interval/add.cpp \
        util/interval/bitwise.cpp \
        util/interval/comparisons.cpp \
