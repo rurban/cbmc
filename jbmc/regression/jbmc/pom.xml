@@ -45,6 +45,7 @@
         <module>assert3</module>
         <module>assert4</module>
         <module>assert5</module>
+        <module>assert6</module>
         <module>classpath-jar-load-whole-jar</module>
     </modules>
 
