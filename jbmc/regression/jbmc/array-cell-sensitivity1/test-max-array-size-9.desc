@@ -1,6 +1,6 @@
 CORE
 Test
---function Test.main --show-vcc --max-field-sensitivity-array-size 9
+--function Test.main --show-vcc --max-field-sensitivity-array-size 9 -cp target/classes
 ^EXIT=0$
 ^SIGNAL=0$
 symex_dynamic::dynamic_array#[0-9]\[1\]

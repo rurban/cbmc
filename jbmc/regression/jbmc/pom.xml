@@ -29,6 +29,7 @@
         <module>ArithmeticException7</module>
         <module>array1</module>
         <module>array2</module>
+        <module>array-cell-sensitivity1</module>
         <module>classpath-jar-load-whole-jar</module>
     </modules>
 
