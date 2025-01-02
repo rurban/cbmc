@@ -26,6 +26,7 @@
         <module>ArithmeticException4</module>
         <module>ArithmeticException5</module>
         <module>ArithmeticException6</module>
+        <module>ArithmeticException7</module>
         <module>classpath-jar-load-whole-jar</module>
     </modules>
 
