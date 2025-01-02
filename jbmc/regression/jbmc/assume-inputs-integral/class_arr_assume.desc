@@ -1,6 +1,6 @@
 KNOWNBUG
 My
---function My.arrayArg --java-assume-inputs-integral
+--function My.arrayArg --java-assume-inputs-integral -cp target/classes
 ^EXIT=10$
 ^SIGNAL=0$
 ^VERIFICATION FAILED$

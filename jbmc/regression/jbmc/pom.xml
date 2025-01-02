@@ -52,6 +52,7 @@
         <module>assume1</module>
         <module>assume2</module>
         <module>assume3</module>
+        <module>assume-inputs-integral</module>
         <module>classpath-jar-load-whole-jar</module>
     </modules>
 

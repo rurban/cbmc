@@ -1,6 +1,6 @@
 KNOWNBUG symex-driven-lazy-loading-expected-failure
 My
---function My.fieldStaticNoClinit --java-assume-inputs-integral --nondet-static
+--function My.fieldStaticNoClinit --java-assume-inputs-integral --nondet-static -cp target/classes
 ^EXIT=10$
 ^SIGNAL=0$
 ^VERIFICATION FAILED$
