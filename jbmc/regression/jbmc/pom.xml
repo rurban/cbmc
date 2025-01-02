@@ -48,6 +48,7 @@
         <module>assert6</module>
         <module>assert7</module>
         <module>assert-no-exceptions-thrown</module>
+        <module>assertion_error_constructors</module>
         <module>classpath-jar-load-whole-jar</module>
     </modules>
 

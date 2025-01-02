@@ -1,6 +1,6 @@
 CORE
 AssertionIssue
---function AssertionIssue.throwAssertion
+--function AssertionIssue.throwAssertion -cp target/classes
 ^EXIT=10$
 ^SIGNAL=0$
 ^VERIFICATION FAILED$
