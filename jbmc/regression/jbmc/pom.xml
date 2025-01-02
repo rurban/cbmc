@@ -61,6 +61,7 @@
         <module>basic2</module>
         <module>bitwise1</module>
         <module>boolean1</module>
+        <module>boolean2</module>
         <module>classpath-jar-load-whole-jar</module>
     </modules>
 

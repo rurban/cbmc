@@ -1,6 +1,6 @@
 CORE
 boolean2
---function boolean2.entry
+--function boolean2.entry -cp target/classes
 ^EXIT=0$
 ^SIGNAL=0$
 ^VERIFICATION SUCCESSFUL$
