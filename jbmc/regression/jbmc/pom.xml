@@ -42,6 +42,7 @@
         <module>arrayread1</module>
         <module>assert1</module>
         <module>assert2</module>
+        <module>assert3</module>
         <module>classpath-jar-load-whole-jar</module>
     </modules>
 

@@ -1,6 +1,6 @@
 CORE
 assert3
---throw-assertion-error --disable-uncaught-exception-check
+--throw-assertion-error --disable-uncaught-exception-check -cp target/classes
 ^EXIT=0$
 ^SIGNAL=0$
 ^VERIFICATION SUCCESSFUL$
