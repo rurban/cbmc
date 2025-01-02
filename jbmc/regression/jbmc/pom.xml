@@ -57,6 +57,7 @@
         <module>assume-inputs-non-null</module>
         <module>astore_aload1</module>
         <module>athrow1</module>
+        <module>basic1</module>
         <module>classpath-jar-load-whole-jar</module>
     </modules>
 
