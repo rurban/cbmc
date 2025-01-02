@@ -37,6 +37,7 @@
         <module>array_nonconstsize_nonconstaccess</module>
         <module>ArrayIndexOutOfBoundsException1</module>
         <module>ArrayIndexOutOfBoundsException2</module>
+        <module>ArrayIndexOutOfBoundsException3</module>
         <module>classpath-jar-load-whole-jar</module>
     </modules>
 
