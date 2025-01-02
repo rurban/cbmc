@@ -35,6 +35,7 @@
         <module>array-cell-sensitivity-static-fields</module>
         <module>array-clone</module>
         <module>array_nonconstsize_nonconstaccess</module>
+        <module>ArrayIndexOutOfBoundsException1</module>
         <module>classpath-jar-load-whole-jar</module>
     </modules>
 
