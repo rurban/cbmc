@@ -1088,11 +1088,25 @@ void smt2_parsert::setup_expressions()
     return from_integer(ieee_floatt::ROUND_TO_EVEN, unsignedbv_typet(32));
   };
 
+  expressions["RNE"] = [] {
+    // we encode as 32-bit unsignedbv
+    return from_integer(ieee_floatt::ROUND_TO_EVEN, unsignedbv_typet(32));
+  };
+
   expressions["roundNearestTiesToAway"] = [this]() -> exprt {
     throw error("unsupported rounding mode");
   };
 
+  expressions["RNA"] = [this]() -> exprt {
+    throw error("unsupported rounding mode");
+  };
+
   expressions["roundTowardPositive"] = [] {
+    // we encode as 32-bit unsignedbv
+    return from_integer(ieee_floatt::ROUND_TO_PLUS_INF, unsignedbv_typet(32));
+  };
+
+  expressions["RTP"] = [] {
     // we encode as 32-bit unsignedbv
     return from_integer(ieee_floatt::ROUND_TO_PLUS_INF, unsignedbv_typet(32));
   };
@@ -1102,7 +1116,17 @@ void smt2_parsert::setup_expressions()
     return from_integer(ieee_floatt::ROUND_TO_MINUS_INF, unsignedbv_typet(32));
   };
 
+  expressions["RTN"] = [] {
+    // we encode as 32-bit unsignedbv
+    return from_integer(ieee_floatt::ROUND_TO_MINUS_INF, unsignedbv_typet(32));
+  };
+
   expressions["roundTowardZero"] = [] {
+    // we encode as 32-bit unsignedbv
+    return from_integer(ieee_floatt::ROUND_TO_ZERO, unsignedbv_typet(32));
+  };
+
+  expressions["RTZ"] = [] {
     // we encode as 32-bit unsignedbv
     return from_integer(ieee_floatt::ROUND_TO_ZERO, unsignedbv_typet(32));
   };
