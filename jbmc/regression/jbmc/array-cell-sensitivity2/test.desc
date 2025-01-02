@@ -1,6 +1,6 @@
 CORE
 Test
---function Test.main --show-vcc
+--function Test.main --show-vcc -cp target/classes
 symex_dynamic::dynamic_object\$3#3\.\.data =
 symex_dynamic::dynamic_object\$1#3\.\.data =
 ^EXIT=0$
