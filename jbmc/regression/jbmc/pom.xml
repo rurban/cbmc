@@ -22,6 +22,7 @@
         <module>annotations2</module>
         <module>ArithmeticException1</module>
         <module>ArithmeticException2</module>
+        <module>ArithmeticException3</module>
         <module>classpath-jar-load-whole-jar</module>
     </modules>
 
