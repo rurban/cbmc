@@ -40,6 +40,7 @@
         <module>ArrayIndexOutOfBoundsException3</module>
         <module>arraylength1</module>
         <module>arrayread1</module>
+        <module>assert1</module>
         <module>classpath-jar-load-whole-jar</module>
     </modules>
 
