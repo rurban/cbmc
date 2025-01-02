@@ -55,6 +55,7 @@
         <module>assume-inputs-integral</module>
         <module>assume-inputs-interval</module>
         <module>assume-inputs-non-null</module>
+        <module>astore_aload1</module>
         <module>classpath-jar-load-whole-jar</module>
     </modules>
 
