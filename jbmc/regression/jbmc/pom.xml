@@ -31,6 +31,7 @@
         <module>array2</module>
         <module>array-cell-sensitivity1</module>
         <module>array-cell-sensitivity2</module>
+        <module>array-cell-sensitivity-negative-size</module>
         <module>classpath-jar-load-whole-jar</module>
     </modules>
 
