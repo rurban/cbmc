@@ -1,6 +1,6 @@
 CORE
 Test
---function Test.check --assert-no-exceptions-thrown
+--function Test.check --assert-no-exceptions-thrown -cp target/classes
 line 6 assertion at file Test.java line 6 .*: FAILURE
 line 8 assertion at file Test.java line 8 .*: FAILURE
 line 10 assertion at file Test.java line 10 .*: FAILURE

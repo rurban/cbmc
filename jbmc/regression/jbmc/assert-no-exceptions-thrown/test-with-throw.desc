@@ -1,6 +1,6 @@
 CORE
 Test
---function Test.check
+--function Test.check -cp target/classes
 line 22 assertion at file Test.java line 22 .*: FAILURE
 line 24 assertion at file Test.java line 24 .*: FAILURE
 line 26 assertion at file Test.java line 26 .*: FAILURE
