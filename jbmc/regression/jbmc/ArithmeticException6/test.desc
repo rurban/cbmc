@@ -1,6 +1,6 @@
 CORE
 ArithmeticExceptionTest
---throw-runtime-exceptions --function ArithmeticExceptionTest.main
+--throw-runtime-exceptions --function ArithmeticExceptionTest.main -cp target/classes
 ^EXIT=10$
 ^SIGNAL=0$
 ^.*assertion at file ArithmeticExceptionTest.java line 7 function.*: FAILURE$
