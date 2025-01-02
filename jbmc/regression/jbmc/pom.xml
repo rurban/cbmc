@@ -59,6 +59,7 @@
         <module>athrow1</module>
         <module>basic1</module>
         <module>basic2</module>
+        <module>bitwise1</module>
         <module>classpath-jar-load-whole-jar</module>
     </modules>
 
