@@ -1,6 +1,6 @@
 KNOWNBUG
 My
---function My.classArrArg --java-assume-inputs-interval [1:3]
+--function My.classArrArg --java-assume-inputs-interval [1:3] -cp target/classes
 ^EXIT=10$
 ^SIGNAL=0$
 ^VERIFICATION FAILED$

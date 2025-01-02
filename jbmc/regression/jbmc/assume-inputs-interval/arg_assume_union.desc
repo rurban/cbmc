@@ -1,6 +1,6 @@
 CORE
 My
---function My.intervalUnion --java-assume-inputs-interval [-3:-2],[5:],[1:2]
+--function My.intervalUnion --java-assume-inputs-interval [-3:-2],[5:],[1:2] -cp target/classes
 ^EXIT=10$
 ^SIGNAL=0$
 ^VERIFICATION FAILED$
