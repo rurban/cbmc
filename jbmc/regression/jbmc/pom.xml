@@ -38,6 +38,7 @@
         <module>ArrayIndexOutOfBoundsException1</module>
         <module>ArrayIndexOutOfBoundsException2</module>
         <module>ArrayIndexOutOfBoundsException3</module>
+        <module>arraylength1</module>
         <module>classpath-jar-load-whole-jar</module>
     </modules>
 
