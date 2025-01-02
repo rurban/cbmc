@@ -1,6 +1,6 @@
 CORE
 annotations
---no-lazy-methods --show-symbol-table --function annotations.main
+--no-lazy-methods --show-symbol-table --function annotations.main -cp target/classes
 ^EXIT=0$
 ^SIGNAL=0$
 ^Type\.\.\.\.\.\.\.\.: @java::ClassAnnotation struct annotations
