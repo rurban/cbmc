@@ -1,0 +1,8 @@
+CORE
+basic1.c
+--show-local-bitvector
+^  foobar::pointer_parameter: \+unknown$
+^  foobar::1::pointer_local: \+static_lifetime$
+^EXIT=0$
+^SIGNAL=0$
+--

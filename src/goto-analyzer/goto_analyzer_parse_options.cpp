@@ -25,6 +25,7 @@ Author: Daniel Kroening, kroening@kroening.com
 #include <goto-programs/show_symbol_table.h>
 
 #include <analyses/ai.h>
+#include <analyses/local_bitvector_analysis.h>
 #include <analyses/local_may_alias.h>
 #include <ansi-c/cprover_library.h>
 #include <ansi-c/gcc_version.h>
@@ -137,6 +138,11 @@ void goto_analyzer_parse_optionst::get_command_line_options(optionst &options)
   if(cmdline.isset("show-local-may-alias"))
   {
     options.set_option("show-local-may-alias", true);
+    options.set_option("specific-analysis", true);
+  }
+  if(cmdline.isset("show-local-bitvector"))
+  {
+    options.set_option("show-local-bitvector", true);
     options.set_option("specific-analysis", true);
   }
 
@@ -572,6 +578,23 @@ int goto_analyzer_parse_optionst::perform_analysis(const optionst &options)
     return CPROVER_EXIT_SUCCESS;
   }
 
+  if(options.get_bool_option("show-local-bitvector"))
+  {
+    namespacet ns(goto_model.symbol_table);
+
+    for(const auto &gf_entry : goto_model.goto_functions.function_map)
+    {
+      std::cout << ">>>>\n";
+      std::cout << ">>>> " << gf_entry.first << '\n';
+      std::cout << ">>>>\n";
+      local_bitvector_analysist local_bitvector_analysis(gf_entry.second, ns);
+      local_bitvector_analysis.output(std::cout, gf_entry.second, ns);
+      std::cout << '\n';
+    }
+
+    return CPROVER_EXIT_SUCCESS;
+  }
+
   label_properties(goto_model);
 
   if(cmdline.isset("show-properties"))
@@ -802,6 +825,7 @@ void goto_analyzer_parse_optionst::help()
     " {y--taint} {ufile_name} \t perform taint analysis using rules in given"
     " file\n"
     " {y--show-taint} \t print taint analysis results on stdout\n"
+    " {y--show-local-bitvector} \t perform procedure-local bitvector analysis\n"
     " {y--show-local-may-alias} \t perform procedure-local may alias analysis\n"
     "\n"
     "C/C++ frontend options:\n"
