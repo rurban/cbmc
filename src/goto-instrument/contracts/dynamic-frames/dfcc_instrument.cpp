@@ -735,31 +735,6 @@ void dfcc_instrumentt::instrument_lhs(
   insert_before_swap_and_advance(goto_program, target, payload);
 }
 
-/// Checks if lhs is the `dead_object`, and if the rhs
-/// is an `if_exprt(nondet, ptr, dead_object)` expression.
-/// Returns `ptr` if the pattern was matched, nullptr otherwise.
-std::optional<exprt>
-dfcc_instrumentt::is_dead_object_update(const exprt &lhs, const exprt &rhs)
-{
-  if(
-    lhs.id() == ID_symbol &&
-    to_symbol_expr(lhs).get_identifier() == CPROVER_PREFIX "dead_object" &&
-    rhs.id() == ID_if)
-  {
-    // only handle `if_exprt(nondet, ptr, dead_object)`
-    auto &if_expr = to_if_expr(rhs);
-    if(
-      if_expr.cond().id() == ID_side_effect &&
-      to_side_effect_expr(if_expr.cond()).get_statement() == ID_nondet &&
-      if_expr.false_case() == lhs)
-    {
-      return if_expr.true_case();
-    }
-  }
-
-  return {};
-}
-
 void dfcc_instrumentt::instrument_assign(
   const irep_idt &function_id,
   goto_programt::targett &target,
@@ -774,43 +749,6 @@ void dfcc_instrumentt::instrument_assign(
   // check the lhs
   if(cfg_info.must_check_lhs(target))
     instrument_lhs(function_id, target, lhs, goto_program, cfg_info);
-
-  // handle dead_object updates (created by __builtin_alloca for instance)
-  // Remark: we do not really need to track this deallocation since the default
-  // CBMC checks are already able to detect writes to DEAD objects
-  const auto dead_ptr = is_dead_object_update(lhs, rhs);
-  if(dead_ptr.has_value())
-  {
-    // ```
-    // ASSIGN dead_object := if_exprt(nondet, ptr, dead_object);
-    // ----
-    // IF !write_set GOTO skip_target;
-    // CALL record_deallocated(write_set, ptr);
-    // skip_target: SKIP;
-    // ```
-
-    // step over the instruction
-    target++;
-
-    goto_programt payload;
-
-    auto goto_instruction = payload.add(goto_programt::make_incomplete_goto(
-      dfcc_utilst::make_null_check_expr(write_set), target_location));
-
-    payload.add(goto_programt::make_function_call(
-      library.write_set_record_dead_call(
-        write_set, dead_ptr.value(), target_location),
-      target_location));
-
-    auto label_instruction =
-      payload.add(goto_programt::make_skip(target_location));
-    goto_instruction->complete_goto(label_instruction);
-
-    insert_before_swap_and_advance(goto_program, target, payload);
-
-    // step back
-    target--;
-  }
 
   // is the rhs expression a side_effect("allocate") expression ?
   if(rhs.id() == ID_side_effect && rhs.get(ID_statement) == ID_allocate)

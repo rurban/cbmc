@@ -283,13 +283,6 @@ protected:
     goto_programt &goto_program,
     dfcc_cfg_infot &cfg_info);
 
-  /// Checks if \p lhs is the `dead_object`, and if \p rhs
-  /// is an `if_exprt(nondet, ptr, dead_object)` expression.
-  /// Returns a pointer to the `ptr` expression if the pattern was matched,
-  /// returns `nullptr` otherwise.
-  std::optional<exprt>
-  is_dead_object_update(const exprt &lhs, const exprt &rhs);
-
   /// Instrument the \p lhs of an `ASSIGN lhs := rhs` instruction by
   /// adding an inclusion check of \p lhs in \p write_set.
   /// If \ref is_dead_object_update returns a successful match, the matched
