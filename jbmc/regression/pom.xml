@@ -14,6 +14,8 @@
     </properties>
 
     <modules>
+        <module>janalyzer</module>
+        <module>janalyzer-taint</module>
         <module>jbmc</module>
         <module>book-examples</module>
     </modules>
