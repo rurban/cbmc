@@ -15,6 +15,7 @@
 
     <modules>
         <module>jbmc</module>
+        <module>book-examples</module>
     </modules>
 
     <build>
