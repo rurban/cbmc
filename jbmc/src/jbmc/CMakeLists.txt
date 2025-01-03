@@ -32,8 +32,8 @@ add_executable(jbmc jbmc_main.cpp)
 target_link_libraries(jbmc jbmc-lib)
 install(TARGETS jbmc DESTINATION ${CMAKE_INSTALL_BINDIR})
 
-# make sure java-models-library and java-regression is built at least once
-add_dependencies(jbmc java-models-library java-regression)
+# make sure java-models-library (on which java-regression depends) is built at least once
+add_dependencies(jbmc java-regression)
 
 # Man page
 if(NOT WIN32)
