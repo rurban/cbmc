@@ -1,6 +1,6 @@
 CORE
 My
---function My.numericalArg --java-assume-inputs-interval 2:]
+--function My.numericalArg --java-assume-inputs-interval 2:] -cp target/classes
 ^EXIT=1$
 ^SIGNAL=0$
 ^Invalid User Input

@@ -1,6 +1,6 @@
 CORE
 Test
---object-bits 4
+--object-bits 4 --cp target/classes
 too many addressed objects
 ^EXIT=6$
 ^SIGNAL=0$

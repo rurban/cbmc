@@ -1,6 +1,6 @@
 CORE
 test
---function test.f
+--function test.f -cp target/classes
 ^EXIT=0$
 ^SIGNAL=0$
 --

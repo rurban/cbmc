@@ -1,6 +1,6 @@
 CORE
 Test
---object-bits 8
+--object-bits 8 -cp target/classes
 ^EXIT=10$
 ^SIGNAL=0$
 ^VERIFICATION FAILED$

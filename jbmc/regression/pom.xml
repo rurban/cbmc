@@ -20,6 +20,18 @@
         <module>book-examples</module>
     </modules>
 
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.cprover.util</groupId>
+                <artifactId>cprover-api</artifactId>
+                <version>1.0.0</version>
+                <scope>system</scope>
+                <systemPath>${maven.multiModuleProjectDirectory}/../lib/java-models-library/target/cprover-api.jar</systemPath>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
     <build>
         <pluginManagement>
             <plugins>

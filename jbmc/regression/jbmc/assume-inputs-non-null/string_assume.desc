@@ -1,6 +1,6 @@
 CORE
 My
---function My.stringArg --java-assume-inputs-non-null --max-nondet-string-length 10
+--function My.stringArg --java-assume-inputs-non-null --max-nondet-string-length 10 -cp target/classes
 ^EXIT=10$
 ^SIGNAL=0$
 ^VERIFICATION FAILED$

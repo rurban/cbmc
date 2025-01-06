@@ -1,6 +1,6 @@
 CORE
 ArrayClone
---function ArrayClone.cloneLongArray
+--function ArrayClone.cloneLongArray -cp target/classes
 ^EXIT=0$
 ^SIGNAL=0$
 ^VERIFICATION SUCCESSFUL$

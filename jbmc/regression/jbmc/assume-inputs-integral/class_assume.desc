@@ -1,6 +1,6 @@
 CORE
 My
---function My.classArg --java-assume-inputs-integral
+--function My.classArg --java-assume-inputs-integral -cp target/classes
 ^EXIT=10$
 ^SIGNAL=0$
 ^VERIFICATION FAILED$

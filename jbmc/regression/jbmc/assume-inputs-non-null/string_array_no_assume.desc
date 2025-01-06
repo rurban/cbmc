@@ -1,6 +1,6 @@
 CORE
 My
---function My.stringArrayArg
+--function My.stringArrayArg -cp target/classes
 ^EXIT=10$
 ^SIGNAL=0$
 ^VERIFICATION FAILED$

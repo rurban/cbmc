@@ -56,3 +56,5 @@ add_custom_command(OUTPUT ${java_regression_compiled_sources}
 add_custom_target(java-regression ALL
     DEPENDS ${java_regression_compiled_sources}
 )
+
+add_dependencies(java-regression java-models-library)

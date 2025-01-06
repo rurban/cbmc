@@ -1,6 +1,6 @@
 CORE
 FloatMultidim2
---function FloatMultidim2.f --unwind 3
+--function FloatMultidim2.f --unwind 3 -cp target/classes
 ^EXIT=10$
 ^SIGNAL=0$
 assertion at file FloatMultidim2.java line 14 .*: FAILURE

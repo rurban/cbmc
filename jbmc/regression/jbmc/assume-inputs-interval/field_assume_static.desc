@@ -1,6 +1,6 @@
 CORE symex-driven-lazy-loading-expected-failure
 My
---function My.fieldStatic --java-assume-inputs-interval [1:3] --nondet-static
+--function My.fieldStatic --java-assume-inputs-interval [1:3] --nondet-static -cp target/classes
 ^EXIT=10$
 ^SIGNAL=0$
 ^VERIFICATION FAILED$

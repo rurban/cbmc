@@ -1,6 +1,6 @@
 CORE
 My
---function My.classArg --java-assume-inputs-interval [1:]
+--function My.classArg --java-assume-inputs-interval [1:] -cp target/classes
 ^EXIT=10$
 ^SIGNAL=0$
 ^VERIFICATION FAILED$

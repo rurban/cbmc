@@ -1,6 +1,6 @@
 CORE
 arrayread1
---unwind 3 --no-propagation --function arrayread1.main
+--unwind 3 --no-propagation --function arrayread1.main -cp target/classes
 ^EXIT=0$
 ^SIGNAL=0$
 ^VERIFICATION SUCCESSFUL$

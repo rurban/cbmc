@@ -1,6 +1,6 @@
 CORE
 Assume2
---function Assume2.foo
+--function Assume2.foo -cp target/classes
 ^EXIT=10$
 ^SIGNAL=0$
 ^VERIFICATION FAILED$

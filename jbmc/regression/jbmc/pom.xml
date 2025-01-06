@@ -15,7 +15,53 @@
     </parent>
 
     <modules>
+        <module>aastore_aaload1</module>
+        <module>address_space_size_limit1</module>
+        <module>address_space_size_limit2</module>
+        <module>annotations1</module>
+        <module>annotations2</module>
         <module>ArithmeticException1</module>
+        <module>ArithmeticException2</module>
+        <module>ArithmeticException3</module>
+        <module>ArithmeticException4</module>
+        <module>ArithmeticException5</module>
+        <module>ArithmeticException6</module>
+        <module>ArithmeticException7</module>
+        <module>array1</module>
+        <module>array2</module>
+        <module>array-cell-sensitivity1</module>
+        <module>array-cell-sensitivity2</module>
+        <module>array-cell-sensitivity-negative-size</module>
+        <module>array-cell-sensitivity-static-fields</module>
+        <module>array-clone</module>
+        <module>array_nonconstsize_nonconstaccess</module>
+        <module>ArrayIndexOutOfBoundsException1</module>
+        <module>ArrayIndexOutOfBoundsException2</module>
+        <module>ArrayIndexOutOfBoundsException3</module>
+        <module>arraylength1</module>
+        <module>arrayread1</module>
+        <module>assert1</module>
+        <module>assert2</module>
+        <module>assert3</module>
+        <module>assert4</module>
+        <module>assert5</module>
+        <module>assert6</module>
+        <module>assert7</module>
+        <module>assert-no-exceptions-thrown</module>
+        <module>assertion_error_constructors</module>
+        <module>assume1</module>
+        <module>assume2</module>
+        <module>assume3</module>
+        <module>assume-inputs-integral</module>
+        <module>assume-inputs-interval</module>
+        <module>assume-inputs-non-null</module>
+        <module>astore_aload1</module>
+        <module>athrow1</module>
+        <module>basic1</module>
+        <module>basic2</module>
+        <module>bitwise1</module>
+        <module>boolean1</module>
+        <module>boolean2</module>
         <module>classpath-jar-load-whole-jar</module>
     </modules>
 

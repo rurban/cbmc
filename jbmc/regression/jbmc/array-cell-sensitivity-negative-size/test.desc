@@ -1,6 +1,6 @@
 CORE
 Test
---function Test.check
+--function Test.check -cp target/classes
 line 5 Array size should be >= 0: FAILURE
 ^EXIT=10$
 ^SIGNAL=0$
