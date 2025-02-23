@@ -4,6 +4,7 @@ var hierarchy =
     [ "__CPROVER_contracts_car_set_t", "struct_____c_p_r_o_v_e_r__contracts__car__set__t.html", null ],
     [ "__CPROVER_contracts_car_t", "struct_____c_p_r_o_v_e_r__contracts__car__t.html", null ],
     [ "__CPROVER_contracts_obj_set_t", "struct_____c_p_r_o_v_e_r__contracts__obj__set__t.html", null ],
+    [ "__CPROVER_contracts_ptr_pred_ctx_t", "struct_____c_p_r_o_v_e_r__contracts__ptr__pred__ctx__t.html", null ],
     [ "__CPROVER_contracts_write_set_t", "struct_____c_p_r_o_v_e_r__contracts__write__set__t.html", null ],
     [ "__CPROVER_jsa_abstract_heap", "struct_____c_p_r_o_v_e_r__jsa__abstract__heap.html", null ],
     [ "__CPROVER_jsa_abstract_node", "struct_____c_p_r_o_v_e_r__jsa__abstract__node.html", null ],
@@ -895,7 +896,9 @@ var hierarchy =
     [ "identity_functort", "classidentity__functort.html", null ],
     [ "smt2_parsert::idt", "structsmt2__parsert_1_1idt.html", null ],
     [ "ieee_float_spect", "classieee__float__spect.html", null ],
-    [ "ieee_floatt", "classieee__floatt.html", null ],
+    [ "ieee_float_valuet", "classieee__float__valuet.html", [
+      [ "ieee_floatt", "classieee__floatt.html", null ]
+    ] ],
     [ "smt_core_theoryt::if_then_elset", "structsmt__core__theoryt_1_1if__then__elset.html", null ],
     [ "framet::implicationt", "structframet_1_1implicationt.html", null ],
     [ "smt_core_theoryt::impliest", "structsmt__core__theoryt_1_1impliest.html", null ],
@@ -926,7 +929,6 @@ var hierarchy =
     [ "index_set_pairt", "structindex__set__pairt.html", null ],
     [ "inductiveness_resultt", "classinductiveness__resultt.html", null ],
     [ "infix_opt", "structinfix__opt.html", null ],
-    [ "inflate_state", "structinflate__state.html", null ],
     [ "resolve_inherited_componentt::inherited_componentt", "classresolve__inherited__componentt_1_1inherited__componentt.html", null ],
     [ "insert_final_assert_falset", "classinsert__final__assert__falset.html", null ],
     [ "cpp_typecheckt::instantiation_levelt", "classcpp__typecheckt_1_1instantiation__levelt.html", null ],
@@ -1156,7 +1158,7 @@ var hierarchy =
     [ "full_array_abstract_objectt::mp_integer_hasht", "structfull__array__abstract__objectt_1_1mp__integer__hasht.html", null ],
     [ "ms_cl_versiont", "classms__cl__versiont.html", null ],
     [ "smt_bit_vector_theoryt::multiplyt", "structsmt__bit__vector__theoryt_1_1multiplyt.html", null ],
-    [ "mz_stream_s", "structmz__stream__s.html", null ],
+    [ "mz_dummy_time_t_tag", "structmz__dummy__time__t__tag.html", null ],
     [ "mz_zip_archive", "structmz__zip__archive.html", [
       [ "mz_zip_archive_statet", "classmz__zip__archive__statet.html", null ]
     ] ],
@@ -1164,7 +1166,7 @@ var hierarchy =
     [ "mz_zip_archivet", "classmz__zip__archivet.html", null ],
     [ "mz_zip_array", "structmz__zip__array.html", null ],
     [ "mz_zip_internal_state_tag", "structmz__zip__internal__state__tag.html", null ],
-    [ "mz_zip_writer_add_state", "structmz__zip__writer__add__state.html", null ],
+    [ "mz_zip_reader_extract_iter_state", "structmz__zip__reader__extract__iter__state.html", null ],
     [ "smt2_parsert::named_termt", "structsmt2__parsert_1_1named__termt.html", null ],
     [ "namespace_baset", "classnamespace__baset.html", [
       [ "namespacet", "classnamespacet.html", [
@@ -1576,6 +1578,7 @@ var hierarchy =
               [ "factorial_power_exprt", "classfactorial__power__exprt.html", null ],
               [ "floatbv_mod_exprt", "classfloatbv__mod__exprt.html", null ],
               [ "floatbv_rem_exprt", "classfloatbv__rem__exprt.html", null ],
+              [ "floatbv_round_to_integral_exprt", "classfloatbv__round__to__integral__exprt.html", null ],
               [ "floatbv_typecast_exprt", "classfloatbv__typecast__exprt.html", null ],
               [ "function_application_exprt", "classfunction__application__exprt.html", null ],
               [ "implies_exprt", "classimplies__exprt.html", null ],
@@ -2100,9 +2103,6 @@ var hierarchy =
     [ "java_bytecode_convert_methodt::method_with_amapt::target_less_than", "structjava__bytecode__convert__methodt_1_1method__with__amapt_1_1target__less__than.html", null ],
     [ "goto_convertt::targetst", "structgoto__convertt_1_1targetst.html", null ],
     [ "grapht< N >::tarjant", "classgrapht_1_1tarjant.html", null ],
-    [ "tdefl_compressor", "structtdefl__compressor.html", null ],
-    [ "tdefl_output_buffer", "structtdefl__output__buffer.html", null ],
-    [ "tdefl_sym_freq", "structtdefl__sym__freq.html", null ],
     [ "temp_dirt", "classtemp__dirt.html", null ],
     [ "template_mapt", "classtemplate__mapt.html", null ],
     [ "temporary_filet", "classtemporary__filet.html", null ],
@@ -2120,7 +2120,6 @@ var hierarchy =
       [ "wall_clock_timestampert", "classwall__clock__timestampert.html", null ]
     ] ],
     [ "tinfl_decompressor_tag", "structtinfl__decompressor__tag.html", null ],
-    [ "tinfl_huff_table", "structtinfl__huff__table.html", null ],
     [ "to_be_merged_irep_hash", "structto__be__merged__irep__hash.html", null ],
     [ "trace_automatont", "classtrace__automatont.html", null ],
     [ "trace_optionst", "structtrace__optionst.html", null ],

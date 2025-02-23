@@ -99,7 +99,7 @@ $(document).ready(function(){initNavTree('group__util.html',''); initResizable()
   <div class="headertitle"><div class="title">util</div></div>
 </div><!--header-->
 <div class="contents">
-<h1><a class="anchor" id="autotoc_md178"></a>
+<h1><a class="anchor" id="autotoc_md165"></a>
 Folder util</h1>
 <dl class="section author"><dt>Author</dt><dd>Martin Brain, Owen Jones, Chris Smowton</dd></dl>
 <h1><a class="anchor" id="util_data_structures"></a>
@@ -145,7 +145,7 @@ symbolt, symbol_tablet, and namespacet</h2>
 <p>Symbol expressions (<a class="el" href="classsymbol__exprt.html">symbol_exprt</a>) and types (<a class="el" href="classtag__typet.html">tag_typet</a>) refer to symbols stored in a symbol table. Symbol expressions can be thought of as referring to the table for more detail about a symbol (for example, is it a local or a global variable, or perhaps a function?), and have a type which must match the type given in the symbol table. Symbol types can be thought of as shorthands or aliases for a type given in more detail in the symbol table, for example permitting a shorthand for a large structure type, as well as permitting the construction of expressions referring to that type before its full definition is known.</p>
 <p>Note the implementation of <a class="el" href="classsymbol__tablet.html">symbol_tablet</a> is split into a base interface (<a class="el" href="classsymbol__table__baset.html">symbol_table_baset</a>) and an implementation (<a class="el" href="classsymbol__tablet.html">symbol_tablet</a>). There is one alternate implementation (<a class="el" href="classjournalling__symbol__tablet.html">journalling_symbol_tablet</a>) which additionally maintains a log or journal of symbol creation, modification and deletions.</p>
 <p>Namespaces (<a class="el" href="classnamespacet.html">namespacet</a>) provide a read-only view on one or more symbol tables, and provide helper functions that aid accessing the table. A namespace may layer one or more symbol tables, in which case any lookup operation checks the 'top' symbol table before moving down the layers towards the 'bottom' symbol table, looking up the target symbol name in each successive table until one is found. Note class <a class="el" href="classmulti__namespacet.html">multi_namespacet</a> can layer arbitrary numbers of symbol tables, while for historical reasons <a class="el" href="classnamespacet.html">namespacet</a> can layer up to two.</p>
-<p>The namespace wrapper class also provides the <a class="el" href="classnamespace__baset.html#a08ff1828dbaf894a44a23f50a700255a">namespacet::follow</a> operation, which dereferences a <code><a class="el" href="classtag__typet.html" title="A tag-based type, i.e., typet with an identifier.">tag_typet</a></code> to retrieve the type it refers to, including following a type tag which refers to another symbol which eventually refers to a 'real' type.</p>
+<p>The namespace wrapper class also provides the <a class="el" href="classnamespace__baset.html#a9a5ad94024723d598ae0b8b67e7a3710">namespacet::follow_tag</a> operation, which dereferences a <code><a class="el" href="classtag__typet.html" title="A tag-based type, i.e., typet with an identifier.">tag_typet</a></code> to retrieve the type it refers to, including following a type tag which refers to another symbol which eventually refers to a 'real' type.</p>
 <h3><a class="anchor" id="symbolt_lifetime"></a>
 Symbol lifetimes</h3>
 <p>Symbols with <a class="el" href="classsymbolt.html#a6317578dd5e0ea50e815d1ee89b4f3f8">symbolt::is_static_lifetime</a> set are initialised before a program's entry-point is called and live until it ends. Such long-lived variables are used to implement globals, but also C's procedure-local static variables, which have restricted visiblity but the lifetime of a global. They may be marked dead using a <a class="el" href="classcode__deadt.html">code_deadt</a> instruction, but this does not render the variable inaccessible, it only indicates that the variable's current value will not be read without an intervening write.</p>
@@ -220,10 +220,10 @@ CProver legacy output</h3>
 </ul>
 <h2><a class="anchor" id="Graph"></a>
 Graph</h2>
-<h3><a class="anchor" id="autotoc_md179"></a>
+<h3><a class="anchor" id="autotoc_md166"></a>
 Graph</h3>
 <p>Implemented in <code><a class="el" href="classait.html#acb910a3c8ab35d67a9a9a27c324e4992">src/util/graph.h</a></code> as <code>grapht</code> class. The <code>grapht</code> class represents a directed graph. However, an undirected graph can be emulated by inserting for each edge (u, v) also (v, u). A multi-graph is not supported though, because parallel edges are not allowed between vertices.</p>
-<h4><a class="anchor" id="autotoc_md180"></a>
+<h4><a class="anchor" id="autotoc_md167"></a>
 Data representation</h4>
 <p>A graph is defined by a template class <code>grapht&lt;N&gt;</code>, where <code>N</code> is the type of the nodes of the graph. The class <code>grapht</code> stores the nodes in a vector. A user of the graph is supposed to access the nodes via their indices in the vector. The node type <code>N</code> must meet these requirements:</p><ul>
 <li>It must be default constructible; the common way how to insert a node to the graph is to call method <code>add_node</code> which pushes a new default-constructed instance of <code>N</code> to the end of the vector and returns its index. Then <code>operator[]</code> can be used to obtain a reference to the pushed instance and set its content as desired.</li>
@@ -234,7 +234,7 @@ Data representation</h4>
 <li>It must define a method <code>pretty</code> converting the node to a "pretty" string.</li>
 </ul>
 <p>One can use a predefined template class <code><a class="el" href="classgraph__nodet.html" title="This class represents a node in a directed graph.">graph_nodet</a>&lt;E&gt;</code> as the template parameter <code>N</code> of the graph. The template parameter <code>E</code> allows to define the type <code>edget</code>.</p>
-<h4><a class="anchor" id="autotoc_md181"></a>
+<h4><a class="anchor" id="autotoc_md168"></a>
 Graph algorithms</h4>
 <p>The graph implementation comes with several graph algorithms. We describe each of them in following paragraphs.</p>
 <p>TODO! </p>
