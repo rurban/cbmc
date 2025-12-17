@@ -114,7 +114,7 @@ $(document).ready(function(){initNavTree('std__expr_8h.html',''); initResizable(
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="std__expr_8h__incl.svg" width="950" height="784"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="std__expr_8h__incl.svg" width="979" height="784"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 <p><a href="std__expr_8h_source.html">Go to the source code of this file.</a></p>
@@ -244,7 +244,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Semantic type conversion.  <a href="classtypecast__exprt.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classand__exprt.html">and_exprt</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Boolean AND.  <a href="classand__exprt.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Boolean AND All operands must be boolean, and the result is always boolean.  <a href="classand__exprt.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnand__exprt.html">nand_exprt</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Boolean NAND.  <a href="classnand__exprt.html#details">More...</a><br /></td></tr>
@@ -253,13 +253,13 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Boolean implication.  <a href="classimplies__exprt.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classor__exprt.html">or_exprt</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Boolean OR.  <a href="classor__exprt.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Boolean OR All operands must be boolean, and the result is always boolean.  <a href="classor__exprt.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnor__exprt.html">nor_exprt</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Boolean NOR.  <a href="classnor__exprt.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxor__exprt.html">xor_exprt</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Boolean XOR.  <a href="classxor__exprt.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Boolean XOR All operands must be boolean, and the result is always boolean.  <a href="classxor__exprt.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxnor__exprt.html">xnor_exprt</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Boolean XNOR.  <a href="classxnor__exprt.html#details">More...</a><br /></td></tr>
@@ -309,6 +309,9 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcond__exprt.html">cond_exprt</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">this is a parametric version of an if-expression: it returns the value of the first case (using the ordering of the operands) whose condition evaluates to true.  <a href="classcond__exprt.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcase__exprt.html">case_exprt</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Case expression: evaluates to the value corresponding to the first matching case.  <a href="classcase__exprt.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarray__comprehension__exprt.html">array_comprehension_exprt</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Expression to define a mapping from an argument (index) to elements.  <a href="classarray__comprehension__exprt.html#details">More...</a><br /></td></tr>
@@ -674,6 +677,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a6f5bbd063b7d74fe4f284dde56330267" id="r_a6f5bbd063b7d74fe4f284dde56330267"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classexprt.html">exprt</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="std__expr_8h.html#a6f5bbd063b7d74fe4f284dde56330267">conjunction</a> (<a class="el" href="classait.html">const</a> <a class="el" href="classexprt.html#a10c073e5cdd14b181d56cf53def8b378">exprt::operandst</a> &amp;)</td></tr>
 <tr class="memdesc:a6f5bbd063b7d74fe4f284dde56330267"><td class="mdescLeft">&#160;</td><td class="mdescRight">1) generates a conjunction for two or more operands 2) for one operand, returns the operand 3) returns true otherwise  <br /></td></tr>
 <tr class="separator:a6f5bbd063b7d74fe4f284dde56330267"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addae1945ff0ba28efc42c47a1a493034" id="r_addae1945ff0ba28efc42c47a1a493034"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classexprt.html">exprt</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="std__expr_8h.html#addae1945ff0ba28efc42c47a1a493034">conjunction</a> (<a class="el" href="classexprt.html">exprt</a> <a class="el" href="classait.html">a</a>, <a class="el" href="classexprt.html">exprt</a> <a class="el" href="classait.html">b</a>)</td></tr>
+<tr class="memdesc:addae1945ff0ba28efc42c47a1a493034"><td class="mdescLeft">&#160;</td><td class="mdescRight">Conjunction of two expressions.  <br /></td></tr>
+<tr class="separator:addae1945ff0ba28efc42c47a1a493034"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1a92119cb9f4a2b01f1473a03bcd5e6" id="r_ac1a92119cb9f4a2b01f1473a03bcd5e6"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
 <tr class="memitem:ac1a92119cb9f4a2b01f1473a03bcd5e6"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classait.html">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="std__expr_8h.html#ac1a92119cb9f4a2b01f1473a03bcd5e6">can_cast_expr&lt; and_exprt &gt;</a> (<a class="el" href="classait.html">const</a> <a class="el" href="classexprt.html">exprt</a> &amp;base)</td></tr>
 <tr class="separator:ac1a92119cb9f4a2b01f1473a03bcd5e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -833,6 +839,24 @@ Functions</h2></td></tr>
 <tr class="memitem:a6727cf617db4107129295dda23563630" id="r_a6727cf617db4107129295dda23563630"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classconstant__exprt.html">constant_exprt</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="std__expr_8h.html#a6727cf617db4107129295dda23563630">to_constant_expr</a> (<a class="el" href="classexprt.html">exprt</a> &amp;expr)</td></tr>
 <tr class="memdesc:a6727cf617db4107129295dda23563630"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cast an exprt to a <a class="el" href="classconstant__exprt.html">constant_exprt</a>.    <br /></td></tr>
 <tr class="separator:a6727cf617db4107129295dda23563630"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10691362b53e5e684ad1eda3142ada9c" id="r_a10691362b53e5e684ad1eda3142ada9c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classait.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="std__expr_8h.html#a10691362b53e5e684ad1eda3142ada9c">operator==</a> (<a class="el" href="classait.html">const</a> <a class="el" href="classexprt.html">exprt</a> &amp;lhs, <a class="el" href="classait.html">bool</a> rhs)</td></tr>
+<tr class="memdesc:a10691362b53e5e684ad1eda3142ada9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether the expression <code>lhs</code> is a constant of Boolean type that is representing the Boolean value <code>rhs</code>.  <br /></td></tr>
+<tr class="separator:a10691362b53e5e684ad1eda3142ada9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada734c1f945ec23fa005ee0a9da832c8" id="r_ada734c1f945ec23fa005ee0a9da832c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classait.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="std__expr_8h.html#ada734c1f945ec23fa005ee0a9da832c8">operator!=</a> (<a class="el" href="classait.html">const</a> <a class="el" href="classexprt.html">exprt</a> &amp;lhs, <a class="el" href="classait.html">bool</a> rhs)</td></tr>
+<tr class="memdesc:ada734c1f945ec23fa005ee0a9da832c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether the expression <code>lhs</code> is not a constant of Boolean type or is not representing the Boolean value <code>rhs</code>.  <br /></td></tr>
+<tr class="separator:ada734c1f945ec23fa005ee0a9da832c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad3c40d1c985310afff0bee9ee171415" id="r_aad3c40d1c985310afff0bee9ee171415"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classait.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="std__expr_8h.html#aad3c40d1c985310afff0bee9ee171415">operator==</a> (<a class="el" href="classait.html">const</a> <a class="el" href="classexprt.html">exprt</a> &amp;lhs, <a class="el" href="classait.html">int</a> rhs)</td></tr>
+<tr class="memdesc:aad3c40d1c985310afff0bee9ee171415"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether the expression <code>lhs</code> is a constant representing the numeric value <code>rhs</code>; only values 0 and 1 are supported for <code>rhs</code>.  <br /></td></tr>
+<tr class="separator:aad3c40d1c985310afff0bee9ee171415"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a164a29e9671b35dfc7544b46e872d4b1" id="r_a164a29e9671b35dfc7544b46e872d4b1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classait.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="std__expr_8h.html#a164a29e9671b35dfc7544b46e872d4b1">operator!=</a> (<a class="el" href="classait.html">const</a> <a class="el" href="classexprt.html">exprt</a> &amp;lhs, <a class="el" href="classait.html">int</a> rhs)</td></tr>
+<tr class="memdesc:a164a29e9671b35dfc7544b46e872d4b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the negation of <a class="el" href="std__expr_8cpp.html#a10691362b53e5e684ad1eda3142ada9c">operator==(const exprt &amp;, int)</a>.  <br /></td></tr>
+<tr class="separator:a164a29e9671b35dfc7544b46e872d4b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa82562d03b55ecb7b56be93b6b355d8d" id="r_aa82562d03b55ecb7b56be93b6b355d8d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classait.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="std__expr_8h.html#aa82562d03b55ecb7b56be93b6b355d8d">operator==</a> (<a class="el" href="classait.html">const</a> <a class="el" href="classexprt.html">exprt</a> &amp;lhs, std::nullptr_t)</td></tr>
+<tr class="memdesc:aa82562d03b55ecb7b56be93b6b355d8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether the expression <code>lhs</code> is a constant representing the NULL pointer.  <br /></td></tr>
+<tr class="separator:aa82562d03b55ecb7b56be93b6b355d8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98ce3eeba17afe5aa36c809dba24214d" id="r_a98ce3eeba17afe5aa36c809dba24214d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classait.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="std__expr_8h.html#a98ce3eeba17afe5aa36c809dba24214d">operator!=</a> (<a class="el" href="classait.html">const</a> <a class="el" href="classexprt.html">exprt</a> &amp;lhs, std::nullptr_t)</td></tr>
+<tr class="memdesc:a98ce3eeba17afe5aa36c809dba24214d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the negation of <a class="el" href="std__expr_8cpp.html#a6c1d73123a7d5e28285795e85d8dd393">operator==(const exprt &amp;, std::nullptr_t)</a>.  <br /></td></tr>
+<tr class="separator:a98ce3eeba17afe5aa36c809dba24214d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:accaf5062f39d5f186ad9845e710778d3" id="r_accaf5062f39d5f186ad9845e710778d3"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
 <tr class="memitem:accaf5062f39d5f186ad9845e710778d3"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classait.html">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="std__expr_8h.html#accaf5062f39d5f186ad9845e710778d3">can_cast_expr&lt; nil_exprt &gt;</a> (<a class="el" href="classait.html">const</a> <a class="el" href="classexprt.html">exprt</a> &amp;base)</td></tr>
 <tr class="separator:accaf5062f39d5f186ad9845e710778d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -869,6 +893,15 @@ Functions</h2></td></tr>
 <tr class="memitem:a44bd6f8e805c16c2978ff0acead997fb" id="r_a44bd6f8e805c16c2978ff0acead997fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcond__exprt.html">cond_exprt</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="std__expr_8h.html#a44bd6f8e805c16c2978ff0acead997fb">to_cond_expr</a> (<a class="el" href="classexprt.html">exprt</a> &amp;expr)</td></tr>
 <tr class="memdesc:a44bd6f8e805c16c2978ff0acead997fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cast an exprt to a <a class="el" href="classcond__exprt.html">cond_exprt</a>.    <br /></td></tr>
 <tr class="separator:a44bd6f8e805c16c2978ff0acead997fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a834feaf65014ffdf8a051c999d706e6f" id="r_a834feaf65014ffdf8a051c999d706e6f"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:a834feaf65014ffdf8a051c999d706e6f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classait.html">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="std__expr_8h.html#a834feaf65014ffdf8a051c999d706e6f">can_cast_expr&lt; case_exprt &gt;</a> (<a class="el" href="classait.html">const</a> <a class="el" href="classexprt.html">exprt</a> &amp;base)</td></tr>
+<tr class="separator:a834feaf65014ffdf8a051c999d706e6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab11ebb0bdaf874bf4d0a41e2b16a3867" id="r_ab11ebb0bdaf874bf4d0a41e2b16a3867"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classait.html">const</a> <a class="el" href="classcase__exprt.html">case_exprt</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="std__expr_8h.html#ab11ebb0bdaf874bf4d0a41e2b16a3867">to_case_expr</a> (<a class="el" href="classait.html">const</a> <a class="el" href="classexprt.html">exprt</a> &amp;expr)</td></tr>
+<tr class="memdesc:ab11ebb0bdaf874bf4d0a41e2b16a3867"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cast an exprt to a <a class="el" href="classcase__exprt.html">case_exprt</a>.  <br /></td></tr>
+<tr class="separator:ab11ebb0bdaf874bf4d0a41e2b16a3867"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc338e072ae30ccc3da81922a9b009d4" id="r_afc338e072ae30ccc3da81922a9b009d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcase__exprt.html">case_exprt</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="std__expr_8h.html#afc338e072ae30ccc3da81922a9b009d4">to_case_expr</a> (<a class="el" href="classexprt.html">exprt</a> &amp;expr)</td></tr>
+<tr class="memdesc:afc338e072ae30ccc3da81922a9b009d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cast an exprt to a <a class="el" href="classcase__exprt.html">case_exprt</a>.    <br /></td></tr>
+<tr class="separator:afc338e072ae30ccc3da81922a9b009d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3eec676701b1a654234507ad6b25923c" id="r_a3eec676701b1a654234507ad6b25923c"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
 <tr class="memitem:a3eec676701b1a654234507ad6b25923c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classait.html">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="std__expr_8h.html#a3eec676701b1a654234507ad6b25923c">can_cast_expr&lt; array_comprehension_exprt &gt;</a> (<a class="el" href="classait.html">const</a> <a class="el" href="classexprt.html">exprt</a> &amp;base)</td></tr>
 <tr class="separator:a3eec676701b1a654234507ad6b25923c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -961,7 +994,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02161">2161</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02185">2185</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -991,7 +1024,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03593">3593</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03784">3784</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -1021,7 +1054,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01654">1654</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01672">1672</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -1051,7 +1084,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01706">1706</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01724">1724</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -1081,7 +1114,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01587">1587</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01605">1605</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -1171,7 +1204,37 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03285">3285</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03358">3358</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+
+</div>
+</div>
+<a id="a834feaf65014ffdf8a051c999d706e6f" name="a834feaf65014ffdf8a051c999d706e6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a834feaf65014ffdf8a051c999d706e6f">&#9670;&#160;</a></span>can_cast_expr&lt; case_exprt &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classait.html">bool</a> <a class="el" href="expr__cast_8h.html#a42363d1890db7dd905e72b2db8e336e7">can_cast_expr</a>&lt; <a class="el" href="classcase__exprt.html">case_exprt</a> &gt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classait.html">const</a> <a class="el" href="classexprt.html">exprt</a> &amp;&#160;</td>
+          <td class="paramname"><em>base</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03697">3697</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -1201,7 +1264,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03731">3731</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03922">3922</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -1231,7 +1294,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01949">1949</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01967">1967</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -1261,7 +1324,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02036">2036</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02054">2054</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -1291,7 +1354,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01993">1993</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02011">2011</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -1321,7 +1384,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03500">3500</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03573">3573</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -1351,7 +1414,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03156">3156</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03199">3199</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -1381,7 +1444,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01190">1190</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01208">1208</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -1411,7 +1474,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01843">1843</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01861">1861</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -1441,7 +1504,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01391">1391</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01409">1409</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -1471,7 +1534,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01329">1329</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01347">1347</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -1561,7 +1624,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02561">2561</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02592">2592</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -1591,7 +1654,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02234">2234</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02260">2260</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -1621,7 +1684,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02697">2697</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02724">2724</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -1651,7 +1714,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01522">1522</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01540">1540</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -1741,7 +1804,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03439">3439</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03512">3512</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -1771,7 +1834,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02746">2746</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02773">2773</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -1801,7 +1864,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03047">3047</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03074">3074</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -1831,7 +1894,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01070">1070</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01083">1083</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -1861,7 +1924,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01261">1261</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01279">1279</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -1891,7 +1954,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01121">1121</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01139">1139</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -1921,7 +1984,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03776">3776</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03967">3967</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -1951,7 +2014,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03217">3217</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03290">3290</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -2011,7 +2074,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02463">2463</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02494">2494</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -2041,7 +2104,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01434">1434</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01452">1452</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -2071,7 +2134,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02306">2306</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02333">2333</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -2101,7 +2164,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01025">1025</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01038">1038</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -2161,7 +2224,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01889">1889</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01907">1907</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -2221,7 +2284,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03089">3089</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03116">3116</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -2251,7 +2314,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02091">2091</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02109">2109</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -2371,7 +2434,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01800">1800</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01818">1818</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -2401,7 +2464,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02848">2848</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02875">2875</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -2431,7 +2494,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01743">1743</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01761">1761</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -2461,7 +2524,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02640">2640</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02671">2671</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -2491,7 +2554,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02428">2428</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02459">2459</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -2521,12 +2584,12 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02384">2384</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02415">2415</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
 <a id="a6f5bbd063b7d74fe4f284dde56330267" name="a6f5bbd063b7d74fe4f284dde56330267"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6f5bbd063b7d74fe4f284dde56330267">&#9670;&#160;</a></span>conjunction()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f5bbd063b7d74fe4f284dde56330267">&#9670;&#160;</a></span>conjunction() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2543,7 +2606,40 @@ template&lt;&gt; </div>
 
 <p>1) generates a conjunction for two or more operands 2) for one operand, returns the operand 3) returns true otherwise </p>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8cpp_source.html#l00083">83</a> of file <a class="el" href="std__expr_8cpp_source.html">std_expr.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8cpp_source.html#l00275">275</a> of file <a class="el" href="std__expr_8cpp_source.html">std_expr.cpp</a>.</p>
+
+</div>
+</div>
+<a id="addae1945ff0ba28efc42c47a1a493034" name="addae1945ff0ba28efc42c47a1a493034"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addae1945ff0ba28efc42c47a1a493034">&#9670;&#160;</a></span>conjunction() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classexprt.html">exprt</a> conjunction </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classexprt.html">exprt</a>&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classexprt.html">exprt</a>&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Conjunction of two expressions. </p>
+<p>If the second is already an <code><a class="el" href="classand__exprt.html" title="Boolean AND All operands must be boolean, and the result is always boolean.">and_exprt</a></code> add to its operands instead of creating a new expression. If one is <code>true</code>, return the other expression. If one is <code>false</code> returns <code>false</code>. </p>
+
+<p class="definition">Definition at line <a class="el" href="std__expr_8cpp_source.html#l00252">252</a> of file <a class="el" href="std__expr_8cpp_source.html">std_expr.cpp</a>.</p>
 
 </div>
 </div>
@@ -2565,7 +2661,203 @@ template&lt;&gt; </div>
 
 <p>1) generates a disjunction for two or more operands 2) for one operand, returns the operand 3) returns false otherwise </p>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8cpp_source.html#l00071">71</a> of file <a class="el" href="std__expr_8cpp_source.html">std_expr.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8cpp_source.html#l00240">240</a> of file <a class="el" href="std__expr_8cpp_source.html">std_expr.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ada734c1f945ec23fa005ee0a9da832c8" name="ada734c1f945ec23fa005ee0a9da832c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada734c1f945ec23fa005ee0a9da832c8">&#9670;&#160;</a></span>operator!=() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classait.html">bool</a> <a class="el" href="interval_8cpp.html#aff2c7c23e9183e17b252198de5e5cf49">operator!</a>= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classait.html">const</a> <a class="el" href="classexprt.html">exprt</a> &amp;&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classait.html">bool</a>&#160;</td>
+          <td class="paramname"><em>rhs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return whether the expression <code>lhs</code> is not a constant of Boolean type or is not representing the Boolean value <code>rhs</code>. </p>
+
+<p class="definition">Definition at line <a class="el" href="std__expr_8cpp_source.html#l00037">37</a> of file <a class="el" href="std__expr_8cpp_source.html">std_expr.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a164a29e9671b35dfc7544b46e872d4b1" name="a164a29e9671b35dfc7544b46e872d4b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a164a29e9671b35dfc7544b46e872d4b1">&#9670;&#160;</a></span>operator!=() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classait.html">bool</a> <a class="el" href="interval_8cpp.html#aff2c7c23e9183e17b252198de5e5cf49">operator!</a>= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classait.html">const</a> <a class="el" href="classexprt.html">exprt</a> &amp;&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classait.html">int</a>&#160;</td>
+          <td class="paramname"><em>rhs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the negation of <a class="el" href="std__expr_8cpp.html#a10691362b53e5e684ad1eda3142ada9c">operator==(const exprt &amp;, int)</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="std__expr_8cpp_source.html#l00060">60</a> of file <a class="el" href="std__expr_8cpp_source.html">std_expr.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a98ce3eeba17afe5aa36c809dba24214d" name="a98ce3eeba17afe5aa36c809dba24214d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98ce3eeba17afe5aa36c809dba24214d">&#9670;&#160;</a></span>operator!=() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classait.html">bool</a> <a class="el" href="interval_8cpp.html#aff2c7c23e9183e17b252198de5e5cf49">operator!</a>= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classait.html">const</a> <a class="el" href="classexprt.html">exprt</a> &amp;&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::nullptr_t&#160;</td>
+          <td class="paramname"><em>rhs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the negation of <a class="el" href="std__expr_8cpp.html#a6c1d73123a7d5e28285795e85d8dd393">operator==(const exprt &amp;, std::nullptr_t)</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="std__expr_8cpp_source.html#l00192">192</a> of file <a class="el" href="std__expr_8cpp_source.html">std_expr.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a10691362b53e5e684ad1eda3142ada9c" name="a10691362b53e5e684ad1eda3142ada9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10691362b53e5e684ad1eda3142ada9c">&#9670;&#160;</a></span>operator==() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classait.html">bool</a> <a class="el" href="classait.html">operator</a>== </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classait.html">const</a> <a class="el" href="classexprt.html">exprt</a> &amp;&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classait.html">bool</a>&#160;</td>
+          <td class="paramname"><em>rhs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return whether the expression <code>lhs</code> is a constant of Boolean type that is representing the Boolean value <code>rhs</code>. </p>
+
+<p class="definition">Definition at line <a class="el" href="std__expr_8cpp_source.html#l00032">32</a> of file <a class="el" href="std__expr_8cpp_source.html">std_expr.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aad3c40d1c985310afff0bee9ee171415" name="aad3c40d1c985310afff0bee9ee171415"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad3c40d1c985310afff0bee9ee171415">&#9670;&#160;</a></span>operator==() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classait.html">bool</a> <a class="el" href="classait.html">operator</a>== </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classait.html">const</a> <a class="el" href="classexprt.html">exprt</a> &amp;&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classait.html">int</a>&#160;</td>
+          <td class="paramname"><em>rhs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return whether the expression <code>lhs</code> is a constant representing the numeric value <code>rhs</code>; only values 0 and 1 are supported for <code>rhs</code>. </p>
+<p>For value 0 we consider the following types: ID_integer, ID_natural, ID_rational, ID_unsignedbv, ID_signedbv, ID_c_bool, ID_c_bit_field, ID_fixedbv, ID_floatbv, ID_pointer.<br  />
+ For ID_pointer, returns true iff the value is a zero string or a null pointer.<br  />
+ For value 1 we consider the following types: ID_integer, ID_natural, ID_rational, ID_unsignedbv, ID_signedbv, ID_c_bool, ID_c_bit_field, ID_fixedbv, ID_floatbv.<br  />
+ For all other types, return false. </p>
+
+<p class="definition">Definition at line <a class="el" href="std__expr_8cpp_source.html#l00052">52</a> of file <a class="el" href="std__expr_8cpp_source.html">std_expr.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa82562d03b55ecb7b56be93b6b355d8d" name="aa82562d03b55ecb7b56be93b6b355d8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa82562d03b55ecb7b56be93b6b355d8d">&#9670;&#160;</a></span>operator==() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classait.html">bool</a> <a class="el" href="classait.html">operator</a>== </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classait.html">const</a> <a class="el" href="classexprt.html">exprt</a> &amp;&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::nullptr_t&#160;</td>
+          <td class="paramname"><em>rhs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return whether the expression <code>lhs</code> is a constant representing the NULL pointer. </p>
+
+<p class="definition">Definition at line <a class="el" href="std__expr_8cpp_source.html#l00186">186</a> of file <a class="el" href="std__expr_8cpp_source.html">std_expr.cpp</a>.</p>
 
 </div>
 </div>
@@ -2679,7 +2971,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classand__exprt.html">and_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02172">2172</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02196">2196</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -2717,7 +3009,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classand__exprt.html">and_exprt</a>   </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02179">2179</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02203">2203</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -2755,7 +3047,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classarray__comprehension__exprt.html">array_comprehension_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03610">3610</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03801">3801</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -2793,7 +3085,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classarray__comprehension__exprt.html">array_comprehension_exprt</a>   </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03620">3620</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03811">3811</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -2831,7 +3123,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classarray__exprt.html">array_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01665">1665</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01683">1683</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -2869,7 +3161,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classarray__exprt.html">array_exprt</a>   </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01672">1672</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01690">1690</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -2897,7 +3189,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01716">1716</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01734">1734</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -2925,7 +3217,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01724">1724</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01742">1742</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -2963,7 +3255,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classarray__of__exprt.html">array_of_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01603">1603</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01621">1621</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -3001,7 +3293,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classarray__of__exprt.html">array_of_exprt</a>   </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01611">1611</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01629">1629</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -3191,7 +3483,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classbinding__exprt.html">binding_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03303">3303</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03376">3376</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -3229,7 +3521,83 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classbinding__exprt.html">binding_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03319">3319</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03392">3392</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+
+</div>
+</div>
+<a id="ab11ebb0bdaf874bf4d0a41e2b16a3867" name="ab11ebb0bdaf874bf4d0a41e2b16a3867"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab11ebb0bdaf874bf4d0a41e2b16a3867">&#9670;&#160;</a></span>to_case_expr() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classait.html">const</a> <a class="el" href="classcase__exprt.html">case_exprt</a> &amp; to_case_expr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classait.html">const</a> <a class="el" href="classexprt.html">exprt</a> &amp;&#160;</td>
+          <td class="paramname"><em>expr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Cast an exprt to a <a class="el" href="classcase__exprt.html">case_exprt</a>. </p>
+<p><em>expr</em> must be known to be <a class="el" href="classcase__exprt.html">case_exprt</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">expr</td><td>Source expression </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classcase__exprt.html">case_exprt</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03708">3708</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+
+</div>
+</div>
+<a id="afc338e072ae30ccc3da81922a9b009d4" name="afc338e072ae30ccc3da81922a9b009d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc338e072ae30ccc3da81922a9b009d4">&#9670;&#160;</a></span>to_case_expr() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classcase__exprt.html">case_exprt</a> &amp; to_case_expr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classexprt.html">exprt</a> &amp;&#160;</td>
+          <td class="paramname"><em>expr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Cast an exprt to a <a class="el" href="classcase__exprt.html">case_exprt</a>.   </p>
+<p><em>expr</em> must be known to be <a class="el" href="classcase__exprt.html">case_exprt</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">expr</td><td>Source expression </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classcase__exprt.html">case_exprt</a>   </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03717">3717</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -3267,7 +3635,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classclass__method__descriptor__exprt.html">class_method_descriptor_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03723">3723</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03914">3914</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -3305,7 +3673,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classcomplex__exprt.html">complex_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01965">1965</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01983">1983</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -3343,7 +3711,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classcomplex__exprt.html">complex_exprt</a>   </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01974">1974</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01992">1992</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -3381,7 +3749,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classcomplex__imag__exprt.html">complex_imag_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02053">2053</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02071">2071</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -3419,7 +3787,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classcomplex__imag__exprt.html">complex_imag_exprt</a>   </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02062">2062</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02080">2080</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -3457,7 +3825,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classcomplex__real__exprt.html">complex_real_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02010">2010</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02028">2028</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -3495,7 +3863,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classcomplex__real__exprt.html">complex_real_exprt</a>   </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02018">2018</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02036">2036</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -3533,7 +3901,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classcond__exprt.html">cond_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03517">3517</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03590">3590</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -3571,7 +3939,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classcond__exprt.html">cond_exprt</a>   </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03526">3526</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03599">3599</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -3609,7 +3977,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classconstant__exprt.html">constant_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03172">3172</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03215">3215</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -3647,7 +4015,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classconstant__exprt.html">constant_exprt</a>   </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03180">3180</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03223">3223</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -3685,7 +4053,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classdiv__exprt.html">div_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01206">1206</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01224">1224</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -3723,7 +4091,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classdiv__exprt.html">div_exprt</a>   </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01215">1215</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01233">1233</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -3761,7 +4129,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classempty__union__exprt.html">empty_union_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01860">1860</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01878">1878</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -3799,7 +4167,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classempty__union__exprt.html">empty_union_exprt</a>   </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01868">1868</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01886">1886</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -3837,7 +4205,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classequal__exprt.html">equal_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01407">1407</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01425">1425</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -3875,7 +4243,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classequal__exprt.html">equal_exprt</a>   </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01415">1415</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01433">1433</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -3913,7 +4281,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classeuclidean__mod__exprt.html">euclidean_mod_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01345">1345</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01363">1363</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -3951,7 +4319,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classeuclidean__mod__exprt.html">euclidean_mod_exprt</a>   </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01355">1355</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01373">1373</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -3989,7 +4357,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classif__exprt.html">if_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02577">2577</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02608">2608</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -4027,7 +4395,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classif__exprt.html">if_exprt</a>   </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02586">2586</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02617">2617</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -4065,7 +4433,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classimplies__exprt.html">implies_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02250">2250</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02276">2276</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -4103,7 +4471,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classimplies__exprt.html">implies_exprt</a>   </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02259">2259</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02285">2285</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -4141,7 +4509,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classindex__designatort.html">index_designatort</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02713">2713</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02740">2740</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -4179,7 +4547,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classindex__designatort.html">index_designatort</a>   </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02722">2722</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02749">2749</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -4217,7 +4585,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classindex__exprt.html">index_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01538">1538</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01556">1556</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -4255,7 +4623,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classindex__exprt.html">index_exprt</a>   </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01547">1547</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01565">1565</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -4293,7 +4661,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classlet__exprt.html">let_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03455">3455</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03528">3528</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -4331,7 +4699,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classlet__exprt.html">let_exprt</a>   </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03464">3464</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03537">3537</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -4369,7 +4737,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classmember__designatort.html">member_designatort</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02762">2762</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02789">2789</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -4407,7 +4775,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classmember__designatort.html">member_designatort</a>   </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02771">2771</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02798">2798</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -4445,7 +4813,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classmember__exprt.html">member_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03063">3063</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03090">3090</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -4483,7 +4851,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classmember__exprt.html">member_exprt</a>   </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03071">3071</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03098">3098</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -4521,7 +4889,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classminus__exprt.html">minus_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01086">1086</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01099">1099</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -4559,7 +4927,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classminus__exprt.html">minus_exprt</a>   </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01095">1095</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01108">1108</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -4597,7 +4965,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classmod__exprt.html">mod_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01277">1277</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01295">1295</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -4635,7 +5003,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classmod__exprt.html">mod_exprt</a>   </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01286">1286</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01304">1304</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -4673,7 +5041,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classmult__exprt.html">mult_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01137">1137</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01155">1155</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -4711,7 +5079,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classmult__exprt.html">mult_exprt</a>   </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01146">1146</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01164">1164</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -4749,7 +5117,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classmulti__ary__exprt.html">multi_ary_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l00987">987</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l00995">995</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -4787,7 +5155,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classmulti__ary__exprt.html">multi_ary_exprt</a>   </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l00993">993</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01001">1001</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -4825,7 +5193,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classnamed__term__exprt.html">named_term_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03792">3792</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03983">3983</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -4863,7 +5231,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classarray__comprehension__exprt.html">array_comprehension_exprt</a>   </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03801">3801</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03992">3992</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -4901,7 +5269,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classnand__exprt.html">nand_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02210">2210</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02236">2236</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -4939,7 +5307,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classnand__exprt.html">nand_exprt</a>   </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02217">2217</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02243">2243</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -5053,7 +5421,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classnor__exprt.html">nor_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02355">2355</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02384">2384</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -5091,7 +5459,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classnor__exprt.html">nor_exprt</a>   </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02362">2362</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02391">2391</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -5129,7 +5497,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classnot__exprt.html">not_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02479">2479</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02510">2510</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -5167,7 +5535,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classnot__exprt.html">not_exprt</a>   </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02487">2487</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02518">2518</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -5205,7 +5573,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classnotequal__exprt.html">notequal_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01450">1450</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01468">1468</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -5243,7 +5611,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classnotequal__exprt.html">notequal_exprt</a>   </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01459">1459</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01477">1477</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -5281,7 +5649,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classor__exprt.html">or_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02317">2317</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02344">2344</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -5319,7 +5687,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classor__exprt.html">or_exprt</a>   </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02324">2324</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02351">2351</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -5357,7 +5725,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classplus__exprt.html">plus_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01041">1041</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01054">1054</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -5395,7 +5763,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classplus__exprt.html">plus_exprt</a>   </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01050">1050</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01063">1063</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -5509,7 +5877,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classstruct__exprt.html">struct_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01900">1900</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01918">1918</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -5547,7 +5915,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classstruct__exprt.html">struct_exprt</a>   </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01907">1907</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01925">1925</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -5737,7 +6105,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classtype__exprt.html">type_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03100">3100</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03127">3127</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -5775,7 +6143,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classtype__exprt.html">type_exprt</a>   </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03108">3108</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03135">3135</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -5813,7 +6181,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classtypecast__exprt.html">typecast_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02107">2107</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02125">2125</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -5851,7 +6219,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classtypecast__exprt.html">typecast_exprt</a>   </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02115">2115</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02133">2133</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -6117,7 +6485,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classunion__exprt.html">union_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01816">1816</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01834">1834</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -6155,7 +6523,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classunion__exprt.html">union_exprt</a>   </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01824">1824</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01842">1842</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -6193,7 +6561,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classupdate__exprt.html">update_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02865">2865</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02892">2892</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -6231,7 +6599,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classupdate__exprt.html">update_exprt</a>   </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02874">2874</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02901">2901</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -6269,7 +6637,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classvector__exprt.html">vector_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01754">1754</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01772">1772</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -6307,7 +6675,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classvector__exprt.html">vector_exprt</a>   </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01761">1761</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01779">1779</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -6345,7 +6713,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classwith__exprt.html">with_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02660">2660</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02687">2687</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -6383,7 +6751,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classwith__exprt.html">with_exprt</a>   </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02669">2669</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02696">2696</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -6421,7 +6789,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classxnor__exprt.html">xnor_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02439">2439</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02470">2470</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -6459,7 +6827,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classxnor__exprt.html">xnor_exprt</a>   </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02446">2446</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02477">2477</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -6497,7 +6865,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classxor__exprt.html">xor_exprt</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02395">2395</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02426">2426</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -6535,7 +6903,7 @@ template&lt;&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Object of type <a class="el" href="classxor__exprt.html">xor_exprt</a>   </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02402">2402</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02433">2433</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -6591,7 +6959,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03598">3598</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03789">3789</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -6619,7 +6987,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01711">1711</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01729">1729</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -6647,7 +7015,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01592">1592</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01610">1610</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -6731,7 +7099,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03291">3291</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03364">3364</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -6759,7 +7127,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03699">3699</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03890">3890</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -6787,7 +7155,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01954">1954</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01972">1972</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -6815,7 +7183,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02041">2041</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02059">2059</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -6843,7 +7211,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01998">1998</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02016">2016</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -6871,7 +7239,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03505">3505</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03578">3578</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -6899,7 +7267,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03161">3161</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03204">3204</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -6927,7 +7295,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01195">1195</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01213">1213</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -6955,7 +7323,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01848">1848</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01866">1866</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -6983,7 +7351,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01396">1396</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01414">1414</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -7011,7 +7379,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01334">1334</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01352">1352</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -7095,7 +7463,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02566">2566</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02597">2597</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -7123,7 +7491,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02239">2239</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02265">2265</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -7151,7 +7519,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02702">2702</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02729">2729</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -7179,7 +7547,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01527">1527</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01545">1545</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -7263,7 +7631,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03444">3444</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03517">3517</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -7291,7 +7659,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02751">2751</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02778">2778</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -7319,7 +7687,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03052">3052</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03079">3079</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -7347,7 +7715,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01075">1075</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01088">1088</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -7375,7 +7743,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01266">1266</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01284">1284</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -7403,7 +7771,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01126">1126</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01144">1144</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -7431,7 +7799,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03781">3781</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l03972">3972</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -7487,7 +7855,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02468">2468</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02499">2499</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -7515,7 +7883,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01439">1439</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01457">1457</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -7543,7 +7911,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01030">1030</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01043">1043</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -7627,7 +7995,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02096">2096</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02114">2114</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -7739,7 +8107,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01805">1805</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l01823">1823</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -7767,7 +8135,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02853">2853</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02880">2880</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>
@@ -7795,7 +8163,7 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02645">2645</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="std__expr_8h_source.html#l02676">2676</a> of file <a class="el" href="std__expr_8h_source.html">std_expr.h</a>.</p>
 
 </div>
 </div>

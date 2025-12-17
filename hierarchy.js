@@ -154,6 +154,7 @@ var hierarchy =
         [ "location_sensitive_storaget", "classlocation__sensitive__storaget.html", null ]
       ] ]
     ] ],
+    [ "algebraic_numbert", "classalgebraic__numbert.html", null ],
     [ "allocate_objectst", "classallocate__objectst.html", null ],
     [ "ancestry_resultt", "classancestry__resultt.html", null ],
     [ "smt_bit_vector_theoryt::andt", "structsmt__bit__vector__theoryt_1_1andt.html", null ],
@@ -1614,6 +1615,7 @@ var hierarchy =
               [ "bitor_exprt", "classbitor__exprt.html", null ],
               [ "bitxnor_exprt", "classbitxnor__exprt.html", null ],
               [ "bitxor_exprt", "classbitxor__exprt.html", null ],
+              [ "case_exprt", "classcase__exprt.html", null ],
               [ "concatenation_exprt", "classconcatenation__exprt.html", null ],
               [ "cond_exprt", "classcond__exprt.html", null ],
               [ "mult_exprt", "classmult__exprt.html", null ],
@@ -1887,7 +1889,9 @@ var hierarchy =
     [ "smt_bit_vector_theoryt::signed_less_than_or_equalt", "structsmt__bit__vector__theoryt_1_1signed__less__than__or__equalt.html", null ],
     [ "smt_bit_vector_theoryt::signed_less_thant", "structsmt__bit__vector__theoryt_1_1signed__less__thant.html", null ],
     [ "smt_bit_vector_theoryt::signed_remaindert", "structsmt__bit__vector__theoryt_1_1signed__remaindert.html", null ],
-    [ "simplify_exprt", "classsimplify__exprt.html", null ],
+    [ "simplify_exprt", "classsimplify__exprt.html", [
+      [ "simplify_expr_with_value_sett", "classsimplify__expr__with__value__sett.html", null ]
+    ] ],
     [ "reachability_slicert::slicer_entryt", "structreachability__slicert_1_1slicer__entryt.html", null ],
     [ "slicing_criteriont", "classslicing__criteriont.html", [
       [ "assert_criteriont", "classassert__criteriont.html", null ],
